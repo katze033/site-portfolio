@@ -1,7 +1,15 @@
+* {
+  background: black;
+  color: white;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
 .footer p {
   position: absolute;
-  font-size: .5rem;
+  font-size: 0.5rem;
   bottom: 0;
-  padding-bottom: 0vh;
+  right: 0;
+  padding-bottom: 3rem;
 }
 /*# sourceMappingURL=footer.module.css.map */

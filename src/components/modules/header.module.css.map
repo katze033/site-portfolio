@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA;;IAEI",
+    "mappings": "ACOA,AAAA,CAAC,CAAC;EACE,UAAU,EARE,KAAK;EASjB,KAAK,EAAE,KAAK;EACZ,SAAS,EARD,IAAI;EASZ,WAAW,EAAE,kBAAkB;CAClC;;ADND,AAAA,UAAU,CAAC;EACT,SAAS,ECFK,IAAI;EDGlB,OAAO,EAAE,MAAM;EACf,YAAY,EAAE,EAAE;CACjB;;AAED,AAAA,UAAU,CAAC;EACT,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,IAAI;CAKZ;;AAPD,AAIE,UAJQ,AAIP,MAAM,CAAC;EACN,KAAK,EChBS,OAAO;CDiBtB;;AAGH,AAAA,gBAAgB,CAAC;EACb,KAAK,ECrBS,OAAO;CDsBxB",
     "sources": [
-        "header.module.scss"
+        "header.module.scss",
+        "../../styles/_config.scss"
     ],
     "names": [],
     "file": "header.module.css"

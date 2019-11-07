@@ -1,6 +1,9 @@
+@import "../../styles/config";
+
 .footer p {
     position: absolute;
-    font-size: .5rem;
+    font-size: $footer-font-size;
     bottom: 0;
-    padding-bottom: 0vh;
+    right: 0;
+    padding-bottom: 3rem;
 }

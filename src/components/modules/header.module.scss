@@ -1,3 +1,24 @@
-/* .header {
+@import "../../styles/config";
 
-} */
+.navcontainer {
+
+}
+
+.nav__list {
+  font-size: $nav-font-size;
+  display: inline;
+  margin-right: 2%;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.nav__linkactive {
+    color: $secondary-color;
+}

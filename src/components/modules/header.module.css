@@ -1,4 +1,26 @@
-/* .header {
+* {
+  background: black;
+  color: white;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
 
-} */
+.nav__list {
+  font-size: 1rem;
+  display: inline;
+  margin-right: 2%;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__link:hover {
+  color: #f15060;
+}
+
+.nav__linkactive {
+  color: #f15060;
+}
 /*# sourceMappingURL=header.module.css.map */
