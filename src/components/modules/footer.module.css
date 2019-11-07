@@ -1,4 +1,7 @@
-/* .footer {
-
-} */
+.footer p {
+  position: absolute;
+  font-size: .5rem;
+  bottom: 0;
+  padding-bottom: 0vh;
+}
 /*# sourceMappingURL=footer.module.css.map */

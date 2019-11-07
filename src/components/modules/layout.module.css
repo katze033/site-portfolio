@@ -1,11 +1,10 @@
-/*
-
 .container {
-
+  position: relative;
+  min-height: 100vh;
+  margin: 10%;
 }
 
 .content {
-
+  margin-top: 3rem;
 }
-*/
 /*# sourceMappingURL=layout.module.css.map */

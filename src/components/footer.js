@@ -5,7 +5,7 @@ import footerStyles from './modules/footer.module.css'
 const Footer = () => {
     return (
         <footer className={footerStyles.footer}>
-            <p>Footer</p>
+            <p>Josh Katzenmeyer &copy; 2020</p>
         </footer>
     )
 }

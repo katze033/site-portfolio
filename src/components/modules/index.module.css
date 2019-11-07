@@ -1,0 +1,112 @@
+* {
+  background: black;
+  color: white;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+.body, .sliding__divrole {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+/*Horizontal Sliding*/
+.sliding__divcontainer {
+  display: inline;
+}
+
+.sliding__divcontainer span {
+  animation: leftToRight 7.5s linear infinite 0s;
+  -ms-animation: leftToRight 7.5s linear infinite 0s;
+  -webkit-animation: leftToRight 7.5s linear infinite 0s;
+  color: #fff;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.sliding__divcontainer span:nth-child(2) {
+  animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+}
+
+.sliding__divcontainer span:nth-child(3) {
+  animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+
+/*leftToRight Animation*/
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.home__img {
+  display: inline-block;
+  float: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  shape-outside: circle(50% at 50% 50%);
+  margin-left: .5rem;
+  max-width: 55%;
+  border-radius: 100%;
+  border: 5px #fff solid;
+}
+/*# sourceMappingURL=index.module.css.map */
