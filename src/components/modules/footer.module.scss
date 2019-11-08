@@ -1,8 +1,12 @@
 @import "../../styles/config";
 
-.footer p {
-    position: absolute;
-    font-size: $footer-font-size;
+.footer {
+    position: fixed;
     bottom: 0rem;
-    padding-bottom: 0rem;
+    width: 100%;
+    background: black;
+}
+
+.footer p {
+    font-size: $footer-font-size;
 }

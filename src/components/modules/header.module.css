@@ -1,8 +1,9 @@
 * {
   background: black;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
+  line-height: 1.5rem;
 }
 
 .menutoggle {
@@ -115,7 +116,7 @@
 .nav__link {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .nav__link:hover {
