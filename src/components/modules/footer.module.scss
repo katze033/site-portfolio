@@ -2,11 +2,30 @@
 
 .footer {
     position: fixed;
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 1fr;
     bottom: 0rem;
     width: 100%;
     background: black;
 }
 
-.footer p {
+.copyright {
     font-size: $footer-font-size;
+    grid-column: 1 / 2;
+}
+
+.socialicons {
+    display: inline;
+    align-self: center;
+    grid-column: 2 / 3;
+}
+
+.copyright, .socialicons {
+    grid-row: 1 / 2;
+}
+
+.socialicons i {
+    font-size: $footer-font-size;
+    margin-right: 1rem;
 }

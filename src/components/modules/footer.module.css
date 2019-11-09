@@ -8,12 +8,42 @@
 
 .footer {
   position: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60vw 40vw;
+      grid-template-columns: 60vw 40vw;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   bottom: 0rem;
   width: 100%;
   background: black;
 }
 
-.footer p {
+.copyright {
   font-size: 0.75rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.socialicons {
+  display: inline;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.copyright, .socialicons {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.socialicons i {
+  font-size: 0.75rem;
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=footer.module.css.map */

@@ -1,0 +1,44 @@
+* {
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90vw;
+      grid-template-columns: 90vw;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+.icons {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 0px solid white;
+}
+
+.icons i {
+  font-size: 2.5rem;
+  margin-right: .5rem;
+  padding-bottom: 1rem;
+}
+
+.content {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+/*# sourceMappingURL=about.module.css.map */
