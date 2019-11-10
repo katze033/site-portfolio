@@ -2,6 +2,8 @@ import React from "react"
 import Layout from '../components/layout'
 import aboutStyles from "../components/modules/about.module.css"
 
+import { Link } from 'gatsby'
+
 const AboutPage = () => {
     return (
         <Layout>
@@ -25,7 +27,7 @@ const AboutPage = () => {
                 exploring generative audio and visuals through code. I work with p5.js, Web Audio API, and various
                     softwares to create art that's lively, multi-layered, and reliant on unique technologies.<br></br></p>
 
-                <p>In my portfolio you'll find some of the websites and apps that I've created.<br></br></p>
+                <p>In <Link to={`/projects`} className={aboutStyles.link}>my portfolio</Link> you'll find some of the websites and apps that I've created.<br></br></p>
             </div>
             </div>
         </Layout>

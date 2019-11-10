@@ -17,6 +17,7 @@
   bottom: 0rem;
   width: 100%;
   background: black;
+  border-top: 2px solid white;
 }
 
 .copyright {
@@ -43,7 +44,11 @@
 }
 
 .socialicons i {
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
+}
+
+.socialicons i:hover {
+  color: #f15060;
 }
 /*# sourceMappingURL=footer.module.css.map */
