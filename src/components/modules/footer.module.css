@@ -6,6 +6,10 @@
   line-height: 1.5rem;
 }
 
+a:hover {
+  color: #f15060;
+}
+
 .footer {
   position: fixed;
   display: -ms-grid;
@@ -21,7 +25,7 @@
 }
 
 .copyright {
-  font-size: 0.75rem;
+  font-size: 1rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -44,7 +48,7 @@
 }
 
 .socialicons i {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 1rem;
 }
 

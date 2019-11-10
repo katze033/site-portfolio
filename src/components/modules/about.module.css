@@ -6,6 +6,10 @@
   line-height: 1.5rem;
 }
 
+a:hover {
+  color: #f15060;
+}
+
 .container {
   display: -ms-grid;
   display: grid;

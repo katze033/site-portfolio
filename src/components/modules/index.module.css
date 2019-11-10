@@ -6,6 +6,10 @@
   line-height: 1.5rem;
 }
 
+a:hover {
+  color: #f15060;
+}
+
 .body, .sliding__divrole {
   font-size: 2.5rem;
   line-height: 2.5rem;

@@ -1,0 +1,9 @@
+@import "../../styles/config";
+
+a {
+    text-decoration: none;
+    
+    &:hover {
+        color: $secondary-color;
+    }
+}

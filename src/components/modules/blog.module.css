@@ -1,0 +1,26 @@
+* {
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5rem;
+}
+
+a:hover {
+  color: #f15060;
+}
+
+ol {
+  list-style: none;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.date {
+  margin-top: -0.75rem;
+  font-size: 0.75rem;
+}
+/*# sourceMappingURL=blog.module.css.map */

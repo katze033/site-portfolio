@@ -9,4 +9,12 @@
 a:hover {
   color: #f15060;
 }
-/*# sourceMappingURL=styles.css.map */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f15060;
+}
+/*# sourceMappingURL=contact.module.css.map */
