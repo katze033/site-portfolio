@@ -2,9 +2,10 @@
 
 .footer {
     position: fixed;
-    bottom: 0rem;
+    bottom: -1rem;
     width: 100%;
     background: black;
+    left: 1rem;
 
     @include media-query(md) {
         padding-left: 22%;

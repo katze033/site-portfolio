@@ -12,9 +12,10 @@ a:hover {
 
 .footer {
   position: fixed;
-  bottom: 0rem;
+  bottom: -1rem;
   width: 100%;
   background: black;
+  left: 1rem;
 }
 
 @media (min-width: 768px) {
