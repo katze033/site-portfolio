@@ -9,10 +9,14 @@
 }
 
 .content {
-    margin-top: 5rem;
     margin-bottom: 5rem;
     
-    @include media-query(md) {
+    @include media-query(sm) {
         margin: 10% 25%;
+        padding-top: 2rem;
+    }
+
+    @include media-query(lg) {
+        padding-top: 0rem;
     }
 }

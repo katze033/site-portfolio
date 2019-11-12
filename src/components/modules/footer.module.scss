@@ -7,7 +7,7 @@
     background: black;
 
     @include media-query(md) {
-        margin-left: 22%;
+        padding-left: 22%;
         padding-bottom: 8%;
     }
 }
