@@ -2,24 +2,22 @@
 
 .footer {
     position: fixed;
-    display: grid;
-    grid-template-columns: 60vw 40vw;
-    grid-template-rows: 1fr;
     bottom: 0rem;
-    width: 100%;
+    width: 80%;
     background: black;
-    border-top: 2px solid white;
+
+    @include media-query(md) {
+        margin-left: 22%;
+        padding-bottom: 8%;
+    }
 }
 
 .copyright {
     font-size: $footer-font-size;
-    grid-column: 1 / 2;
 }
 
 .socialicons {
     display: inline;
-    align-self: center;
-    grid-column: 2 / 3;
 }
 
 .copyright, .socialicons {
@@ -27,9 +25,10 @@
 }
 
 .socialicons i {
-    font-size: $footer-font-size;
-    margin-right: 1rem;
-
+    font-size: $footer-font-size * 1.5;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
     &:hover {
         color: $secondary-color;
     }

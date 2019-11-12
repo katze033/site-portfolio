@@ -1,3 +1,15 @@
+* {
+  background: black;
+  color: white;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5rem;
+}
+
+a:hover {
+  color: #f15060;
+}
+
 .container {
   position: relative;
   min-height: 80vh;
@@ -9,5 +21,11 @@
 .content {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin: 10% 25%;
+  }
 }
 /*# sourceMappingURL=layout.module.css.map */

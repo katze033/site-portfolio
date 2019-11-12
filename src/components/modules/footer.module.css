@@ -1,7 +1,7 @@
 * {
   background: black;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Lato', sans-serif;
   line-height: 1.5rem;
 }
@@ -12,33 +12,24 @@ a:hover {
 
 .footer {
   position: fixed;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60vw 40vw;
-      grid-template-columns: 60vw 40vw;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
   bottom: 0rem;
-  width: 100%;
+  width: 80%;
   background: black;
-  border-top: 2px solid white;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-left: 22%;
+    padding-bottom: 8%;
+  }
 }
 
 .copyright {
   font-size: 1rem;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
 }
 
 .socialicons {
   display: inline;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
 }
 
 .copyright, .socialicons {
@@ -48,8 +39,10 @@ a:hover {
 }
 
 .socialicons i {
-  font-size: 1rem;
-  margin-right: 1rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-right: 2rem;
 }
 
 .socialicons i:hover {

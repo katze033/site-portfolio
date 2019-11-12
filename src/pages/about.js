@@ -11,8 +11,8 @@ const AboutPage = () => {
             <div className={aboutStyles.icons}>
                 <i className="fab fa-html5" alt="HTML5 icon"></i>
                 <i className="fab fa-css3"></i>
+                <i className="fab fa-sass"></i><br></br>
                 <i className="fab fa-node-js"></i>
-                <i className="fab fa-sass"></i>
                 <i className="fab fa-react"></i>
                 <i className="fab fa-git"></i>
             </div>

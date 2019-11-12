@@ -1,17 +1,48 @@
 @import "../../styles/config";
 
-.body, .sliding__divrole {
+.gridContainer {
+  @include media-query(md) {
+    @include layout-grid;
+  }
+}
+
+h1 {
+  @include media-query(md) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+h2 {
+  @include media-query(md) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+} 
+
+.body,
+.sliding__divRole {
   font-size: $large-font-size;
   line-height: 2.5rem;
+
+  @include media-query(md) {
+    font-size: $large-font-size + 1;
+    line-height: 3.5rem;
+  }
 }
 
 
 /*Horizontal Sliding*/
-.sliding__divcontainer {
+.sliding__divContainer {
   display: inline;
+
+  @include media-query (md) {
+  grid-template-columns: 1 / 2;
+  grid-template-rows: 2 / 3;
+  }
 }
 
-.sliding__divcontainer span {
+.sliding__divContainer span {
   animation: leftToRight 7.5s linear infinite 0s;
   -ms-animation: leftToRight 7.5s linear infinite 0s;
   -webkit-animation: leftToRight 7.5s linear infinite 0s;
@@ -20,12 +51,12 @@
   overflow: hidden;
   position: absolute;
 }
-.sliding__divcontainer span:nth-child(2) {
+.sliding__divContainer span:nth-child(2) {
   animation-delay: 2.5s;
   -ms-animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
 }
-.sliding__divcontainer span:nth-child(3) {
+.sliding__divContainer span:nth-child(3) {
   animation-delay: 5s;
   -ms-animation-delay: 5s;
   -webkit-animation-delay: 5s;
@@ -142,16 +173,3 @@
     opacity: 0;
   }
 }
-
-
-
-.home__img {
-    display: inline-block;
-    float: right;
-    box-sizing: border-box;
-    shape-outside: circle(50% at 50% 50%);
-    margin-left: .5rem;
-    max-width: 55%;
-    border-radius: 100%;
-    border: 5px #fff solid;
-  }

@@ -1,11 +1,12 @@
 $primary-color: black;
 $secondary-color: #f15060;
-$font-size: 16px;
+$font-size: 14px;
 $large-font-size: 2.5rem;
 $footer-font-size: 1rem;
 $nav-font-size: 1.5rem;
 $blogTitle-font-size: 1.5rem;
 $blogDate-font-size: .75rem;
+$screen-width: 90vw;
 
 * {
     background: $primary-color;
@@ -17,4 +18,28 @@ $blogDate-font-size: .75rem;
 
 a:hover {
     color: $secondary-color;
+}
+
+
+
+@mixin media-query($size) {
+    @if $size == sm {
+        @media (min-width: 400px) { @content; }
+    } @else if $size == md {
+      @media (min-width: 768px) { @content; }
+    } @else if $size == lg {
+      @media (min-width: 1024px) { @content; }
+    } @else if $size == xl {
+      @media (min-width: 1224px) { @content; }
+    } @else if $size == xxl {
+      @media (min-width: 1824px) { @content; }
+    }
+}
+
+@mixin layout-grid {
+    display: grid;
+    grid-template-columns: 350px 400px;
+    grid-template-rows: 115px 200px;
+    width: 100%;
+    justify-self: center;
 }

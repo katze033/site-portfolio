@@ -5,7 +5,6 @@
   display: block;
   position: relative;
   top: 2rem;
-  left: 0rem;
   z-index: 1;
 
   -webkit-user-select: none;
@@ -26,6 +25,11 @@
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
+  
+  @include media-query(md) {
+    visibility: hidden;
+  }
+  
 }
 
 
@@ -47,6 +51,11 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
+
+
+  @include media-query(md) {
+    visibility: hidden;
+  }
 }
 
 //transformation fx
@@ -97,11 +106,24 @@
   transform: translate(-100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  @include media-query(md) {
+    transform: translate(0, 0);
+    height: 0;
+    width: 50%;
+    left: 20%;
+  }
+
 }
 
 .navcontainer li
 {
   font-size: 3rem;
+
+  @include media-query(md) {
+    display: inline;
+    margin-right: 3%;
+  }
 }
 
 .menutoggle input:checked ~ ul

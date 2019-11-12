@@ -1,9 +1,21 @@
 @import "../../styles/config";
 
-a {
-    text-decoration: none;
+.container {
+    margin-left: 0rem;
     
-    &:hover {
-        color: $secondary-color;
+    @include media-query(sm) {
+        @include layout-grid
     }
+}
+
+form {
+    margin-left: 5%;
+    @include media-query(md) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+}
+
+.datainput {
+    width: 80%;
 }

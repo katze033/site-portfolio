@@ -6,7 +6,6 @@ const Footer = () => {
     return (
         <footer className={footerStyles.footer}>
               
-            <p className={footerStyles.copyright}>Josh Katzenmeyer &copy; 2020</p>
             <div className={footerStyles.socialicons}>
                 <a href="https://www.twitter.com/luxpris" target="_blank">
                     <i class="fab fa-twitter"></i>

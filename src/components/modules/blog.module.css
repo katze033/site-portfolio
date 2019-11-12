@@ -1,7 +1,7 @@
 * {
   background: black;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Lato', sans-serif;
   line-height: 1.5rem;
 }
@@ -17,10 +17,27 @@ ol {
 .title {
   text-decoration: none;
   font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1824px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }
 
 .date {
   margin-top: -0.75rem;
   font-size: 0.75rem;
+}
+
+.body {
+  margin: 2rem 0rem;
 }
 /*# sourceMappingURL=blog.module.css.map */

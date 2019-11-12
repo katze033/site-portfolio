@@ -1,15 +1,28 @@
 @import "../../styles/config";
 
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 .title {
-    text-decoration: none;
-    font-size: $blogTitle-font-size;
+  text-decoration: none;
+  font-size: $blogTitle-font-size;
+  line-height: 2rem;
+
+  @include media-query(md) {
+    font-size: $blogTitle-font-size + 0.5;
+
+  }
+  @include media-query(xxl) {
+    font-size: $blogTitle-font-size + 1;
+  }
 }
 
 .date {
-    margin-top: -0.75rem;
-    font-size: $blogDate-font-size;
+  margin-top: -0.75rem;
+  font-size: $blogDate-font-size;
+}
+
+.body {
+  margin: 2rem 0rem;
 }
