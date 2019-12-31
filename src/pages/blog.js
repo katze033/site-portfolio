@@ -21,7 +21,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
-            <ol>
+            <ol className={blogStyles.blogList}> 
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
                         <li>

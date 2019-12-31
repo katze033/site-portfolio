@@ -1,5 +1,5 @@
 @import "../../styles/config";
-
+/*
 //positioning of toggle
 .menutoggle {
   display: block;
@@ -22,8 +22,8 @@
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; // hide this 
+  z-index: 2; // and place it over the hamburger
   -webkit-touch-callout: none;
   
   @include media-query(md) {
@@ -100,7 +100,7 @@
   background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+  // to stop flickering of text in safari
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -115,14 +115,15 @@
   }
 
 }
-
+*/
 .navcontainer li
 {
   font-size: 3rem;
 
   @include media-query(md) {
     display: inline;
-    margin-right: 3%;
+    margin-right: 80px;
+    margin-left: -40px
   }
 }
 

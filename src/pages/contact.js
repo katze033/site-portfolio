@@ -8,7 +8,8 @@ const ContactPage = () => {
         <Layout>
             <div className={contactStyles.container}>
                 <p className={contactStyles.body}>Don't hesitate to say hello. To reach me, you can either fill out this form or use any of the links below.</p>
-                <form method="post" data-netlify="true">
+                <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="bot-field" />
                     <label>
                         Name<br></br>
                         <input type="text" name="name" id="name" className={contactStyles.datainput} /><br></br>

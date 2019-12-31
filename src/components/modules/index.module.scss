@@ -1,11 +1,11 @@
 @import "../../styles/config";
-
+/*
 .gridContainer {
   @include media-query(md) {
     @include layout-grid;
   }
 }
-
+*/
 h1 {
   @include media-query(md) {
     grid-column: 1 / 3;

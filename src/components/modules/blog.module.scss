@@ -1,7 +1,14 @@
 @import "../../styles/config";
 
-ol {
+
+
+.blogList {
   list-style: none;
+
+  li {
+    margin-left: -40px;
+  }
+
 }
 
 .title {
@@ -24,5 +31,5 @@ ol {
 }
 
 .body {
-  margin: 2rem 0rem;
+  margin: 0rem 0rem;
 }
