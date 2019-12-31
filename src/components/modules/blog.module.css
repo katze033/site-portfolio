@@ -47,18 +47,6 @@ a:hover {
   line-height: 2rem;
 }
 
-@media (min-width: 768px) {
-  .title {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 1824px) {
-  .title {
-    font-size: 2.5rem;
-  }
-}
-
 .date {
   margin-top: -0.75rem;
   font-size: 0.75rem;

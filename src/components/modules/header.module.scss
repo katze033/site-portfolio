@@ -1,5 +1,5 @@
 @import "../../styles/config";
-/*
+
 //positioning of toggle
 .menutoggle {
   display: block;
@@ -19,19 +19,18 @@
   position: absolute;
   top: -7px;
   left: -5px;
-  
+  visibility: hidden;
+
   cursor: pointer;
-  
-  opacity: 0; // hide this 
+
+  opacity: 0; // hide this
   z-index: 2; // and place it over the hamburger
   -webkit-touch-callout: none;
-  
-  @include media-query(md) {
-    visibility: hidden;
-  }
-  
-}
 
+  @include media-query(sm) {
+    visibility: visible;
+  }
+}
 
 //styles the bars of the menu toggle
 .menutoggle span {
@@ -40,99 +39,102 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+  visibility: hidden;
+
   background: white;
   border-radius: 3px;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
 
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
 
-  @include media-query(md) {
-    visibility: hidden;
+  @include media-query(sm) {
+    visibility: visible;
   }
 }
 
 //transformation fx
-.menutoggle span:first-child
-{
+.menutoggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-.menutoggle span:nth-last-child(2)
-{
+.menutoggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-.menutoggle input:checked ~ span
-{
+.menutoggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: white;
 }
 
-.menutoggle input:checked ~ span:nth-last-child(3)
-{
+.menutoggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.menutoggle input:checked ~ span:nth-last-child(2)
-{
+.menutoggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-//
-.navcontainer
-{
+/*
+.navcontainer {
   position: absolute;
   width: 90vw;
   height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+
   background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   // to stop flickering of text in safari
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  
-  @include media-query(md) {
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+  @include media-query(sm) {
     transform: translate(0, 0);
     height: 0;
     width: 80%;
     left: 20%;
   }
-
 }
 */
-.navcontainer li
-{
-  font-size: 3rem;
 
-  @include media-query(md) {
-    display: inline;
-    margin-right: 80px;
-    margin-left: -40px
+.navcontainer {
+  margin-left: -40px;
+
+  @include media-query(sm) {
+    position: absolute;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    width: 100vw;
+    height: 100vh;
+  }
+  
+}
+
+.navcontainer li {
+  font-size: 3rem;
+  display: inline;
+  padding-right: 40px;
+
+  @include media-query(sm) {
+    display: block;
   }
 }
 
-.menutoggle input:checked ~ ul
-{
-  transform: none;
+.menutoggle input:checked ~ ul {
+    transform: none;
 }
 
-//
 
 .nav__list {
   line-height: 2rem;
@@ -144,13 +146,11 @@
   color: #fff;
   font-size: $nav-font-size;
 
-
-
   &:hover {
     color: $secondary-color;
   }
 }
 
 .nav__linkactive {
-    color: $secondary-color;
+  color: $secondary-color;
 }

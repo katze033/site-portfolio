@@ -16,13 +16,7 @@
   font-size: $blogTitle-font-size;
   line-height: 2rem;
 
-  @include media-query(md) {
-    font-size: $blogTitle-font-size + 0.5;
-
-  }
-  @include media-query(xxl) {
-    font-size: $blogTitle-font-size + 1;
-  }
+  
 }
 
 .date {

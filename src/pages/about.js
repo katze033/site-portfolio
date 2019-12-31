@@ -8,14 +8,7 @@ const AboutPage = () => {
     return (
         <Layout>
             <div className={aboutStyles.container}>
-            <div className={aboutStyles.icons}>
-                <i className="fab fa-html5" alt="HTML5 icon"></i>
-                <i className="fab fa-css3"></i>
-                <i className="fab fa-sass"></i><br></br>
-                <i className="fab fa-node-js"></i>
-                <i className="fab fa-react"></i>
-                <i className="fab fa-git"></i>
-            </div>
+            
             <div className={aboutStyles.content}>
                 <p>My name's Josh Katzenmeyer, and I'm a freelance web developer skilled at
                     creating attractive and mobile responsive websites using HTML, CSS, JavaScript, and other industry
@@ -33,5 +26,17 @@ const AboutPage = () => {
         </Layout>
     )
 }
+
+
+/* ICONS?
+<div className={aboutStyles.icons}>
+                <i className="fab fa-html5" alt="HTML5 icon"></i>
+                <i className="fab fa-css3"></i>
+                <i className="fab fa-sass"></i><br></br>
+                <i className="fab fa-node-js"></i>
+                <i className="fab fa-react"></i>
+                <i className="fab fa-git"></i>
+            </div>
+            */
 
 export default AboutPage

@@ -41,10 +41,28 @@ a:hover {
   margin: 0 auto;
 }
 
+@media (max-width: 1170px) {
+  .container {
+    max-width: 75vw;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
 .content {
   margin-bottom: 0rem;
-  margin-top: 30px;
+  margin-top: 50px;
   max-height: 70vh;
   overflow-y: auto;
+}
+
+@media (max-width: 650px) {
+  .content {
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=layout.module.css.map */
