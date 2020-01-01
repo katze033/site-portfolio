@@ -1,0 +1,23 @@
+@import "../../styles/config";
+
+.categories_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  .category {
+    border: 1px solid white;
+    height: 125px;
+    //width: 125px;
+    flex: 30%;
+    margin-right: 25px;
+    margin-top: 25px;
+
+    p {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1rem; 
+    }
+  }
+}

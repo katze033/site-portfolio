@@ -1,0 +1,64 @@
+* {
+  background: black;
+  color: white;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5rem;
+}
+
+a:hover {
+  color: #f15060;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+/*
+@mixin layout-grid {
+    display: grid;
+    grid-template-columns: 350px 400px;
+    grid-template-rows: 115px 200px;
+    width: 100%;
+    justify-self: center;
+}
+*/
+.categories_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.categories_container .category {
+  border: 1px solid white;
+  height: 125px;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.categories_container .category p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=projects.module.css.map */
