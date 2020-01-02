@@ -10,20 +10,25 @@ const ProjectsPage = () => {
         <Layout>
             <div className={projectsStyles.categories_container}>
                 <div className={projectsStyles.category}>
-                    <Link to="/projects/web"><p>Web</p></Link>
+                    <Link to="/projects/web">Web</Link>
                 </div>
                 <div className={projectsStyles.category}>
-                    <Link to="/projects/art"><p>Art</p></Link>
+                    <Link to="/projects/art">Art</Link>
                 </div>
                 <div className={projectsStyles.category}>
-                    <Link to="/projects/music"><p>Music</p></Link>
+                    <Link to="/projects/music">Music</Link>
                 </div>
                 <div className={projectsStyles.category}>
-                    <Link to="/blog"><p>Blog</p></Link>
+                    <Link to="/blog">Blog</Link>
                 </div>
             </div>
         </Layout>
     )
 }
+
+(".category").click(function() {
+    window.location = (this).find("a"); 
+    return false;
+  });
 
 export default ProjectsPage
