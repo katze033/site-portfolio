@@ -56,9 +56,10 @@ a:hover {
   margin-top: 25px;
 }
 
-.categories_container .category p {
+.categories_container .category a {
   text-align: center;
   margin-top: 30px;
   font-size: 1rem;
+  text-decoration: none;
 }
 /*# sourceMappingURL=projects.module.css.map */

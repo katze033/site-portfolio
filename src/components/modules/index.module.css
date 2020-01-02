@@ -46,6 +46,15 @@ a:hover {
   line-height: 3.5rem;
 }
 
+.bodyContainer p {
+  padding-top: 40px;
+}
+
+.bodyContainer a {
+  text-decoration: none;
+  color: #f15060;
+}
+
 /*Horizontal Sliding*/
 .sliding__divContainer {
   display: inline;
