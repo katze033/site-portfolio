@@ -10,6 +10,7 @@ import categoriesStyles from '../../components/modules/projects-categories.modul
 //images
 import questForCute from '../../components/images/webprojects/quest-for-cute.png'
 
+
 const ProjectsWebPage = () => {
     return (
         <Layout>
