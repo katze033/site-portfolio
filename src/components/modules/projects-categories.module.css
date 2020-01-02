@@ -33,35 +33,34 @@ a:hover {
     justify-self: center;
 }
 */
-.footer {
-  position: absolute;
-  bottom: 0;
+.images_container {
+  width: 80%;
+  height: 190px;
+}
+
+.images {
   width: 100%;
-  padding-top: 10px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.copyright {
-  font-size: 1rem;
+.artFlex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.socialicons {
-  display: inline;
+.art_container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
 }
-
-.copyright, .socialicons {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-}
-
-.socialicons i {
-  font-size: 1.5rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  margin-right: 2rem;
-}
-
-.socialicons i:hover {
-  color: #f15060;
-}
-/*# sourceMappingURL=footer.module.css.map */
+/*# sourceMappingURL=projects-categories.module.css.map */
