@@ -26,9 +26,4 @@ const ProjectsPage = () => {
     )
 }
 
-(".category").click(function() {
-    window.location = (this).find("a"); 
-    return false;
-  });
-
 export default ProjectsPage
