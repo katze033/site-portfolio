@@ -16,7 +16,7 @@ const ProjectsPage = () => {
                     <Link to="/projects/art">Art</Link>
                 </div>
                 <div className={projectsStyles.category}>
-                    <Link to="/projects/music">Music</Link>
+                    <a href="http://www.luxuryprison.bandcamp.com">Music</a>
                 </div>
                 <div className={projectsStyles.category}>
                     <Link to="/blog">Blog</Link>
