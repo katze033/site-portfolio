@@ -18,8 +18,6 @@ export const squareImage = graphql`
   }
 `
 
-
-
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {

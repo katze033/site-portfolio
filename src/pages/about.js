@@ -8,20 +8,27 @@ const AboutPage = () => {
     return (
         <Layout>
             <div className={aboutStyles.container}>
-            
-            <div className={aboutStyles.content}>
-                <p>My name's Josh Katzenmeyer, and I'm a freelance web developer skilled at
-                    creating attractive and mobile responsive websites using HTML, CSS, JavaScript, and other industry
-                    languages and tools. Whether you're looking to boost your online presence through a blog or seeking a
-                    new digital storefront for your business venture, I have the skills to design a product you'll
-                    love.<br></br></p>
 
-                <p>Beyond my interest in web development, I am also passionate about
-                exploring generative audio and visuals through code. I work with p5.js, Web Audio API, and various
-                    softwares to create art that's lively, multi-layered, and reliant on unique technologies.<br></br></p>
-
-                <p>In <Link to={`/projects`} className={aboutStyles.link}>my portfolio</Link> you'll find some of the websites and apps that I've created.<br></br></p>
-            </div>
+                <div className={aboutStyles.content}>
+                    <p>I'm a freelancer interested in helping others build lightweight and attractive websites. If you're looking for assistance solidifying your web presence, get in touch: I am an approachable professional with a deep understanding of shaping online identities that feel thoughtful, respectable, and true.
+                        <br></br>
+                        <br></br>
+                        I would like to let my more web development-oriented readers know that I'm comfortable with the following technologies:
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/Sass</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>Git</li>
+                            <li>GatsbyJS</li>
+                            <li>Wordpress</li>
+                        </ul>
+                        Beyond my interest in web development, I am also passionate about exploring generative audio and visuals through code. I work with p5.js, Web Audio API, and various software to create art that's lively, multi-layered, and strongly informed by the technology that produces it.
+                        <br></br>
+                        <br></br>
+                        In <Link to={`/projects`} className={aboutStyles.link}>my portfolio</Link> you'll find some of my work.
+                    </p>
+                </div>
             </div>
         </Layout>
     )
