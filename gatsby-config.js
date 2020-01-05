@@ -41,7 +41,7 @@ module.exports = {
     description:
       "Freelance web developer, artist, and musician.",
     url: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
-    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    image: "/static/favicon.ico", // Path to your image you placed in the 'static' folder
     twitterUsername: "@luxpris",
   },
 }
