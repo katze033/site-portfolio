@@ -7,28 +7,37 @@ const ContactPage = () => {
     return (
         <Layout>
             <div className={contactStyles.container}>
-                <p className={contactStyles.body}>Don't hesitate to say hello. To reach me, you can either fill out this form or use any of the links below.</p>
-                <form method="post" action="/success" data-netlify-honeypot="bot-field" data-netlify="true">
+                <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />
-                    <label>
-                        Name<br></br>
-                        <input type="text" name="name" id="name" className={contactStyles.datainput} /><br></br>
-                    </label>
-                    <label>
-                        Email<br></br>
-                        <input type="email" name="email" id="email" className={contactStyles.datainput} /><br></br>
-                    </label>
-                    <label>
-                        Subject<br></br>
-                        <input type="text" name="subject" id="subject" className={contactStyles.datainput} /><br></br>
-                    </label>
-                    <label>
-                        Message<br></br>
-                        <textarea name="message" id="message" rows="5" className={contactStyles.datainput} /><br></br>
-                    </label>
-                    <input type="submit" value="Send Message">Send</input>
-                    <input type="reset" value="Clear" />
+                    <div>
+                        <label htmlFor="name">Name</label>
+                        <br></br>
+                        <input type="text" name="name" id="name" className={contactStyles.datainput} />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email</label>
+                        <br></br>
+                        <input type="text" name="email" id="email" className={contactStyles.datainput} />
+                    </div>
+                    <div>
+                        <label htmlFor="subject">Subject</label>
+                        <br></br>
+                        <input type="text" name="subject" id="subject" className={contactStyles.datainput} />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message</label>
+                        <br></br>
+                        <textarea name="message" id="message" rows="5" className={contactStyles.datainput} />
+                    </div>
+                    <ul className="actions">
+                        <li>
+                            <input type="submit" value="Send Message" className="special" />
+                        </li>
+                        <li>
+                            <input type="reset" value="Clear" />
+                        </li>
+                    </ul>
                 </form>
             </div>
         </Layout>

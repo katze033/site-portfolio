@@ -2,7 +2,19 @@
 
 form {
     margin-left: 0%;
+
+    ul {
+        list-style: none;
+        display: inline;
+        padding-left: 0;
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+    }
 }
+
 .datainput {
     width: 300px;
     resize: none;
