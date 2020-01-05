@@ -54,7 +54,7 @@ a:hover {
 }
 
 .content {
-  margin-bottom: 0rem;
+  padding-bottom: 40px;
   margin-top: 50px;
   max-height: 70vh;
   overflow-y: auto;

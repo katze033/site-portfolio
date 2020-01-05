@@ -50,7 +50,7 @@ const ProjectsArtPage = () => {
   return (
     <Layout>
       <div>
-        <Link to="/projects">Go back</Link>
+        <Link to="/projects">More projects</Link>
         <p>All of these images are coded using p5.js, a JavaScript library for creating graphic and interactive experiences.</p>
         <div className={categoriesStyles.artFlex_container}>
           <div className={categoriesStyles.art_container}>
@@ -102,6 +102,7 @@ const ProjectsArtPage = () => {
             />
           </div>
         </div>
+        <Link to="/projects">More projects</Link>
       </div>
     </Layout>
   )
