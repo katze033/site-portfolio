@@ -59,17 +59,17 @@ const ProjectsWebPage = () => {
               fluid={data.etch.childImageSharp.fluid}
               alt="White grid on black background"
               className={categoriesStyles.webImages}
-          />
-            </a>
+            />
+          </a>
         </div>
         <p>This is a desktop-only etch-a-sketch coded using pure JavaScript.</p>
           <div className={categoriesStyles.webImages_container}>
-             <a href="https://katze033-minimessageboard.herokuapp.com/">
-            <Img
-              fluid={data.messageboard.childImageSharp.fluid}
-              alt="Message board"
-              className={categoriesStyles.webImages}
-            />
+            <a href="https://katze033-minimessageboard.herokuapp.com/">
+              <Img
+                fluid={data.messageboard.childImageSharp.fluid}
+                alt="Message board"
+                className={categoriesStyles.webImages}
+              />
             </a>
         </div>
         <p>This is a small message board architecture built using RESTful API.</p>

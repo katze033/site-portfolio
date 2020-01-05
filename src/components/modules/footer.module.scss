@@ -5,6 +5,10 @@
     bottom: 0;
     width: 100%;
     padding-top: 10px;
+
+   @media (max-height: 500px) {
+       position: relative;
+   }
 }
 
 
