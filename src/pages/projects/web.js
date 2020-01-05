@@ -54,19 +54,23 @@ const ProjectsWebPage = () => {
         </div>
         <p>This is a website I coded for my personal music project. The main objective was to create a site that was fast, minimalist, and attractive. This site is comprised of simple HTML and CSS.</p>
         <div className={categoriesStyles.webImages_container}>
-        <Img
+          <a href="https://katze033-etchasketch.herokuapp.com/">
+            <Img
               fluid={data.etch.childImageSharp.fluid}
               alt="White grid on black background"
               className={categoriesStyles.webImages}
-            />
+          />
+            </a>
         </div>
-        <p>This is a simple etch-a-sketch coded using pure JavaScript.</p>
-        <div className={categoriesStyles.webImages_container}>
-        <Img
+        <p>This is a desktop-only etch-a-sketch coded using pure JavaScript.</p>
+          <div className={categoriesStyles.webImages_container}>
+             <a href="https://katze033-minimessageboard.herokuapp.com/">
+            <Img
               fluid={data.messageboard.childImageSharp.fluid}
               alt="Message board"
               className={categoriesStyles.webImages}
             />
+            </a>
         </div>
         <p>This is a small message board architecture built using RESTful API.</p>
         <Link to="/projects">More projects</Link>

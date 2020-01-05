@@ -18,7 +18,7 @@ const AboutPage = () => {
                             <li>HTML</li>
                             <li>CSS/Sass</li>
                             <li>JavaScript</li>
-                            <li>ReactJS</li>
+                            <li>NodeJS</li>
                             <li>Git</li>
                             <li>GatsbyJS</li>
                             <li>Wordpress</li>
