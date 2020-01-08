@@ -50,6 +50,7 @@ a:hover {
 
 .sliding__divContainerContainer {
   position: relative;
+  width: 70%;
 }
 
 /*Horizontal Sliding*/
