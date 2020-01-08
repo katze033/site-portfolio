@@ -21,6 +21,12 @@ export const squareImage = graphql`
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {
+    satellite: file(relativePath: { eq: "art/satellite.png" }) {
+      ...squareImage
+    }
+    page: file(relativePath: { eq: "art/page.png" }) {
+      ...squareImage
+    }
     boathouse: file(relativePath: { eq: "art/boathouse.png" }) {
       ...squareImage
     }
@@ -51,55 +57,86 @@ const ProjectsArtPage = () => {
     <Layout>
       <div>
         <Link to="/projects">More projects</Link>
-        <p>All of these images are coded using p5.js, a JavaScript library for creating graphic and interactive experiences.</p>
+        <p>All of these images are coded using p5.js, a JavaScript library for creating graphic and interactive experiences. If you would like to purchase an 8x8 print, feel free to <Link to="/contact">contact</Link> me.</p>
         <div className={categoriesStyles.artFlex_container}>
+          <div className={categoriesStyles.art_container}>
+            <Img
+              fluid={data.satellite.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            <figcaption>satellite</figcaption>
+          </div>
+          <div className={categoriesStyles.art_container}>
+            <Img
+              fluid={data.page.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            <figcaption>page</figcaption>
+
+          </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.boathouse.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>boathouse</figcaption>
+
           </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.city.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>city</figcaption>
+
           </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.plane.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>plane</figcaption>
+
           </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.plate.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>plate</figcaption>
+
           </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.rain.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>rain</figcaption>
+
           </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.terraform.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>terraform</figcaption>
+
           </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.treat.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>treat</figcaption>
+
           </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.tunnel.childImageSharp.fluid}
               alt="Generative art"
             />
+            <figcaption>tunnel</figcaption>
+
           </div>
         </div>
         <Link to="/projects">More projects</Link>

@@ -60,15 +60,6 @@ a:hover {
   display: inline;
 }
 
-@media (max-width: 765px) {
-  .sliding__divContainer {
-    -ms-grid-columns: 1 / 2;
-        grid-template-columns: 1 / 2;
-    -ms-grid-rows: 2 / 3;
-        grid-template-rows: 2 / 3;
-  }
-}
-
 .sliding__divContainer span {
   animation: leftToRight 7.5s linear infinite 0s;
   -ms-animation: leftToRight 7.5s linear infinite 0s;

@@ -29,10 +29,6 @@
 .sliding__divContainer {
   display: inline;
 
-  @include media-query (md) {
-  grid-template-columns: 1 / 2;
-  grid-template-rows: 2 / 3;
-  }
 }
 
 .sliding__divContainer span {

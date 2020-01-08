@@ -15,13 +15,23 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  figcaption {
+  text-align: center;
+  }
 }
 
 .art_container {
   margin: 20px;
   width: 200px;
-  height: 200px;
+  height: 230px;
   border: 1px solid white;
-
   
+}
+
+p {
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
 }

@@ -6,6 +6,7 @@ import contactStyles from '../components/modules/contact.module.css'
 const ContactPage = () => {
     return (
         <Layout>
+            <p>If you'd like to inquire about hiring, commissions, booking, or anything else, feel free to contact me using the form here or any of the icons at the bottom of this page.</p>
             <div className={contactStyles.container}>
                 <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />

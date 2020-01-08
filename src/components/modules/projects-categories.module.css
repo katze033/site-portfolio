@@ -57,10 +57,19 @@ a:hover {
       flex-wrap: wrap;
 }
 
+.artFlex_container figcaption {
+  text-align: center;
+}
+
 .art_container {
   margin: 20px;
   width: 200px;
-  height: 200px;
+  height: 230px;
   border: 1px solid white;
+}
+
+p a {
+  text-decoration: none;
+  color: #f15060;
 }
 /*# sourceMappingURL=projects-categories.module.css.map */
