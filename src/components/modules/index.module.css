@@ -55,6 +55,10 @@ a:hover {
   color: #f15060;
 }
 
+.sliding__divContainerContainer {
+  position: relative;
+}
+
 /*Horizontal Sliding*/
 .sliding__divContainer {
   display: inline;

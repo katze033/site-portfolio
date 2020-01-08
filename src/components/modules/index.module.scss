@@ -25,10 +25,13 @@
   }
 }
 
+.sliding__divContainerContainer {
+  position: relative;
+}
+
 /*Horizontal Sliding*/
 .sliding__divContainer {
   display: inline;
-
 }
 
 .sliding__divContainer span {
