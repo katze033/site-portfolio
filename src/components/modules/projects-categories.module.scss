@@ -24,14 +24,12 @@
 .art_container {
   margin: 20px;
   width: 200px;
-  height: 230px;
+  height: 200px;
   border: 1px solid white;
   
 }
 
-p {
-  a {
+.projects_link {
     text-decoration: none;
     color: $secondary-color;
-  }
 }

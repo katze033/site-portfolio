@@ -25,4 +25,8 @@
     @include media-query (sm) {
         margin-top: 50px;
     }
+    @media (max-height: 500px) {
+        //overflow-y: visible;
+    }
+    
 }

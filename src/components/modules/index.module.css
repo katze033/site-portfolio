@@ -33,13 +33,6 @@ a:hover {
     justify-self: center;
 }
 */
-/*
-.gridContainer {
-  @include media-query(md) {
-    @include layout-grid;
-  }
-}
-*/
 .body,
 .sliding__divRole {
   font-size: 3.5rem;
