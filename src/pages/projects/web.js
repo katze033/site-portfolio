@@ -60,7 +60,7 @@ const ProjectsWebPage = () => {
             />
           </a>
         </div>
-        <p>This is a desktop-only etch-a-sketch coded using pure JavaScript.</p>
+        <p>This is an etch-a-sketch coded using pure JavaScript.</p>
           <div className={categoriesStyles.webImages_container}>
             <a href="https://katze033-minimessageboard.herokuapp.com/">
               <Img
@@ -70,7 +70,7 @@ const ProjectsWebPage = () => {
               />
             </a>
         </div>
-        <p>This is a small message board architecture built using RESTful API.</p>
+        <p>This is a small message board architecture built using a RESTful API.</p>
         <Link to="/projects">More projects</Link>
       </div>
     </Layout>
