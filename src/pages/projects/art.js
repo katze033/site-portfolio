@@ -21,6 +21,12 @@ export const squareImage = graphql`
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {
+    winter: file(relativePath: { eq: "art/winter.png" }) {
+      ...squareImage
+    }
+    transit: file(relativePath: { eq: "art/transit.png" }) {
+      ...squareImage
+    }
     satellite: file(relativePath: { eq: "art/satellite.png" }) {
       ...squareImage
     }
@@ -59,6 +65,18 @@ const ProjectsArtPage = () => {
         <Link to="/projects">More projects</Link>
         <p>All of these images are coded using p5.js, a JavaScript library for creating graphic and interactive experiences. If you would like to purchase an 8x8 print, feel free to <Link to="/contact" className={categoriesStyles.projects_link}>contact</Link> me.</p>
         <div className={categoriesStyles.artFlex_container}>
+        <div className={categoriesStyles.art_container}>
+            <Img
+              fluid={data.winter.childImageSharp.fluid}
+              alt="Generative art"
+            />
+          </div>
+          <div className={categoriesStyles.art_container}>
+            <Img
+              fluid={data.transit.childImageSharp.fluid}
+              alt="Generative art"
+            />
+          </div>
           <div className={categoriesStyles.art_container}>
             <Img
               fluid={data.satellite.childImageSharp.fluid}
