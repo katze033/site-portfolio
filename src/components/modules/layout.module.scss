@@ -17,9 +17,10 @@
 }
 
 .content {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     margin-top: 50px;
-    max-height: 70vh;
+    margin-bottom: 0px;
+    max-height: 65vh;
     overflow-y: auto;
 
     @include media-query (sm) {
