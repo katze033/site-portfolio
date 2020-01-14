@@ -9,13 +9,16 @@ import blogStyles from '../components/modules/blog.module.css'
 export const query = graphql`
   query ($slug: String!) {
     contentfulBlogPost(slug: {eq: $slug}) {
-      title
-      publishedDate(formatString: "MMMM DD, YYYY")
-      body {
+      childContentfulBlogPostBodyRichTextNode {
         json
       }
+      title
+      publishedDate(formatString: "MMMM DD, YYYY")
     }
   }`
+
+
+  
 
 const Blog = (props) => {
     return (
@@ -23,7 +26,7 @@ const Blog = (props) => {
             <h1 className={blogStyles.title}>{props.data.contentfulBlogPost.title}</h1>
             <p>{props.data.contentfulBlogPost.publishedDate}</p>
             <p><Link to="/blog">More posts</Link></p>
-            <p className={blogStyles.body}>{documentToReactComponents(props.data.contentfulBlogPost.body.json)}</p>
+            <p className={blogStyles.body}>{documentToReactComponents(props.data.contentfulBlogPost.childContentfulBlogPostBodyRichTextNode.json)}</p>
         </Layout>
     )
 }

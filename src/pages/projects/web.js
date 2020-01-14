@@ -70,7 +70,7 @@ const ProjectsWebPage = () => {
               />
             </a>
         </div>
-        <p>This is a small message board architecture built using a RESTful API.</p>
+        <p>This is a small example of a message board architecture.</p>
         <Link to="/projects">More projects</Link>
       </div>
     </Layout>
