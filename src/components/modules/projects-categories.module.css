@@ -43,6 +43,7 @@ a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-top: 20px;
 }
 
 .artFlex_container {

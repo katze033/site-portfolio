@@ -25,6 +25,9 @@ export const fitImage = graphql`
 const ProjectsWebPage = () => {
   const data = useStaticQuery(graphql`
     query {
+        nola: file(relativePath: { eq: "web/nola-vegan.png" }) {
+          ...fitImage
+        }
         quest: file(relativePath: { eq: "web/quest-for-cute.png" }) {
           ...fitImage
         }
@@ -41,6 +44,17 @@ const ProjectsWebPage = () => {
       <div>
         <Link to="/projects">More projects</Link>
         <div className={categoriesStyles.webImages_container}>
+          <a href="https://dreamy-hodgkin-878858.netlify.com/">
+            <Img
+              fluid={data.nola.childImageSharp.fluid}
+              alt="A landing page for a vegan restaurant: text describing business overlaid on top of a dessert."
+              className={categoriesStyles.webImages}
+            />
+          </a>
+        </div>
+        <p>A simple, mobile responsive static site built from a modified HTML/CSS template.</p>
+        
+        <div className={categoriesStyles.webImages_container}>
           <a href="https://zealous-engelbart-509321.netlify.com/">
             <Img
               fluid={data.quest.childImageSharp.fluid}
@@ -49,7 +63,7 @@ const ProjectsWebPage = () => {
             />
           </a>
         </div>
-        <p>This is a static site for Quest for Cute, an Etsy gift shop stationed out of St. Paul, Minnesota. The goal was to create a more attractive alternative to the clients' Wordpress blog. Despite needing an aesthetic overhaul, it was important for the client to still have the ability to edit content easily. To accomodate this, I coded this site using GatsbyJS and Wordpress as a headless CMS.</p>
+        <p>A static site for Quest for Cute, an Etsy gift shop stationed out of St. Paul, Minnesota. The goal was to create a more attractive alternative to the clients' Wordpress blog. Despite needing an aesthetic overhaul, it was important for the client to still have the ability to edit content easily. To accomodate this, I coded this site using GatsbyJS and Wordpress as a headless CMS.</p>
         
         <div className={categoriesStyles.webImages_container}>
           <a href="https://katze033-etchasketch.herokuapp.com/">
