@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
 
 import headerStyles from './modules/header.module.css'
 
@@ -7,6 +8,10 @@ const Header = () => {
     return (
         <header className={headerStyles.header}>
             <div className={headerStyles.menutoggle}>
+                <Helmet
+                    title="Josh Katzenmeyer"
+                    description="Freelance web developer, artist, and musician."
+                />
                 <input type="checkbox" />
                 <span></span>
                 <span></span>
