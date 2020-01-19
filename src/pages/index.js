@@ -20,7 +20,7 @@ const IndexPage = () => {
                         </div>
                     </div>
                 </h2>
-                <p>Read more <Link to="/about">about me.</Link></p>
+                <p>Read more <Link to="/about">about me.</Link> See my <Link to="/projects">projects.</Link> Read my <Link to="/blog">blog.</Link> Say <Link to="/contact">hello.</Link></p>
             </div>
         </Layout>
     )

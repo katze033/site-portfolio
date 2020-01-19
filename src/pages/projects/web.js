@@ -25,7 +25,9 @@ export const fitImage = graphql`
 const ProjectsWebPage = () => {
   const data = useStaticQuery(graphql`
     query {
-        nola: file(relativePath: { eq: "web/nola-vegan.png" }) {
+      luxury: file(relativePath: { eq: "web/luxury-prison.png" }) {
+        ...fitImage
+      }        nola: file(relativePath: { eq: "web/nola-vegan.png" }) {
           ...fitImage
         }
         quest: file(relativePath: { eq: "web/quest-for-cute.png" }) {
@@ -52,8 +54,19 @@ const ProjectsWebPage = () => {
             />
           </a>
         </div>
-        <p>A simple, mobile responsive static site built from a modified HTML/CSS template.</p>
-        
+        <p>A static webpage for a restaurant in New Orleans. This is a simple, mobile responsive static site built from a modified HTML/CSS template.</p>
+
+        <div className={categoriesStyles.webImages_container}>
+          <a href="https://www.luxuryprison.com">
+            <Img
+              fluid={data.luxury.childImageSharp.fluid}
+              alt="A landing page for a musician: the page links to various streaming channels and a mailing list alongside a black and white piece of art."
+              className={categoriesStyles.webImages}
+            />
+          </a>
+        </div>
+        <p>Sample musician profile. This lightweight landing page is built from pure html/css and links to various streaming channels and a mailing list.</p>
+
         <div className={categoriesStyles.webImages_container}>
           <a href="https://zealous-engelbart-509321.netlify.com/">
             <Img
@@ -64,7 +77,7 @@ const ProjectsWebPage = () => {
           </a>
         </div>
         <p>A static site for Quest for Cute, an Etsy gift shop stationed out of St. Paul, Minnesota. The goal was to create a more attractive alternative to the clients' Wordpress blog. Despite needing an aesthetic overhaul, it was important for the client to still have the ability to edit content easily. To accomodate this, I coded this site using GatsbyJS and Wordpress as a headless CMS.</p>
-        
+
         <div className={categoriesStyles.webImages_container}>
           <a href="https://katze033-etchasketch.herokuapp.com/">
             <Img
@@ -74,17 +87,17 @@ const ProjectsWebPage = () => {
             />
           </a>
         </div>
-        <p>This is an etch-a-sketch coded using pure JavaScript.</p>
-          <div className={categoriesStyles.webImages_container}>
-            <a href="https://katze033-minimessageboard.herokuapp.com/">
-              <Img
-                fluid={data.messageboard.childImageSharp.fluid}
-                alt="Message board"
-                className={categoriesStyles.webImages}
-              />
-            </a>
+        <p>An etch-a-sketch coded in JavaScript.</p>
+        <div className={categoriesStyles.webImages_container}>
+          <a href="https://katze033-minimessageboard.herokuapp.com/">
+            <Img
+              fluid={data.messageboard.childImageSharp.fluid}
+              alt="Message board"
+              className={categoriesStyles.webImages}
+            />
+          </a>
         </div>
-        <p>This is a small example of a message board architecture.</p>
+        <p>A small message board architecture.</p>
         <Link to="/projects">More projects</Link>
       </div>
     </Layout>
