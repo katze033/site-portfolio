@@ -54,7 +54,7 @@ const ProjectsWebPage = () => {
             />
           </a>
         </div>
-        <p>A static webpage for a restaurant in New Orleans. This is a simple, mobile responsive static site built from a modified HTML/CSS template.</p>
+        <p>A simple, mobile responsive static site built from a modified HTML/CSS template.</p>
 
         <div className={categoriesStyles.webImages_container}>
           <a href="https://www.luxuryprison.com">

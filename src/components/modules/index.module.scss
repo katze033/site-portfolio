@@ -7,10 +7,6 @@
 }
 
 .bodyContainer {
-  p {
-    padding-top: 100px;
-  }
-
   a {
     text-decoration: none;
     color: $secondary-color;
@@ -20,6 +16,7 @@
 .sliding__divContainerContainer {
   position: relative;
   width: 70%;
+  padding-bottom: 100px
 }
 
 /*Horizontal Sliding*/
