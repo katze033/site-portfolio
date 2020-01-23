@@ -68,7 +68,7 @@ const ProjectsWebPage = () => {
         <p>Sample musician profile. This lightweight landing page is built from pure html/css and links to various streaming channels and a mailing list.</p>
 
         <div className={categoriesStyles.webImages_container}>
-          <a href="https://zealous-engelbart-509321.netlify.com/">
+          <a href="https://www.questforcute.com/">
             <Img
               fluid={data.quest.childImageSharp.fluid}
               alt="An online storefront for an Etsy gift shop featuring a colorful pencil case"
