@@ -21,6 +21,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
+          <p>Every week I gather a collection of links and quotes that spark my interest.</p>
             <ol className={blogStyles.blogList}> 
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
