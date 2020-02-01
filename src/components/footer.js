@@ -10,6 +10,9 @@ const Footer = () => {
                 <a href="https://www.twitter.com/luxpris" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-twitter"></i>
                 </a>
+                <a href="https://www.instagram.com/luxpris" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
                 <a href="https://www.github.com/katze033" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                 </a>
