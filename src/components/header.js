@@ -27,6 +27,9 @@ const Header = () => {
                         <Link to={`/projects`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>My Projects</Link>
                     </li>
                     <li className={headerStyles.nav__list}>
+                        <Link to={`/blog`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Blog</Link>
+                    </li>
+                    <li className={headerStyles.nav__list}>
                         <Link to={`/contact`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Contact</Link>
                     </li>
                 </ul>

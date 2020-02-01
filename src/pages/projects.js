@@ -18,6 +18,9 @@ const ProjectsPage = () => {
                 <div className={projectsStyles.category}>
                     <a href="http://www.luxuryprison.com">Music</a>
                 </div>
+                <div className={projectsStyles.category}>
+                    <Link to="/blog">Blog</Link>
+                </div>
             </div>
         </Layout>
     )
