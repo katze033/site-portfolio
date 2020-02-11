@@ -79,7 +79,6 @@ module.exports = {
                   date: edge.node.publishedDate,
                   url: site.siteMetadata.url + "/blog/" + edge.node.slug,
                   guid: site.siteMetadata.url + "/blog/" + edge.node.slug,
-                  description: edge.node.childContentfulBlogPostBodyRichTextNode.json
                 })
               })
             },
