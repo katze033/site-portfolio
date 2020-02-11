@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId:  "UA-157967254-1",
+        trackingId: "UA-157967254-1",
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -53,6 +53,57 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 600,
             },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                url
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allContentfulBlogPost } }) => {
+              return allContentfulBlogPost.edges.map(edge => {
+                return Object.assign({}, edge.node, {
+                  date: edge.node.publishedDate,
+                  url: site.siteMetadata.url + "/blog/" + edge.node.slug,
+                  guid: site.siteMetadata.url + "/blog/" + edge.node.slug,
+                })
+              })
+            },
+            query: `
+              {
+                allContentfulBlogPost (sort: {order: DESC, fields: publishedDate}) {
+                  edges {
+                    node {
+                      title
+                      publishedDate(formatString: "MMMM DD, YYYY")
+                      slug
+                      }
+                    }
+                  }
+                }
+              `,
+            output: "/rss.xml",
+            title: "Josh Katzenmeyer's Blog RSS Feed",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            match: "^/blog/",
+            // optional configuration to specify external rss feed, such as feedburner
+            link: "https://feeds.feedburner.com/gatsby/blog",
           },
         ],
       },
