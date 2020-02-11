@@ -21,7 +21,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
-          <p>The logs serve as a weekly snapshot of content I've found inspiring, entertaining, or thoughtful. Within you'll find a collection of articles, songs, images, tools and quotes. If you'd like to be notified of updates, feel free to subscribe to <a href="https:/www.joshkatzenmeyer.com/rss.xml">my RSS feed.</a></p>
+          <p>The logs serve as a weekly snapshot of content I've found inspiring, entertaining, or thoughtful. Within you'll find a collection of articles, songs, images, tools and quotes. If you'd like to be notified of updates, feel free to subscribe to <a href="/rss.xml">my RSS feed.</a></p>
             <ol className={blogStyles.blogList}> 
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
