@@ -11,7 +11,7 @@ import categoriesStyles from '../../components/modules/projects-categories.modul
 export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
-      fluid(maxWidth: 280, maxHeight: 280) {
+      fluid(maxWidth: 270, maxHeight: 270) {
         ...GatsbyImageSharpFluid
       }
     }
