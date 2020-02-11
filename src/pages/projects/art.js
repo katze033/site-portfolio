@@ -21,40 +21,34 @@ export const squareImage = graphql`
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {
-    winter: file(relativePath: { eq: "art/winter.png" }) {
+    perfectday: file(relativePath: { eq: "art/perfect_day_for_sailing_2400.png" }) {
       ...squareImage
     }
-    transit: file(relativePath: { eq: "art/transit.png" }) {
+    portersgate: file(relativePath: { eq: "art/porters_gate_2400.png" }) {
       ...squareImage
     }
-    satellite: file(relativePath: { eq: "art/satellite.png" }) {
+    replica8: file(relativePath: { eq: "art/replica-container-key8.png" }) {
       ...squareImage
     }
-    page: file(relativePath: { eq: "art/page.png" }) {
+    replica7: file(relativePath: { eq: "art/replica-container-key7.png" }) {
       ...squareImage
     }
-    boathouse: file(relativePath: { eq: "art/boathouse.png" }) {
+    replica6: file(relativePath: { eq: "art/replica-container-key6.png" }) {
       ...squareImage
     }
-    city: file(relativePath: { eq: "art/city.png" }) {
+    replica5: file(relativePath: { eq: "art/replica-container-key5.png" }) {
       ...squareImage
     }
-    plane: file(relativePath: { eq: "art/plane.png" }) {
+    replica4: file(relativePath: { eq: "art/replica-container-key4.png" }) {
       ...squareImage
     }
-    plate: file(relativePath: { eq: "art/plate.png" }) {
+    replica3: file(relativePath: { eq: "art/replica-container-key3.png" }) {
       ...squareImage
     }
-    rain: file(relativePath: { eq: "art/rain.png" }) {
+    replica2: file(relativePath: { eq: "art/replica-container-key2.png" }) {
       ...squareImage
     }
-    terraform: file(relativePath: { eq: "art/terraform.png" }) {
-      ...squareImage
-    }
-    treat: file(relativePath: { eq: "art/treat.png" }) {
-      ...squareImage
-    }
-    tunnel: file(relativePath: { eq: "art/tunnel.png" }) {
+    replica1: file(relativePath: { eq: "art/replica-container-key1.png" }) {
       ...squareImage
     }
   }
@@ -63,79 +57,87 @@ const ProjectsArtPage = () => {
     <Layout>
       <div>
         <Link to="/projects">More projects</Link>
-        <p>All of these images are coded using p5.js, a JavaScript library for creating graphic and interactive experiences. If you would like to purchase an 8x8 print, feel free to <Link to="/contact" className={categoriesStyles.projects_link}>contact</Link> me.</p>
+        <p>All of these images are coded with JavaScript. Tokenized single edition digital copies are available for purchase with Ethereum through <a href="https://superrare.co/luxpris">SuperRare.co</a>. Soon I will be making physical prints. If you are interested in a copy, feel free to <Link to="/contact" className={categoriesStyles.projects_link}>contact</Link> me and I will let you know as soon as they're available.</p>
         <div className={categoriesStyles.artFlex_container}>
         <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/a-perfect-day-for-sailing-7935">
             <Img
-              fluid={data.winter.childImageSharp.fluid}
+              fluid={data.perfectday.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/porter's-gate-7852">
             <Img
-              fluid={data.transit.childImageSharp.fluid}
+              fluid={data.portersgate.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-8-7824">
             <Img
-              fluid={data.satellite.childImageSharp.fluid}
+              fluid={data.replica8.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-7-7802">
             <Img
-              fluid={data.page.childImageSharp.fluid}
+              fluid={data.replica7.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-6-7709">
             <Img
-              fluid={data.boathouse.childImageSharp.fluid}
+              fluid={data.replica6.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-5-7675">
             <Img
-              fluid={data.city.childImageSharp.fluid}
+              fluid={data.replica5.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-4-7624">
             <Img
-              fluid={data.plane.childImageSharp.fluid}
+              fluid={data.replica4.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-3-7583">
             <Img
-              fluid={data.plate.childImageSharp.fluid}
+              fluid={data.replica3.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-2-7503">
             <Img
-              fluid={data.rain.childImageSharp.fluid}
+              fluid={data.replica2.childImageSharp.fluid}
               alt="Generative art"
             />
+            </a>
           </div>
           <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/replica-container-key-1-7450">
             <Img
-              fluid={data.terraform.childImageSharp.fluid}
+              fluid={data.replica1.childImageSharp.fluid}
               alt="Generative art"
             />
-          </div>
-          <div className={categoriesStyles.art_container}>
-            <Img
-              fluid={data.treat.childImageSharp.fluid}
-              alt="Generative art"
-            />
-          </div>
-          <div className={categoriesStyles.art_container}>
-            <Img
-              fluid={data.tunnel.childImageSharp.fluid}
-              alt="Generative art"
-            />
+            </a>
           </div>
         </div>
         <Link to="/projects">More projects</Link>
