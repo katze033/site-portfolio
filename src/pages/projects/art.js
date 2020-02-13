@@ -21,6 +21,9 @@ export const squareImage = graphql`
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {
+    alongthecoast: file(relativePath: { eq: "art/along_the_coast_2400.png" }) {
+      ...squareImage
+    }
     perfectday: file(relativePath: { eq: "art/perfect_day_for_sailing_2400.png" }) {
       ...squareImage
     }
@@ -59,6 +62,14 @@ const ProjectsArtPage = () => {
         <Link to="/projects">More projects</Link>
         <p>All of these images are coded with JavaScript. Tokenized single edition digital copies are available for purchase with Ethereum through <a href="https://superrare.co/luxpris">SuperRare.co</a>. Soon I will be making physical prints. If you are interested in a copy, feel free to <Link to="/contact" className={categoriesStyles.projects_link}>contact</Link> me and I will let you know as soon as they're available.</p>
         <div className={categoriesStyles.artFlex_container}>
+        <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/along-the-coast-8006">
+            <Img
+              fluid={data.alongthecoast.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            </a>
+          </div>
         <div className={categoriesStyles.art_container}>
             <a href="https://superrare.co/artwork-v2/a-perfect-day-for-sailing-7935">
             <Img
