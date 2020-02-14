@@ -10,9 +10,19 @@ const AboutPage = () => {
             <div className={aboutStyles.container}>
 
                 <div className={aboutStyles.content}>
-                    <p>As a technologist I value simplicity, speed, purpose, and accessibility. I am available on a freelance basis for website design and development. <a href="https://drive.google.com/open?id=1Uh5aMMt3t3Vma9vw2lgxGIDbpg8adps-">My resume</a> lists some of the technologies I'm most comfortable with, and <Link to="/projects/web">this page</Link> lists some of my recent web projects and accompanying source code.</p>
+                    <p>As a technologist I value simplicity, speed, purpose, and accessibility. I am available on a freelance basis for website design and development. <Link to="/projects/web">This page</Link> lists some of my recent web projects and accompanying source code. As you'll see on <a href="https://drive.google.com/open?id=1Uh5aMMt3t3Vma9vw2lgxGIDbpg8adps-">my resume</a>, here are a few of the areas in which I'm proficient: </p>
+                    <ul>
+                        <li>HTML5, CSS, and JavaScript</li>
+                        <li>SEO and Google Analytics</li>
+                        <li>Sass/Scss</li>
+                        <li>NodeJS</li>
+                        <li>ReactJS</li>
+                        <li>Git</li>
+                        <li>GatsbyJS and GraphQL</li>
+                        <li>CMS: WordPress, Squarespace, Netlify CMS, and more</li>
+                    </ul>
                     <p>As a digital artist <Link to="/projects/art">I assemble landscapes and collages with code.</Link> My work uses minimalist configurations of two-dimensional shapes and lines to construct otherworldly pieces with deceptive depth. Much of my art relies on procedural and generative processes: because of this, the final output is often surprising and heavily informed by the technologies beneath it.</p>
-                    <p>As the work makes its way through various algorithmic social media channels, I question the importance of free will in the making and consumption of digital art. In response, I seek to explore and redefine my role as an artist. Above all, I interpret myself as a curator of the machine’s output.</p>
+                    <p>Thank you for visiting, and I hope you enjoy your stay.</p>
                 </div>
             </div>
         </Layout>
