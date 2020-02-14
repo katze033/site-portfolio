@@ -10,24 +10,9 @@ const AboutPage = () => {
             <div className={aboutStyles.container}>
 
                 <div className={aboutStyles.content}>
-                    <p>I'm a freelancer interested in helping others build lightweight and attractive websites. If you're looking for assistance solidifying your web presence, get in touch: I am an approachable professional with a deep understanding of shaping online identities that feel thoughtful, respectable, and true.
-                        <br></br>
-                        <br></br>
-                        I would like to let my more web development-oriented readers know that I'm comfortable with the following technologies:
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS/Sass</li>
-                            <li>JavaScript</li>
-                            <li>NodeJS</li>
-                            <li>Git</li>
-                            <li>GatsbyJS</li>
-                            <li>Wordpress</li>
-                        </ul>
-                        Beyond my interest in web development, I am also passionate about exploring generative audio and visuals through code. I work with p5.js, Web Audio API, and various software to create art that's lively, multi-layered, and strongly informed by the technology that produces it.
-                        <br></br>
-                        <br></br>
-                        In <Link to={`/projects`} className={aboutStyles.link}>my portfolio</Link> you'll find some of my work.
-                    </p>
+                    <p>As a technologist I value simplicity, speed, purpose, and accessibility. I am available on a freelance basis for website design and development. <a href="https://drive.google.com/open?id=1Uh5aMMt3t3Vma9vw2lgxGIDbpg8adps-">My resume</a> lists some of the technologies I'm most comfortable with, and <Link to="/projects/web">this page</Link> lists some of my recent web projects and accompanying source code.</p>
+                    <p>As a digital artist <Link to="/projects/art">I assemble landscapes and collages with code.</Link> My work uses minimalist configurations of two-dimensional shapes and lines to construct otherworldly pieces with deceptive depth. Much of my art relies on procedural and generative processes: because of this, the final output is often surprising and heavily informed by the technologies beneath it.</p>
+                    <p>As the work makes its way through various algorithmic social media channels, I question the importance of free will in the making and consumption of digital art. In response, I seek to explore and redefine my role as an artist. Above all, I interpret myself as a curator of the machine’s output.</p>
                 </div>
             </div>
         </Layout>
