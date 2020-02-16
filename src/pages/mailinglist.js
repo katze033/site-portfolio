@@ -6,8 +6,8 @@ import contactStyles from '../components/modules/contact.module.css'
 const MailingList = () => {
     return (
         <Layout>
-            <p>Enter your email below to receive a monthly newsletter showcasing recent work, highlights from the weekly blog posts, and upcoming events and projects.</p>
             <div className={contactStyles.container}>
+            <p>Enter your email below to receive a monthly newsletter showcasing recent work, highlights from the weekly blog posts, and upcoming events and projects.</p>
                 <form name="mailinglist" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="mailinglist" />
