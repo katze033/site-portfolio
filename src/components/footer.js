@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import footerStyles from './modules/footer.module.css'
 
@@ -21,6 +22,7 @@ const Footer = () => {
                     <i class="fas fa-envelope-square"></i>
                 </a>
             </div>
+            <Link to="/mailinglist" activeClassName={footerStyles.mailingListLink}>Mailing List</Link>
         </footer>
     )
 }

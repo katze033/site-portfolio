@@ -23,6 +23,7 @@
     max-height: 65vh;
     overflow-y: auto;
 
+
     @include media-query (sm) {
         margin-top: 50px;
     }

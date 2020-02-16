@@ -40,10 +40,18 @@ a:hover {
   padding-top: 10px;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 @media (max-height: 500px) {
   .footer {
     position: relative;
   }
+}
+
+.mailingListLink {
+  color: #f15060;
 }
 
 .copyright {
