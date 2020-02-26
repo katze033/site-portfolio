@@ -120,7 +120,7 @@ module.exports = {
         ],
       },
     },
-    //`gatsby-plugin-sitemap`,
+    `gatsby-plugin-sitemap`,
   ],
 
   
