@@ -6,6 +6,15 @@
 const path = require('path')
 
 module.exports = {
+  siteMetadata: {
+    title: "Josh Katzenmeyer",
+    description:
+      "Creative technologist, digital artist, and musician: offers web development services, UI/UX design, limited edition generative artworks, and more.",
+    url: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
+    image: "/static/favicon.ico", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@luxpris",
+  },
+  
   plugins: [
     {
       resolve: 'gatsby-plugin-web-font-loader',
@@ -114,12 +123,5 @@ module.exports = {
     `gatsby-plugin-sitemap`,
   ],
 
-  siteMetadata: {
-    title: "Josh Katzenmeyer",
-    description:
-      "Creative technologist, digital artist, and musician: offers web development services, UI/UX design, limited edition generative artworks, and more.",
-    url: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
-    image: "/static/favicon.ico", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@luxpris",
-  },
+  
 }
