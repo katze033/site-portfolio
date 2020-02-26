@@ -21,7 +21,7 @@ const AboutPage = () => {
                         <li>GatsbyJS and GraphQL</li>
                         <li>CMS: WordPress, Squarespace, Netlify CMS, and more</li>
                     </ul>
-                    <p>As a digital artist <Link to="/projects/art">I assemble landscapes and collages with code.</Link> My work uses minimalist configurations of two-dimensional shapes and lines to construct otherworldly pieces with deceptive depth. Much of my art relies on procedural and generative processes: because of this, the final output is often surprising and heavily informed by the technologies beneath it.</p>
+                    <p>As a digital artist <Link to="/projects/art">I assemble abstracted landscapes and collages with code.</Link> My work uses minimalist configurations of two-dimensional shapes and lines to construct otherworldly pieces with deceptive depth. Much of my art relies on procedural and generative processes: because of this, the final output is often surprising and heavily informed by the technologies beneath it.</p>
                     <p>Thank you for visiting, and I hope you enjoy your stay.</p>
                 </div>
             </div>
