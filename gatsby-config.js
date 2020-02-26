@@ -10,7 +10,7 @@ module.exports = {
     title: "Josh Katzenmeyer",
     description:
       "Creative technologist, digital artist, and musician: offers web development services, UI/UX design, limited edition generative artworks, and more.",
-    url: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
+    siteUrl: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
     image: "/static/favicon.ico", // Path to your image you placed in the 'static' folder
     twitterUsername: "@luxpris",
   },
@@ -121,39 +121,39 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: `/sitemap.xml`,
-        // Exclude specific pages or groups of pages using glob parameters
-        // See: https://github.com/isaacs/minimatch
-        // The example below will exclude the single `path/to/page` and all routes beginning with `category`
-        exclude: [`/category/*`, `/path/to/page`],
-        query: `
-          {
-            site {
-              siteMetadata {
-                url
+    resolve: `gatsby-plugin-sitemap`,
+    options: {
+      output: `/sitemap.xml`,
+      // Exclude specific pages or groups of pages using glob parameters
+      // See: https://github.com/isaacs/minimatch
+      // The example below will exclude the single `path/to/page` and all routes beginning with `category`
+      exclude: [`/category/*`, `/path/to/page`],
+      query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            edges {
+              node {
+                path
               }
             }
-  
-            allSitePage {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
-        }`,
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.url + edge.node.path,
-              changefreq: `daily`,
-              priority: 0.7,
-            }
-          })
-      }
+          }
+      }`,
+      serialize: ({ site, allSitePage }) =>
+        allSitePage.edges.map(edge => {
+          return {
+            url: site.siteMetadata.siteUrl + edge.node.path,
+            changefreq: `daily`,
+            priority: 0.7,
+          }
+        })
     }
+  }
   ],
 
   
