@@ -21,6 +21,9 @@ export const squareImage = graphql`
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {
+    fantasyexits: file(relativePath: { eq: "art/fantasy_exits_2400.png" }) {
+      ...squareImage
+    }
     openchannel: file(relativePath: { eq: "art/open_channel_illuminated_2400.png" }) {
       ...squareImage
     }
@@ -71,6 +74,14 @@ const ProjectsArtPage = () => {
         <Link to="/projects">More projects</Link>
         <p>All of these images are coded with JavaScript. Tokenized single edition digital copies are available for purchase with Ethereum through <a href="https://superrare.co/luxpris">SuperRare.co</a>. Soon I will be making physical prints. If you are interested in a copy, feel free to <Link to="/contact" className={categoriesStyles.projects_link}>contact</Link> me and I will let you know as soon as they're available.</p>
         <div className={categoriesStyles.artFlex_container}>
+        <div className={categoriesStyles.art_container}>
+            <a href="https://superrare.co/artwork-v2/fantasy-exit-8385">
+            <Img
+              fluid={data.fantasyexits.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            </a>
+          </div>
         <div className={categoriesStyles.art_container}>
             <a href="https://superrare.co/artwork-v2/open-channel-illuminated-8294">
             <Img
