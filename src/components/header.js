@@ -2,12 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 
+import SEO from './SEO'
 import headerStyles from './modules/header.module.css'
 
 const Header = () => {
     return (
         <header className={headerStyles.header}>
             <div className={headerStyles.menutoggle}>
+                <SEO></SEO>
                 <Helmet
                     title="Josh Katzenmeyer"
                     description="Freelance web developer, artist, and musician."

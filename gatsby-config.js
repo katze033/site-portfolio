@@ -8,6 +8,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: "Josh Katzenmeyer",
+    titleTemplate: "Josh Katzenmeyer",
     description:
       "Creative technologist, digital artist, and musician: offers web development services, UI/UX design, limited edition generative artworks, and more.",
     url: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
