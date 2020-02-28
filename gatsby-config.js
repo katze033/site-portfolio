@@ -10,7 +10,7 @@ module.exports = {
     title: "Josh Katzenmeyer",
     titleTemplate: "Josh Katzenmeyer",
     description:
-      "Creative technologist, digital artist, and musician: offers web development services, UI/UX design, limited edition generative artworks, and more.",
+      "Minneapolis technologist, digital artist, and musician: offers freelance web development services, UI/UX design, limited edition generative artworks, and more.",
     url: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
     image: "/static/favicon.ico", // Path to your image you placed in the 'static' folder
     twitterUsername: "@luxpris",
