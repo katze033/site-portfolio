@@ -5,21 +5,28 @@
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 100%;
-
-  .category {
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid white;
-    height: 125px;
     flex: 30%;
+    height: 125px;
     margin-right: 25px;
     margin-top: 25px;
-
-    a {
-      display: inline-block;
-      text-decoration: none;
-      font-size: $nav-font-size;
-      padding: 10px;
-      width: auto;
-      height: auto;
+    
+    div {
+      p {
+        font-size: $nav-font-size;
+        padding-left: 10px;
+        margin-top: 10px;
+        height: 93px;
+        width: auto;
+        
+        &:hover {
+          color: $secondary-color;
+        }
+      }
     }
   }
 }

@@ -9,18 +9,26 @@ const ProjectsPage = () => {
     return (
         <Layout>
             <div className={projectsStyles.categories_container}>
+            <Link to="/projects/web">
                 <div className={projectsStyles.category}>
-                    <Link to="/projects/web">Web</Link>
+                    <p>Web</p>
                 </div>
+            </Link>
+            <Link to="/projects/art">
                 <div className={projectsStyles.category}>
-                    <Link to="/projects/art">Art</Link>
+                    <p>Art</p>
                 </div>
+            </Link>
+            <a href="http://www.luxuryprison.com">
                 <div className={projectsStyles.category}>
-                    <a href="http://www.luxuryprison.com">Music</a>
+                    <p>Music</p>
                 </div>
+            </a>
+            <Link to="/blog">
                 <div className={projectsStyles.category}>
-                    <Link to="/blog">Blog</Link>
+                    <p>Blog</p>
                 </div>
+            </Link>
             </div>
         </Layout>
     )

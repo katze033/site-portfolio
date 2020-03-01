@@ -72,10 +72,10 @@ const ProjectsArtPage = () => {
     <Layout>
       <div>
         <Link to="/projects">More projects</Link>
-        <p>All of these images are coded with JavaScript. Tokenized single edition digital copies are available for purchase with Ethereum through <a href="https://superrare.co/luxpris">SuperRare.co</a>. Soon I will be making physical prints. If you are interested in a copy, feel free to <Link to="/contact" className={categoriesStyles.projects_link}>contact</Link> me and I will let you know as soon as they're available.</p>
+        <p>All of these images are coded with JavaScript. I sell physical prints of my work, along with limited edition crypto-collectible copies. Clicking an image below will bring you to its location in my online shop.</p>
         <div className={categoriesStyles.artFlex_container}>
         <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/fantasy-exit-8385">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/fantasy-exit-8-x-8-print-matte-finish">
             <Img
               fluid={data.fantasyexits.childImageSharp.fluid}
               alt="Generative art"
@@ -83,7 +83,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/open-channel-illuminated-8294">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/open-channel-illuminated-8-x-8-print-matte-finish">
             <Img
               fluid={data.openchannel.childImageSharp.fluid}
               alt="Generative art"
@@ -91,7 +91,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/spirit-of-the-valley-8195">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/spirit-of-the-valley-8-x-8-print-matte-finish">
             <Img
               fluid={data.spirit.childImageSharp.fluid}
               alt="Generative art"
@@ -99,7 +99,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/junkyard-dreams-8091">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/junkyard-dreams-8-x-8-print-matte-finish">
             <Img
               fluid={data.junkyard.childImageSharp.fluid}
               alt="Generative art"
@@ -107,7 +107,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/along-the-coast-8006">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/along-the-coast-8-x-8-print-matte-finish">
             <Img
               fluid={data.alongthecoast.childImageSharp.fluid}
               alt="Generative art"
@@ -115,7 +115,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/a-perfect-day-for-sailing-7935">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/a-perfect-day-for-sailing-8-x-8-print-matte-finish">
             <Img
               fluid={data.perfectday.childImageSharp.fluid}
               alt="Generative art"
@@ -123,7 +123,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/porter's-gate-7852">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/porters-gate-8-x-8-print-matte-finish">
             <Img
               fluid={data.portersgate.childImageSharp.fluid}
               alt="Generative art"
@@ -131,7 +131,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-8-7824">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-8-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica8.childImageSharp.fluid}
               alt="Generative art"
@@ -139,7 +139,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-7-7802">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-7-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica7.childImageSharp.fluid}
               alt="Generative art"
@@ -147,7 +147,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-6-7709">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-6-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica6.childImageSharp.fluid}
               alt="Generative art"
@@ -155,7 +155,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-5-7675">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-5-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica5.childImageSharp.fluid}
               alt="Generative art"
@@ -163,7 +163,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-4-7624">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/copy-of-copy-of-replica-container-key-4-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica4.childImageSharp.fluid}
               alt="Generative art"
@@ -171,7 +171,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-3-7583">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/copy-of-replica-container-key-3-8-x-8-matte-finish">
             <Img
               fluid={data.replica3.childImageSharp.fluid}
               alt="Generative art"
@@ -179,7 +179,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-2-7503">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-2-8-x-8-matte-finish">
             <Img
               fluid={data.replica2.childImageSharp.fluid}
               alt="Generative art"
@@ -187,7 +187,7 @@ const ProjectsArtPage = () => {
             </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://superrare.co/artwork-v2/replica-container-key-1-7450">
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-1-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica1.childImageSharp.fluid}
               alt="Generative art"

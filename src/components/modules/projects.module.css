@@ -46,22 +46,27 @@ a:hover {
   max-width: 100%;
 }
 
-.categories_container .category {
+.categories_container a {
+  display: inline-block;
+  text-decoration: none;
   border: 1px solid white;
-  height: 125px;
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
+  height: 125px;
   margin-right: 25px;
   margin-top: 25px;
 }
 
-.categories_container .category a {
-  display: inline-block;
-  text-decoration: none;
+.categories_container a div p {
   font-size: 1.5rem;
-  padding: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  height: 93px;
   width: auto;
-  height: auto;
+}
+
+.categories_container a div p:hover {
+  color: #f15060;
 }
 /*# sourceMappingURL=projects.module.css.map */
