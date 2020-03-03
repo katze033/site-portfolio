@@ -21,6 +21,9 @@ export const squareImage = graphql`
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {
+    nobody: file(relativePath: { eq: "art/nobody_knows_2400.png" }) {
+      ...squareImage
+    }
     fantasyexits: file(relativePath: { eq: "art/fantasy_exits_2400.png" }) {
       ...squareImage
     }
@@ -74,6 +77,14 @@ const ProjectsArtPage = () => {
         <Link to="/projects">More projects</Link>
         <p>All of these images are coded with JavaScript. I sell physical prints of my work, along with limited edition crypto-collectible copies. Clicking an image below will bring you to its location in my online shop.</p>
         <div className={categoriesStyles.artFlex_container}>
+        <div className={categoriesStyles.art_container}>
+            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/nobody-knows-8-x-8-print-matte-finish">
+            <Img
+              fluid={data.nobody.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            </a>
+          </div>
         <div className={categoriesStyles.art_container}>
             <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/fantasy-exit-8-x-8-print-matte-finish">
             <Img
