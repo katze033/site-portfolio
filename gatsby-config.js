@@ -1,9 +1,7 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
 const path = require('path')
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 
 module.exports = {
   siteMetadata: {
@@ -29,7 +27,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-157967254-1",
+        trackingId: process.env.GOOGLE_TRACKING_ID
       },
     },
     `gatsby-plugin-react-helmet`,

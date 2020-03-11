@@ -29,9 +29,6 @@ const Header = () => {
                         <Link to={`/projects`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>My Projects</Link>
                     </li>
                     <li className={headerStyles.nav__list}>
-                        <a href={`https://shop.joshkatzenmeyer.com/`} target="_blank" rel="noopener noreferrer" className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Shop</a>
-                    </li>
-                    <li className={headerStyles.nav__list}>
                         <Link to={`/blog`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Blog</Link>
                     </li>
                     <li className={headerStyles.nav__list}>

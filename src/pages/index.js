@@ -4,7 +4,6 @@ import indexStyles from '../components/modules/index.module.css'
 
 import { Link } from 'gatsby'
 
-// import profileImage from '../components/images/home-profile.jpg'
 
 const IndexPage = () => {
     return (
@@ -27,8 +26,6 @@ const IndexPage = () => {
         </Layout>
     )
 }
-
-/// between h1 and h2? <img className={indexStyles.home__img} alt= "Josh Katzenmeyer" src={profileImage}></img>
 
 
 export default IndexPage

@@ -78,143 +78,109 @@ const ProjectsArtPage = () => {
     <Layout>
       <div>
         <Link to="/projects">More projects</Link>
-        <p>All of these images are coded with JavaScript. I sell physical prints of my work, along with limited edition crypto-collectible copies. Clicking an image below will bring you to its location in my online shop.</p>
+        <p>All of these images are coded with JavaScript. Along with the crypto-collectible copies I sell of these works on <a href="https://www.superrare.co/luxpris">SuperRare.co</a>, I also sell physical prints of my work at various price points. If you'd like an 8x8 or 16x16 piece on archival matte paper or canvas, feel free to <Link to={"/contact"}>contact</Link> me for a quote.</p>
         <div className={categoriesStyles.artFlex_container}>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/stillness-delays-8-x-8-print-matte-finish">
             <Img
               fluid={data.stillness.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/nobody-knows-8-x-8-print-matte-finish">
             <Img
               fluid={data.nobody.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/fantasy-exit-8-x-8-print-matte-finish">
             <Img
               fluid={data.fantasyexits.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/open-channel-illuminated-8-x-8-print-matte-finish">
             <Img
               fluid={data.openchannel.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/spirit-of-the-valley-8-x-8-print-matte-finish">
             <Img
               fluid={data.spirit.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/junkyard-dreams-8-x-8-print-matte-finish">
             <Img
               fluid={data.junkyard.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/along-the-coast-8-x-8-print-matte-finish">
             <Img
               fluid={data.alongthecoast.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/a-perfect-day-for-sailing-8-x-8-print-matte-finish">
             <Img
               fluid={data.perfectday.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/porters-gate-8-x-8-print-matte-finish">
             <Img
               fluid={data.portersgate.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-8-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica8.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-7-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica7.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-6-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica6.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-5-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica5.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/copy-of-copy-of-replica-container-key-4-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica4.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/copy-of-replica-container-key-3-8-x-8-matte-finish">
             <Img
               fluid={data.replica3.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-2-8-x-8-matte-finish">
             <Img
               fluid={data.replica2.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
           <div className={categoriesStyles.art_container}>
-            <a href="https://shop.joshkatzenmeyer.com/collections/prints/products/replica-container-key-1-8-x-8-print-matte-finish">
             <Img
               fluid={data.replica1.childImageSharp.fluid}
               alt="Generative art"
             />
-            </a>
           </div>
         </div>
         <Link to="/projects">More projects</Link>
