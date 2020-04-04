@@ -1,1 +1,8 @@
-This is the code for my freelance portfolio website.
+# www.joshkatzenmeyer.com
+
+## Tools used
+
+- React
+- Gatsby.js
+- Contentful
+- p5.js
