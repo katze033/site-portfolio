@@ -66,12 +66,12 @@ const ProjectsWebPage = () => {
           <a href="https://www.luxuryprison.com">
             <Img
               fluid={data.luxury.childImageSharp.fluid}
-              alt="A landing page for a musician: the page links to various streaming channels and a mailing list alongside a black and white piece of art."
+              alt="Musician landing page: the page links to various streaming channels and a mailing list alongside a black and white piece of art."
               className={categoriesStyles.webImages}
             />
           </a>
         </div>
-        <p>Sample musician profile. This lightweight landing page is built from pure html/css and links to various streaming channels and a mailing list. <a href="https://github.com/katze033/site-luxury_prison">View the source code</a></p>
+        <p>Musician landing page. This lightweight page is built from pure html/css and links to various streaming channels and a mailing list. It also features a piece of minimalist generative art that I designed. <a href="https://github.com/katze033/site-luxury_prison">View the source code</a></p>
         
 
         <div className={categoriesStyles.webImages_container}>
@@ -83,7 +83,7 @@ const ProjectsWebPage = () => {
             />
           </a>
         </div>
-        <p>This website! It is built using GatsbyJS. For the blog I use Contentful as a headless CMS, but will likely be moving to markdown soon. I also plan to include a Shopify store to sell my generative art prints. Additional features include an RSS feed and a contact form hosted by Netlify. <a href="https://github.com/katze033/site-portfolio">View the source code.</a></p>
+        <p>This website! It is built using React and GatsbyJS. For the blog I use Contentful as a headless CMS, but will likely be moving to markdown soon. Additional features include an RSS feed, a mailing list, and contact form. <a href="https://github.com/katze033/site-portfolio">View the source code.</a></p>
         <br></br>
         
         <Link to="/projects">More projects</Link>
@@ -93,42 +93,3 @@ const ProjectsWebPage = () => {
 }
 
 export default ProjectsWebPage
-
-
-/*  Add later?
-<div className={categoriesStyles.webImages_container}>
-          <a href="https://dreamy-hodgkin-878858.netlify.com/">
-            <Img
-              fluid={data.nola.childImageSharp.fluid}
-              alt="A landing page for a vegan restaurant: text describing business overlaid on top of a dessert."
-              className={categoriesStyles.webImages}
-            />
-          </a>
-        </div>
-        <p>A simple, mobile responsive static site built from a modified HTML/CSS template.</p>
-        <div className={categoriesStyles.webImages_container}>
-          <a href="https://katze033-etchasketch.herokuapp.com/">
-            <Img
-              fluid={data.etch.childImageSharp.fluid}
-              alt="White grid on black background"
-              className={categoriesStyles.webImages}
-            />
-          </a>
-        </div>
-        <p>An etch-a-sketch coded in JavaScript.</p>
-        <a href="https://github.com/katze033/etch-a-sketch">Source code</a>
-
-        <div className={categoriesStyles.webImages_container}>
-          <a href="https://katze033-minimessageboard.herokuapp.com/">
-            <Img
-              fluid={data.messageboard.childImageSharp.fluid}
-              alt="Message board"
-              className={categoriesStyles.webImages}
-            />
-          </a>
-        </div>
-        <p>A small message board architecture.</p>
-*/
-
-
-
