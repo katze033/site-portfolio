@@ -21,24 +21,11 @@ const AboutPage = () => {
                         <li>GatsbyJS and GraphQL</li>
                         <li>CMS: WordPress, Squarespace, Netlify CMS, and more</li>
                     </ul>
-                    <p>As a digital artist <Link to="/projects/art">I assemble abstracted landscapes and collages with code.</Link> My work uses minimalist configurations of two-dimensional shapes and lines to construct otherworldly pieces with deceptive depth. Much of my art relies on procedural and generative processes: because of this, the final output is often surprising and heavily informed by the technologies beneath it.</p>
-                    <p>Thank you for visiting, and I hope you enjoy your stay.</p>
+                    <p>As a digital artist <Link to="/projects/art">I assemble abstracted landscapes and collages with code.</Link></p>
                 </div>
             </div>
         </Layout>
     )
 }
-
-
-/* ICONS?
-<div className={aboutStyles.icons}>
-                <i className="fab fa-html5" alt="HTML5 icon"></i>
-                <i className="fab fa-css3"></i>
-                <i className="fab fa-sass"></i><br></br>
-                <i className="fab fa-node-js"></i>
-                <i className="fab fa-react"></i>
-                <i className="fab fa-git"></i>
-            </div>
-            */
 
 export default AboutPage
