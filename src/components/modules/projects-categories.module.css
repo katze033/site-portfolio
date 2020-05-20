@@ -58,16 +58,29 @@ a:hover {
       flex-wrap: wrap;
 }
 
-.artFlex_container figcaption {
-  text-align: center;
+.art_container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 25px;
+  width: 270px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0px;
 }
 
-.art_container {
-  margin: 20px;
-  width: 270px;
-  height: 270px;
-  padding: 5px;
-  border: 1px solid white;
+.art_container .image {
+  -webkit-box-shadow: 0px 0px 7px 0px #777777;
+  box-shadow: 0px 0px 7px 0px #777777;
+}
+
+.art_container p {
+  line-height: 10px;
+}
+
+.art_container p a {
+  line-height: 10px;
 }
 
 .projects_link {
