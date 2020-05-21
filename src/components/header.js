@@ -26,10 +26,13 @@ const Header = () => {
                         <Link to={`/about`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>About Me</Link>
                     </li>
                     <li className={headerStyles.nav__list}>
-                        <Link to={`/projects`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>My Projects</Link>
+                        <Link to={`/projects/web`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Web</Link>
                     </li>
                     <li className={headerStyles.nav__list}>
-                        <Link to={`/blog`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Blog</Link>
+                        <Link to={`/projects/art`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Art</Link>
+                    </li>
+                    <li className={headerStyles.nav__list}>
+                        <a href="https://www.luxuryprison.com" className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Music</a>
                     </li>
                     <li className={headerStyles.nav__list}>
                         <Link to={`/contact`} className={headerStyles.nav__link} activeClassName={headerStyles.nav__linkactive}>Contact</Link>

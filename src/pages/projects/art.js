@@ -101,7 +101,7 @@ const ProjectsArtPage = () => {
   return (
     <Layout>
       <div>
-        <Link to="/projects">More projects</Link>
+      <Link to={"/projects/web"}name="top">See my web projects</Link>
         <p>All of these images are coded with JavaScript and incorporate generative processes. You can click the links below to purchase single edition cryptocollectible copies (NFTs) and physical reproductions of my work.</p>
 
         <div className={categoriesStyles.artFlex_container}>
@@ -316,7 +316,7 @@ const ProjectsArtPage = () => {
             <p><a href="https://superrare.co/artwork-v2/replica-container-key-1-7450">NFT</a></p>
           </div>
         </div>
-        <Link to="/projects">More projects</Link>
+        <a href="#top">Back to top</a>
       </div>
     </Layout>
   )

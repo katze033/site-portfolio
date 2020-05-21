@@ -8,9 +8,6 @@ import categoriesStyles from '../../components/modules/projects-categories.modul
 
 import Img from 'gatsby-image'
 
-//images
-//import questForCute from '../../components/images/webprojects/quest-for-cute.png'
-
 export const fitImage = graphql`
   fragment fitImage on File {
     childImageSharp {
@@ -48,7 +45,7 @@ const ProjectsWebPage = () => {
   return (
     <Layout>
       <div classname={categoriesStyles.webProjects}>
-        <Link to="/projects">More projects</Link>
+      <Link to={"/projects/art"}name="top">See my art projects</Link>
         
         <div className={categoriesStyles.webImages_container}>
           <a href="https://www.questforcute.com/">
@@ -72,8 +69,7 @@ const ProjectsWebPage = () => {
           </a>
         </div>
         <p>Musician landing page. This lightweight page is built from pure html/css and links to various streaming channels and a mailing list. It also features a piece of minimalist generative art that I designed. <a href="https://github.com/katze033/site-luxury_prison">View the source code</a></p>
-        
-
+    
         <div className={categoriesStyles.webImages_container}>
           <a href="https://www.joshkatzenmeyer.com">
             <Img
@@ -83,10 +79,9 @@ const ProjectsWebPage = () => {
             />
           </a>
         </div>
-        <p>This website! It is built using React and GatsbyJS. For the blog I use Contentful as a headless CMS, but will likely be moving to markdown soon. Additional features include an RSS feed, a mailing list, and contact form. <a href="https://github.com/katze033/site-portfolio">View the source code.</a></p>
+        <p>This website! It is built using GatsbyJS. <a href="https://github.com/katze033/site-portfolio">View the source code.</a></p>
         <br></br>
-        
-        <Link to="/projects">More projects</Link>
+        <a href="#top">Back to top</a>
       </div>
     </Layout>
   )

@@ -24,11 +24,11 @@ const ProjectsPage = () => {
                     <p>Music</p>
                 </div>
             </a>
-            <Link to="/blog">
+            <a href="https://www.inprnt.com/gallery/luxpris/">
                 <div className={projectsStyles.category}>
-                    <p>Blog</p>
+                    <p>Shop</p>
                 </div>
-            </Link>
+            </a>
             </div>
         </Layout>
     )
