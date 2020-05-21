@@ -111,7 +111,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Subliminal Shatter Plot"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/subliminal-shatter-plot/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/subliminal-shatter-plot/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/subliminal-shatter-plot-10307">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -120,7 +120,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Shadow Transit by Moonlight"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/shadow-transit-by-moonlight/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/shadow-transit-by-moonlight/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/shadow-transit-by-moonlight-9930">NFT</a></p>
 
           </div>
@@ -138,7 +138,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Spectral Exigency"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/spectral-exigency/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/spectral-exigency/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/spectral-exigency-9468">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -147,7 +147,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Material Daydream"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/material-daydream/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/material-daydream/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/material-daydream-9347">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -156,7 +156,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Infinite Crossroads"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/infinite-crossroads/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/infinite-crossroads/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/infinite-crossroads-9225">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -165,7 +165,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Liminal Enclosure"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/liminal-enclosure/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/liminal-enclosure/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/liminal-enclosure-9143">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -174,7 +174,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"New Travels"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/new-travels/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/new-travels/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/new-travels-8896">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -208,6 +208,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Open Channel Illuminated"</p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/open-channel-illuminated/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/open-channel-illuminated-8294">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -216,7 +217,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Spirit of the Valley"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/spirit-of-the-valley/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/spirit-of-the-valley/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/spirit-of-the-valley-8195">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
@@ -249,6 +250,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Porter's Gate"</p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/porters-gate/">Prints</a></p>
             <p><a href="https://superrare.co/artwork-v2/porter's-gate-7852">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
