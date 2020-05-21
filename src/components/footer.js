@@ -28,12 +28,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-
-/* Include Later
-
-<a href="#!" target="_blank">
-<i class="fab fa-linkedin"></i>
-</a>
-
-*/

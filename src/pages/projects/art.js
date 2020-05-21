@@ -102,10 +102,10 @@ const ProjectsArtPage = () => {
     <Layout>
       <div>
         <Link to="/projects">More projects</Link>
-        <p>All of these images are coded using JavaScript and generative processes. You can click the links to below to purchase single edition cryptocollectible copies and physical reproductions of my work.</p>
+        <p>All of these images are coded with JavaScript and incorporate generative processes. You can click the links below to purchase single edition cryptocollectible copies (NFTs) and physical reproductions of my work.</p>
 
         <div className={categoriesStyles.artFlex_container}>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.subliminal.childImageSharp.fluid}
               alt="Generative art"
@@ -113,9 +113,8 @@ const ProjectsArtPage = () => {
             <p>"Subliminal Shatter Plot"</p>
             <p><a href="https://www.inprnt.com/gallery/luxpris/shadow-transit-by-moonlight/">Print</a></p>
             <p><a href="https://superrare.co/artwork-v2/subliminal-shatter-plot-10307">NFT</a></p>
-
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.shadow.childImageSharp.fluid}
               alt="Generative art"
@@ -125,14 +124,13 @@ const ProjectsArtPage = () => {
             <p><a href="https://superrare.co/artwork-v2/shadow-transit-by-moonlight-9930">NFT</a></p>
 
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.pavlovian.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Pavlovian Fortress"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/pavlovian-fortress-10106">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -140,8 +138,8 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Spectral Exigency"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/spectral-exigency/">Print</a></p>
+            <p><a href="https://superrare.co/artwork-v2/spectral-exigency-9468">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -150,7 +148,7 @@ const ProjectsArtPage = () => {
             />
             <p>"Material Daydream"</p>
             <p><a href="https://www.inprnt.com/gallery/luxpris/material-daydream/">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/material-daydream-9347">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -159,7 +157,7 @@ const ProjectsArtPage = () => {
             />
             <p>"Infinite Crossroads"</p>
             <p><a href="https://www.inprnt.com/gallery/luxpris/infinite-crossroads/">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/infinite-crossroads-9225">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -168,7 +166,7 @@ const ProjectsArtPage = () => {
             />
             <p>"Liminal Enclosure"</p>
             <p><a href="https://www.inprnt.com/gallery/luxpris/liminal-enclosure/">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/liminal-enclosure-9143">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -177,79 +175,73 @@ const ProjectsArtPage = () => {
             />
             <p>"New Travels"</p>
             <p><a href="https://www.inprnt.com/gallery/luxpris/new-travels/">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/new-travels-8896">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.stillness.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Stillness Delays"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/stillness-delays-8631">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.nobody.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Nobody Knows"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/nobody-knows-8520">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.fantasyexits.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Fantasy Exits"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+
+            <p><a href="https://superrare.co/artwork-v2/fantasy-exit-8385">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.openchannel.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Open Channel Illuminated"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/open-channel-illuminated-8294">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.spirit.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Spirit of the Valley"</p>
             <p><a href="https://www.inprnt.com/gallery/luxpris/spirit-of-the-valley/">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/spirit-of-the-valley-8195">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.junkyard.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Junkyard Dreams"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/junkyard-dreams-8091">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.alongthecoast.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"Along the Coast"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/along-the-coast-8006">NFT</a></p>
           </div>
-        <div className={categoriesStyles.art_container}>
+          <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.perfectday.childImageSharp.fluid}
               alt="Generative art"
             />
             <p>"A Perfect Day for Sailing"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/a-perfect-day-for-sailing-7935">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -257,8 +249,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Porter's Gate"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/porter's-gate-7852">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -266,8 +257,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #8"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-8-7824">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -275,8 +265,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #7"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-7-7802">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -284,8 +273,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #6"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-6-7709">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -293,8 +281,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #5"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-5-7675">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -302,8 +289,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #4"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-4-7624">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -311,8 +297,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #3"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-3-7583">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -320,8 +305,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #2"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-2-7503">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
@@ -329,8 +313,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Replica Container Key #1"</p>
-            <p><a href="">Print</a></p>
-            <p><a href="">NFT</a></p>
+            <p><a href="https://superrare.co/artwork-v2/replica-container-key-1-7450">NFT</a></p>
           </div>
         </div>
         <Link to="/projects">More projects</Link>
