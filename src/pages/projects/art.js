@@ -111,7 +111,7 @@ const ProjectsArtPage = () => {
               alt="Generative art"
             />
             <p>"Subliminal Shatter Plot"</p>
-            <p><a href="https://www.inprnt.com/gallery/luxpris/shadow-transit-by-moonlight/">Print</a></p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/subliminal-shatter-plot/">Print</a></p>
             <p><a href="https://superrare.co/artwork-v2/subliminal-shatter-plot-10307">NFT</a></p>
           </div>
           <div className={categoriesStyles.art_container}>
