@@ -21,6 +21,15 @@ export const squareImage = graphql`
 const ProjectsArtPage = () => {
   const data = useStaticQuery(graphql`
   query {
+    eminence: file(relativePath: { eq: "art/eminence_disposed_1700.png" }) {
+      ...squareImage
+    }
+    dismantling: file(relativePath: { eq: "art/dismantling_1200x1200.png" }) {
+      ...squareImage
+    }
+    beyond: file(relativePath: { eq: "art/beyond_the_path_of_conveyance.png" }) {
+      ...squareImage
+    }
     subliminal: file(relativePath: { eq: "art/subliminal_shatter_plot.png" }) {
       ...squareImage
     }
@@ -105,6 +114,33 @@ const ProjectsArtPage = () => {
         <p>All of these images are coded with JavaScript and incorporate generative processes. You can click the links below to purchase single edition cryptocollectible copies (NFTs) and physical reproductions of my work.</p>
 
         <div className={categoriesStyles.artFlex_container}>
+         <div className={categoriesStyles.art_container}>
+            <Img className={categoriesStyles.image}
+              fluid={data.eminence.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            <p>"Eminence Disposed"</p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/eminence-disposed/">Prints</a></p>
+            <p><a href="https://superrare.co/artwork-v2/eminence-disposed-11056">NFT</a></p>
+          </div>
+           <div className={categoriesStyles.art_container}>
+            <Img className={categoriesStyles.image}
+              fluid={data.dismantling.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            <p>"Dismantling the Present"</p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/dismantling-the-present/">Prints</a></p>
+            <p><a href="https://superrare.co/artwork-v2/dismantling-the-present-10833">NFT</a></p>
+          </div>
+           <div className={categoriesStyles.art_container}>
+            <Img className={categoriesStyles.image}
+              fluid={data.beyond.childImageSharp.fluid}
+              alt="Generative art"
+            />
+            <p>"Beyond the Path of Conveyance"</p>
+            <p><a href="https://www.inprnt.com/gallery/luxpris/beyond-the-path-of-conveyance/">Prints</a></p>
+            <p><a href="https://superrare.co/artwork-v2/beyond-the-path-of-conveyance-10475">NFT</a></p>
+          </div>
           <div className={categoriesStyles.art_container}>
             <Img className={categoriesStyles.image}
               fluid={data.subliminal.childImageSharp.fluid}
