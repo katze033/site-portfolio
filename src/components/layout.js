@@ -6,15 +6,14 @@ import '../styles/styles.css'
 
 const Layout = (props) => {
     return (
-        <div>
+        <body>
             <Helmet>
-            <title>Josh Katzenmeyer</title>
-            <SEO />
+                <title>Josh Katzenmeyer</title>
+                <html lang="en" />
+                <SEO />
             </Helmet>
-            <div>
-                {props.children}
-            </div>
-        </div>
+            {props.children}
+        </body>
     )
 }
 

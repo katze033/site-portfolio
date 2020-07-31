@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from '../components/layout'
+import SEO from '../components/SEO'
 
 const IndexPage = () => {
     return (
         <Layout>
-           <body>
+            
             <h1>I'm Josh Katzenmeyer.</h1>
             <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles abstracted landscapes and
             collages with code. I work primarily in p5.js and use generative processes while designing. The result is
@@ -29,7 +30,7 @@ const IndexPage = () => {
                 <li><a href="https://www.instagram.com/luxpris/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                 <li><a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
             </ul>
-        </body>
+            <SEO />
         </Layout>
     )
 }
