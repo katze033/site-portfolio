@@ -1,25 +1,19 @@
 @font-face {
     font-family: Baskerville;
     src: url(fonts/LibreBaskerville-Bold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Amiri;
     src: url(fonts/Amiri-Regular.ttf);
-}
-
-@font-face {
-    font-family: HindGuntur-Light;
-    src: url(fonts/HindGuntur-Light.ttf);
-}
-@font-face {
-    font-family: HindGuntur-Medium;
-    src: url(fonts/HindGuntur-Medium.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: HindGuntur-Regular;
     src: url(fonts/HindGuntur-Regular.ttf);
+    font-display: swap;
 }
 /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
 
