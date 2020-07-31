@@ -14,6 +14,7 @@
     font-family: HindGuntur-Regular;
     src: url(fonts/HindGuntur-Regular.ttf);
     font-display: swap;
+
 }
 /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
 
@@ -22,13 +23,63 @@ html {
 }
 
 body {
-    /*font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1700 - 300)));*/
-    color: #cccccc;
+    /*font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1700 - 300)));
+    */color: #cccccc;
     background-color: #111111;
     font-family: HindGuntur-Regular, sans-serif;
     font-size: 16px;
     padding: 0rem 0.5rem;
     width: 60vw;
+    opacity: 0;
+    animation: fadeIn ease-in 5s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeIn ease-in 5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 h1 {
@@ -40,8 +91,7 @@ h2 {
     font-family: Amiri, serif;
     font-size: 2.7rem;
     font-weight: 400;
-    margin: -1.0rem 0;
-    
+    margin: -1rem 0;
 }
 
 ul {
@@ -64,10 +114,7 @@ a:hover {
     color: #f15060;
 }
 
-
-@media only screen 
-    and (min-device-width: 10px)
-    and (max-device-width: 900px) {
+@media only screen and (min-device-width: 10px) and (max-device-width: 900px) {
     html {
         font-size: 55%;
     }
@@ -77,8 +124,7 @@ a:hover {
     }
 }
 
-@media only screen 
-    and (min-device-width: 1600px) {
+@media only screen and (min-device-width: 1600px) {
     html {
         font-size: 90%;
     }
