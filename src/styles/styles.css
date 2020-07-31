@@ -21,14 +21,13 @@ html {
     font-size: 62.5%;
 }
 
-
 body {
     /*font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1700 - 300)));*/
     color: #cccccc;
     background-color: #111111;
     font-family: HindGuntur-Regular, sans-serif;
     font-size: 16px;
-    padding: 0px 10px;
+    padding: 0rem 0.5rem;
     width: 60vw;
 }
 
