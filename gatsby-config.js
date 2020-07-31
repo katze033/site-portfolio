@@ -34,7 +34,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `components`, `images`),
       },
     },
-    */
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -53,6 +53,7 @@ module.exports = {
         ],
       },
     }
+    */
   ],
 
   
