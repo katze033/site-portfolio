@@ -1,19 +1,19 @@
 @font-face {
     font-family: Baskerville;
     src: url(fonts/LibreBaskerville-Bold.ttf);
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: Amiri;
     src: url(fonts/Amiri-Regular.ttf);
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: HindGuntur-Regular;
     src: url(fonts/HindGuntur-Regular.ttf);
-    font-display: swap;
+    font-display: block;
 
 }
 /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
@@ -31,9 +31,9 @@ body {
     padding: 0rem 0.5rem;
     width: 60vw;
     opacity: 0;
-    animation: fadeIn ease-in 5s;
+    animation: fadeIn ease-in 4s;
     animation-fill-mode: forwards;
-    -webkit-animation: fadeIn ease-in 5s;
+    -webkit-animation: fadeIn ease-in 4s;
     -webkit-animation-fill-mode: forwards;
 }
 
