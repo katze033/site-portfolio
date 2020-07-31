@@ -16,6 +16,7 @@ module.exports = {
   
   plugins: [
     `gatsby-plugin-react-helmet`,
+    /*
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -24,7 +25,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    /*
+    
     {
       resolve: `gatsby-source-filesystem`,
       options:
