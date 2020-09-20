@@ -113,6 +113,28 @@ a:hover {
     color: #f15060;
 }
 
+.gallery {
+    line-height: 0;
+    height: 320px;
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar-track {
+  
+  background-color: "#111111";
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  background-color: "#111111"
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eeeeee;
+}
+
 @media only screen and (min-device-width: 10px) and (max-device-width: 900px) {
     html {
         font-size: 55%;

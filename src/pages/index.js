@@ -2,11 +2,33 @@ import React from "react"
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+
+import Gallery from '../components/Gallery'
+
 const IndexPage = () => {
+    const data = useStaticQuery(graphql`
+  query {
+  allContentfulArtwork (sort: {fields: [datePublished], order:DESC}) {
+    edges {
+      node {
+        previewImage {
+        	fixed (height: 300) {
+            ...GatsbyContentfulFixed
+          }
+        }
+        title
+      }
+    }
+  }
+}
+`)
     return (
         <Layout>
-            
             <h1>I'm Josh Katzenmeyer.</h1>
+            
+            
             <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles <a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">abstracted landscapes and
             collages with code.</a> I work primarily with p5.js and use generative processes while designing. The result is
             extraterrestrial, angular, and heavily geometric.</p>
@@ -20,6 +42,12 @@ const IndexPage = () => {
                 <li><b>Art in Quarantine</b>, <i>Wreading Digits</i>, Online, 2020</li>
                 <li><b>$1M Art Show</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
                 <li><b>A Dissolution of Corrupted Arrangements</b>, <i>Museum of CryptoArt</i>, Virtual Reality, 2020 (Solo)</li>
+                <li><b>Generative & AI Art Exhibit</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
+                <li><b>"Audiovisual" Album Release & Gallery</b>, <i>Studio Nouveau</i>, Virtual Reality, 2020</li>
+            </ul>
+            <h2>Press</h2>
+            <ul>
+                <li><a href="https://editorial.superrare.co/2020/09/06/an-interview-with-josh-katzenmeyer-the-artist-that-walks-in-an-abstract-landscape/" target="_blank" rel="noopener noreferrer">An Interview with Josh Katzenmeyer</a></li>
             </ul>
             <h2>Links</h2>
             <ul>
@@ -36,3 +64,15 @@ const IndexPage = () => {
 
 
 export default IndexPage
+
+/*
+<div className="gallery">
+            {data.allContentfulArtwork.edges.map((edge, i) => (
+            <Img
+            fixed={data.allContentfulArtwork.edges[i].node.previewImage.fixed}
+            key={data.allContentfulArtwork.edges[i].node.previewImage.fixed.src} 
+            alt={data.allContentfulArtwork.edges[i].node.title} 
+            />
+            ))}
+            </div>
+*/

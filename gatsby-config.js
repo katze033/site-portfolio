@@ -16,7 +16,7 @@ module.exports = {
   
   plugins: [
     `gatsby-plugin-react-helmet`,
-    /*
+    
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -25,7 +25,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    
+    /*
     {
       resolve: `gatsby-source-filesystem`,
       options:
@@ -34,7 +34,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `components`, `images`),
       },
     },
-    
+    */
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -53,7 +53,7 @@ module.exports = {
         ],
       },
     }
-    */
+    
   ],
 
   
