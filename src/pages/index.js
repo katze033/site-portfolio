@@ -5,8 +5,6 @@ import SEO from '../components/SEO'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Gallery from '../components/Gallery'
-
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
   query {
@@ -64,15 +62,3 @@ const IndexPage = () => {
 
 
 export default IndexPage
-
-/*
-<div className="gallery">
-            {data.allContentfulArtwork.edges.map((edge, i) => (
-            <Img
-            fixed={data.allContentfulArtwork.edges[i].node.previewImage.fixed}
-            key={data.allContentfulArtwork.edges[i].node.previewImage.fixed.src} 
-            alt={data.allContentfulArtwork.edges[i].node.title} 
-            />
-            ))}
-            </div>
-*/
