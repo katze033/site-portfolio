@@ -2,7 +2,7 @@ import React from "react"
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const IndexPage = () => {
@@ -17,6 +17,7 @@ const IndexPage = () => {
           }
         }
         title
+        slug
       }
     }
   }
@@ -26,7 +27,17 @@ const IndexPage = () => {
         <Layout>
             <h1>I'm Josh Katzenmeyer.</h1>
             
-            
+            <div className="gallery">
+            {data.allContentfulArtwork.edges.map((edge, i) => (
+                <Link to={`/art/${data.allContentfulArtwork.edges[i].node.slug}`}>
+                    <Img
+                        fixed={data.allContentfulArtwork.edges[i].node.previewImage.fixed}
+                        key={data.allContentfulArtwork.edges[i].node.previewImage.fixed.src} 
+                        alt={data.allContentfulArtwork.edges[i].node.title} 
+                    />
+                </Link>
+            ))}
+            </div>
             <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles <a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">abstracted landscapes and
             collages with code.</a> I work primarily with p5.js and use generative processes while designing. The result is
             extraterrestrial, angular, and heavily geometric.</p>
