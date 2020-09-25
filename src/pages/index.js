@@ -15,7 +15,7 @@ const IndexPage = () => {
     edges {
       node {
         previewImage {
-        	fixed (height: 300) {
+        	fixed (height: 300, quality:50) {
             ...GatsbyContentfulFixed
           }
         }
