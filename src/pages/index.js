@@ -10,7 +10,7 @@ import smoothscroll from 'smoothscroll-polyfill'
 export const Artwork = graphql`
 fragment Artwork on ContentfulArtwork {
   previewImage {
-    fixed (height: 300, quality:30) {
+    fixed (height: 300) {
       ...GatsbyContentfulFixed
     }
   }
@@ -38,8 +38,8 @@ const IndexPage = () => {
       <h1>I'm Josh Katzenmeyer.</h1>
       <div className="gallery" id="gallery">
         {data.allContentfulArtwork.edges.map((edge, i) => {
-          if (i<10) {
-            return (
+          
+          
             <Link to={`/art/${edge.node.slug}`}>
               <Img
                 fixed={edge.node.previewImage.fixed}
@@ -47,8 +47,6 @@ const IndexPage = () => {
                 alt={edge.node.title}
               />
             </Link>
-            )
-            }
           }
         )
       }

@@ -10,7 +10,7 @@ export const query = graphql`
   contentfulArtwork(slug: {eq: $slug}) {
     title
     previewImage {
-    	fixed(width:300, quality:50) {
+    	fixed(width:300) {
         ...GatsbyContentfulFixed
       }
     }
