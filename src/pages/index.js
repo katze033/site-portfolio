@@ -27,12 +27,40 @@ const IndexPage = () => {
 }
 `)
 
-  
+  useEffect(() => {
+    var gallery = document.getElementById('gallery')
+    var myTimer = setInterval(scroll, 75)
+    function scroll() {
+      smoothscroll.polyfill()
+      gallery.scrollBy({ top: 0, left: 0, behavior: 'smooth' })
+    }
+    function startScroll() {
+      myTimer = setInterval(scroll, 75)
+    }
+    function stopScroll() {
+      clearInterval(myTimer)
+    }
+    gallery.addEventListener("mouseover", stopScroll);
+    gallery.addEventListener("mouseout", startScroll);
+  })
   
   return (
     <Layout>
       <h1>I'm Josh Katzenmeyer.</h1>
-      
+      <div
+        className="gallery"
+        id="gallery"
+      >
+        {data.allContentfulArtwork.edges.map((edge, i) => (
+          <Link to={`/art/${data.allContentfulArtwork.edges[i].node.slug}`}>
+            <Img
+              fixed={data.allContentfulArtwork.edges[i].node.previewImage.fixed}
+              key={data.allContentfulArtwork.edges[i].node.previewImage.fixed.src}
+              alt={data.allContentfulArtwork.edges[i].node.title}
+            />
+          </Link>
+        ))}
+      </div>
       <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles abstracted landscapes and
             collages with code. I work primarily with <a href="https://www.p5js.org" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">p5.js</a> and use generative processes while designing. The result is
             extraterrestrial, angular, and heavily geometric.</p>
@@ -76,43 +104,3 @@ const IndexPage = () => {
 
 
 export default IndexPage
-
-
-
-
-
-/*
-useEffect(() => {
-    var gallery = document.getElementById('gallery')
-    var myTimer = setInterval(scroll, 75)
-    function scroll() {
-      smoothscroll.polyfill()
-      gallery.scrollBy({ top: 0, left: 0, behavior: 'smooth' })
-    }
-    function startScroll() {
-      myTimer = setInterval(scroll, 75)
-    }
-    function stopScroll() {
-      clearInterval(myTimer)
-    }
-    gallery.addEventListener("mouseover", stopScroll);
-    gallery.addEventListener("mouseout", startScroll);
-  })
-
-
-
-<div
-        className="gallery"
-        id="gallery"
-      >
-        {data.allContentfulArtwork.edges.map((edge, i) => (
-          <Link to={`/art/${data.allContentfulArtwork.edges[i].node.slug}`}>
-            <Img
-              fixed={data.allContentfulArtwork.edges[i].node.previewImage.fixed}
-              key={data.allContentfulArtwork.edges[i].node.previewImage.fixed.src}
-              alt={data.allContentfulArtwork.edges[i].node.title}
-            />
-          </Link>
-        ))}
-      </div>
-*/
