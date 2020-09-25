@@ -84,7 +84,7 @@ const IndexPage = () => {
       <h2>Links</h2>
       <ul>
         <li><a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">SuperRare</a></li>
-        <li><a href="https:/app.rarible.com/luxpris" target="_blank" rel="noopener noreferrer">Rarible</a></li>
+        <li><a href="https://www.app.rarible.com/luxpris" target="_blank" rel="noopener noreferrer">Rarible</a></li>
         <li><a href="https://www.luxuryprison.com" target="_blank" rel="noopener noreferrer">Music</a></li>
         <li><a href="https://twitter.com/luxpris" target="_blank" rel="noopener noreferrer">Twitter</a></li>
         <li><a href="https://www.instagram.com/luxpris/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
