@@ -36,16 +36,13 @@ const IndexPage = () => {
   return (
     <Layout>
       <h1>I'm Josh Katzenmeyer.</h1>
-      <div
-        className="gallery"
-        id="gallery"
-      >
+      <div className="gallery" id="gallery">
         {data.allContentfulArtwork.edges.map((edge, i) => (
-          <Link to={`/art/${data.allContentfulArtwork.edges[i].node.slug}`}>
+          <Link to={`/art/${edge.node.slug}`}>
             <Img
-              fixed={data.allContentfulArtwork.edges[i].node.previewImage.fixed}
-              key={data.allContentfulArtwork.edges[i].node.previewImage.fixed.src}
-              alt={data.allContentfulArtwork.edges[i].node.title}
+              fixed={edge.node.previewImage.fixed}
+              key={edge.node.previewImage.fixed.src}
+              alt={edge.node.title}
             />
           </Link>
         ))}
