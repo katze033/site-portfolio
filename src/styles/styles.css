@@ -154,7 +154,7 @@ a:hover {
 .artwork-details {
    display: grid;
    margin-left: 10px;
-grid-template-columns: repeat(2, 125px);
+grid-template-columns: repeat(2, 150px);
 grid-template-rows: repeat(5, 25px) 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
@@ -163,6 +163,8 @@ grid-row-gap: 0px;
 
 .artwork-details p {
     margin: 0;
+    word-wrap: break-word;
+  word-break: break-all;
 }
 
 p:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
@@ -255,6 +257,9 @@ p:nth-child(10) { grid-area: 6 / 1 / 7 / 3; }
 @media only screen and (min-width: 10px) and (max-width: 600px) {
 .artwork-container {
         flex-direction: column;
+    }
+    .artwork-details {
+        margin-left: 0;
     }
 }
 
