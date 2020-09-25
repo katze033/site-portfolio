@@ -10,7 +10,7 @@ import smoothscroll from 'smoothscroll-polyfill'
 export const Artwork = graphql`
 fragment Artwork on ContentfulArtwork {
   previewImage {
-    fixed (height: 300) {
+    fixed (height: 300, quality:100) {
       ...GatsbyContentfulFixed
     }
   }
@@ -38,18 +38,18 @@ const IndexPage = () => {
       <h1>I'm Josh Katzenmeyer.</h1>
       <div className="gallery" id="gallery">
         {data.allContentfulArtwork.edges.map((edge, i) => {
-          
-          
-            <Link to={`/art/${edge.node.slug}`}>
-              <Img
-                fixed={edge.node.previewImage.fixed}
-                key={edge.node.previewImage.fixed.src}
-                alt={edge.node.title}
-              />
-            </Link>
-          }
-        )
-      }
+          return (
+                <Link to={`/art/${edge.node.slug}`}>
+                  <Img
+                    fixed={edge.node.previewImage.fixed}
+                    key={edge.node.previewImage.fixed.src}
+                    alt={edge.node.title}
+                  />
+                </Link>
+              )
+            }
+          )
+        }
       </div>
       <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles abstracted landscapes and
             collages with code. I work primarily with <a href="https://www.p5js.org" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">p5.js</a> and use generative processes while designing. The result is
