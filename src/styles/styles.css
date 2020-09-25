@@ -117,7 +117,8 @@ a:hover {
 .gallery {
     line-height: 0;
     height: 320px;
-    overflow: scroll;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
     white-space: nowrap;
 }
