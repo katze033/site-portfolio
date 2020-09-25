@@ -7,6 +7,16 @@ import Img from "gatsby-image"
 
 import smoothscroll from 'smoothscroll-polyfill'
 
+export const Artwork = graphql`
+fragment Artwork on ContentfulArtwork {
+  previewImage {
+    fixed (height: 300, quality:30) {
+      ...GatsbyContentfulFixed
+    }
+  }
+  title
+  slug
+}`
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -14,13 +24,7 @@ const IndexPage = () => {
   allContentfulArtwork (sort: {fields: [datePublished], order:DESC}) {
     edges {
       node {
-        previewImage {
-        	fixed (height: 300, quality:50) {
-            ...GatsbyContentfulFixed
-          }
-        }
-        title
-        slug
+        ...Artwork
       }
     }
   }
