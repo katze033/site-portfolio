@@ -71,6 +71,12 @@ const IndexPage = () => {
       <ul>
         <li><a href="https://editorial.superrare.co/2020/09/06/an-interview-with-josh-katzenmeyer-the-artist-that-walks-in-an-abstract-landscape/" target="_blank" rel="noopener noreferrer">An Interview with Josh Katzenmeyer</a></li>
       </ul>
+      <h2>Writings</h2>
+      <ul>
+        <li><a href="https://editorial.superrare.co/2020/10/05/an-exploration-of-high-weirdness-interviewing-sarah-zucker/" target="_blank" rel="noopener noreferrer">An Exploration of High Weirdness: Interviewing Sarah Zucker</a></li>
+        <li><a href="https://editorial.superrare.co/2020/09/03/an-interview-with-k0ch-the-algorithmic-artist-lost-in-a-recursive-loop/" target="_blank" rel="noopener noreferrer">An Interview k0ch: The Algorithmic Artist Lost in a Recursive Loop</a></li>
+        
+      </ul>
       <h2>Links</h2>
       <ul>
         <li><a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">SuperRare</a></li>
