@@ -155,7 +155,7 @@ a:hover {
    display: grid;
    margin-left: 10px;
 grid-template-columns: repeat(2, 150px);
-grid-template-rows: repeat(5, 25px) 1fr;
+grid-template-rows: repeat(3, 25px) auto 25px 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
     width: 320px;
