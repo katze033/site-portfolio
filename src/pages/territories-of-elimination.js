@@ -13,8 +13,8 @@ const TerritoriesPage = () => {
                 <p>In early 2021 (after all territories have been published as single edition NFTs on SuperRare), I will compile the audio from this project into a completed digital album. Holders of a Territories of Elimination NFT will receive a redeemable free download code to the album upon series completion.</p>
                 <p>I will update this page with relevant links to the project as it continues to grow.</p>
                 <ul>
-                    <li><a href="https://superrare.co/artwork-v2/temporal-decline-15265">Temporal Decline</a></li>
-                    <li><a href="https://superrare.co/artwork-v2/falsehood-15887">Falsehood</a></li>
+                    <li><a href="https://superrare.co/artwork-v2/temporal-decline-16449">Temporal Decline</a></li>
+                    <li><a href="https://superrare.co/artwork-v2/falsehood-16450">Falsehood</a></li>
                 </ul>
                 <Link to="/">Go Home</Link>
         </Layout>
