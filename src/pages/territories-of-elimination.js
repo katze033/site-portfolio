@@ -15,6 +15,8 @@ const TerritoriesPage = () => {
                 <ul>
                     <li><a href="https://superrare.co/artwork-v2/temporal-decline-16449">Temporal Decline</a></li>
                     <li><a href="https://superrare.co/artwork-v2/falsehood-16450">Falsehood</a></li>
+                    <li><a href="https://superrare.co/artwork-v2/a-concealed-diversion-16507">A Concealed Diversion</a></li>
+
                 </ul>
                 <Link to="/">Go Home</Link>
         </Layout>
