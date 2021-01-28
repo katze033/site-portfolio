@@ -36,23 +36,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <h1>I'm Josh Katzenmeyer.</h1>
-      <div className="gallery" id="gallery">
-        {data.allContentfulArtwork.edges.map((edge, i) => {
-          return (
-                <Link to={`/art/${edge.node.slug}`}>
-                  <Img
-                    fixed={edge.node.previewImage.fixed}
-                    key={edge.node.previewImage.fixed.src}
-                    alt={edge.node.title}
-                  />
-                </Link>
-              )
-            }
-          )
-        }
-      </div>
-      <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles abstracted landscapes and
-            collages with code. I work primarily with <a href="https://www.p5js.org" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">p5.js</a> and use generative processes while designing. The result is
+      <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles <a href="https://www.instagram.com/luxpris/" target="_blank" rel="noopener noreferrer">abstracted landscapes and
+            collages with code.</a> I work primarily with JavaScript and Blender and use generative processes while designing. The result is
             extraterrestrial, angular, and heavily geometric.</p>
       <p>Conceptually I'm drawn to the questions unearthed when collaborating with
       machines. What does it mean for an artist to act primarily as a curator of a computer's procedural outputs? What
