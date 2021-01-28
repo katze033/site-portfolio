@@ -9,6 +9,8 @@ import video from "../assets/movie.mp4"
 import srLogo from "../assets/sr_wordmark.svg"
 import { SRLWrapper } from "simple-react-lightbox";
 
+import NavBar from "../components/navbar"
+
 const options = {
   settings: {
     autoplaySpeed: 3000,
@@ -56,7 +58,7 @@ const IndexPage = () => {
 
   return (
     <Layout> 
-      
+      <NavBar></NavBar>
       <video autoPlay playsInline muted loop id="video">
         <source src={video} type="video/mp4"></source>
       </video>

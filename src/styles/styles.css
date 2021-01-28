@@ -36,6 +36,15 @@ body {
     -webkit-animation-fill-mode: forwards;
 }
 
+nav {
+    position: fixed;
+}
+
+.navitem a {
+    font-size: 1.8rem;
+    
+}
+
 section {
     padding: 25px 0px 25px 0px;
 }
