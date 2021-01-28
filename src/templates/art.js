@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image"
-import Web3 from 'web3'
 
 import Layout from '../components/layout'
 
@@ -74,6 +73,7 @@ async loadBlockchainData() {
             break
             case 'Rarible' :
                 contractAddress = "0x60f80121c31a0d46b5279700f9df786054aa5ee5"
+                break
             default :
                 console.log("Hmm, doesn't match an address on file")
         }

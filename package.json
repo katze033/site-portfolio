@@ -30,6 +30,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
+    "simple-react-lightbox": "^3.5.5",
     "smoothscroll-polyfill": "^0.4.4",
     "web3": "^1.2.11"
   },
