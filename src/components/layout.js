@@ -12,6 +12,7 @@ const Layout = (props) => {
                 <html lang="en" />
                 
                 <SEO />
+                <script src="https://kit.fontawesome.com/457588a6e7.js" crossorigin="anonymous"></script>
             </Helmet>
             {props.children}
         </div >
