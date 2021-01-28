@@ -38,10 +38,20 @@ body {
 
 nav {
     position: fixed;
+    background-color: #111111;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navitem a {
     font-size: 1.8rem;
+    padding: 1.0rem;
+    text-decoration: none;
     
 }
 
