@@ -302,10 +302,11 @@ a:hover {
 }
 
 .artwork-image {
-    width: 50vw
+    width: 50vw;
 }
-.artwork-image img {
+.artwork-image video {
     width: 100%;
+    max-height: 80vh;
 }
 
 
@@ -319,11 +320,13 @@ a:hover {
 .artwork-details {
    display: grid;
    margin-left: 10px;
-grid-template-columns: repeat(2, 125px);
-grid-template-rows: repeat(3, 25px) 25px 20px 1fr;
+grid-template-columns: repeat(2, 140px);
+grid-template-rows: repeat(3, 25px) auto 20px 1fr 20px;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
     width: 320px;
+
+    border: 1px solid white;
 }
 
 .artwork-details p {
@@ -332,6 +335,7 @@ grid-row-gap: 0px;
     word-wrap: break-word;
     word-break: break-all;
     */
+    border: 1px solid white;
 }
 
 p:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
@@ -345,6 +349,9 @@ p:nth-child(8) { grid-area: 4 / 2 / 5 / 3; }
 p:nth-child(9) { grid-area: 5 / 1 / 6 / 3; }
 p:nth-child(10) { grid-area: 6 / 1 / 7 / 3; }
 
+
+
+
 p#collector {
     word-wrap: break-word;
     word-break: break-all;
@@ -353,6 +360,10 @@ p#collector {
 @media only screen and (min-width: 10px) and (max-width: 600px) {
     .artwork-container {
             flex-direction: column;
+        }
+
+        .artwork-image {
+            width: 80vw;
         }
         .artwork-details {
             margin-left: 0;

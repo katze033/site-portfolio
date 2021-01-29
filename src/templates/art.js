@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { graphql, Link } from 'gatsby'
-import Img from "gatsby-image"
+import { graphql } from 'gatsby'
 import NavBar from '../components/navbar'
 
 import Layout from '../components/layout'
@@ -14,6 +13,11 @@ export const query = graphql`
         ...GatsbyContentfulFluid
       }
     }
+    video {
+        file {
+          url
+        }
+      }
     platform
     platformTokenNumber
   }
@@ -30,11 +34,17 @@ class Art extends Component {
                     <h1 id="artwork-title">{this.props.data.contentfulArtwork.title}</h1>
                     <div className="artwork-container">
                         <div className="artwork-image">
-                            <Img
-                                fluid={this.props.data.contentfulArtwork.previewImage.fluid}
-                                key={this.props.data.contentfulArtwork.previewImage.fluid.src}
+                            <video
                                 alt={this.props.data.contentfulArtwork.title}
-                            />
+                                muted
+                                autoPlay
+                                controls
+                                loop
+                            >
+                                <source
+                                    src={this.props.data.contentfulArtwork.video.file.url}
+                                />
+                            </video>
                         </div>
                         <div className="artwork-details">
                             <p><b>Platform</b></p>
@@ -50,7 +60,6 @@ class Art extends Component {
                         </div>
                     </div>
                 </div>
-                <Link to="/">Go Home</Link>
             </Layout>
         )
     }
