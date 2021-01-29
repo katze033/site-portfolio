@@ -51,12 +51,16 @@ class Art extends Component {
                             <p id="platform"></p>
                             <p><b>Platform Token No.</b></p>
                             <p id="platformTokenNumber"></p>
-                            <p><b>Latest Price</b></p>
+                            <p><b>Last Sale Price</b></p>
                             <p id="last_price"></p>
                             <p><b>Owner</b></p>
                             <p id="collector"></p>
                             <p><b>Description</b></p>
                             <p id="description"></p>
+                           
+                                <a href="" className="button-lg">
+                                    Shop
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -71,11 +75,11 @@ class Art extends Component {
 
     insertLoader() {
         let loader = "<div className=\"loader\"></div>"
-        document.getElementById("platform").innerHTML = loader;
-        document.getElementById("platformTokenNumber").innerHTML = loader;
-        document.getElementById("last_price").innerHTML = loader;
-        document.getElementById("collector").innerHTML = loader;
-        document.getElementById("description").innerHTML = loader;
+        document.getElementById("platform").innerHTML = "Loading...";
+        document.getElementById("platformTokenNumber").innerHTML = "Loading...";
+        document.getElementById("last_price").innerHTML = "Loading...";
+        document.getElementById("collector").innerHTML = "Loading...";
+        document.getElementById("description").innerHTML = "Loading...";
     }
 
     async loadBlockchainData() {
