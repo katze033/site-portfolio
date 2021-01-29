@@ -293,8 +293,13 @@ a:hover {
   background-color: #eeeeee;
 }
 
-#artwork-title {
+
+
+.artpage {
+    width: 90vw;
     padding-top: 60px;
+    margin: 0 5vw;
+    border: 5px solid white;
 }
 
 .artwork-image {
@@ -309,6 +314,8 @@ a:hover {
     display: flex;
     flex-direction: row;
   }
+
+ 
 
 .artwork-details {
    display: grid;
