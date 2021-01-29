@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image"
+import NavBar from '../components/navbar'
 
 import Layout from '../components/layout'
 
@@ -9,8 +10,8 @@ export const query = graphql`
   contentfulArtwork(slug: {eq: $slug}) {
     title
     previewImage {
-    	fixed(width:300, quality:100) {
-        ...GatsbyContentfulFixed
+    	fluid {
+        ...GatsbyContentfulFluid
       }
     }
     platform
@@ -24,12 +25,13 @@ class Art extends Component {
 render() {            
     return (
         <Layout>
-            <h1>{this.props.data.contentfulArtwork.title}</h1>
+            <NavBar></NavBar>
+            <h1 id="artwork-title">{this.props.data.contentfulArtwork.title}</h1>
             <div className="artwork-container">
                 <div className="artwork-image">
                     <Img
-                            fixed={this.props.data.contentfulArtwork.previewImage.fixed}
-                            key={this.props.data.contentfulArtwork.previewImage.fixed.src} 
+                            fluid={this.props.data.contentfulArtwork.previewImage.fluid}
+                            key={this.props.data.contentfulArtwork.previewImage.fluid.src} 
                             alt={this.props.data.contentfulArtwork.title} 
                     />
                 </div>

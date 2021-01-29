@@ -293,17 +293,28 @@ a:hover {
   background-color: #eeeeee;
 }
 
+#artwork-title {
+    padding-top: 60px;
+}
+
+.artwork-image {
+    width: 50vw
+}
+.artwork-image img {
+    width: 100%;
+}
+
 
 .artwork-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
 .artwork-details {
    display: grid;
-   margin-left: 10px;
-grid-template-columns: repeat(2, 150px);
-grid-template-rows: repeat(3, 25px) auto 25px 1fr;
+   margin-top: 10px;
+grid-template-columns: repeat(2, 125px);
+grid-template-rows: repeat(3, 25px) 25px 20px 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
     width: 320px;
@@ -340,14 +351,7 @@ p#collector {
 
     
 }
-@media only screen and (min-width: 10px) and (max-width: 600px) {
-.artwork-container {
-        flex-direction: column;
-    }
-    .artwork-details {
-        margin-left: 0;
-    }
-}
+
 
 @media only screen and (min-width: 1600px) {
     html {
