@@ -139,6 +139,7 @@ const IndexPage = () => {
         </motion.div>
       </section>
       <section id="work">
+        <FadeInWhenVisible>
         <div>
           <h2>Exhibitions</h2>
           <ul>
@@ -165,8 +166,10 @@ const IndexPage = () => {
 
           </ul>
         </div>
+        </FadeInWhenVisible>
       </section>
       <section id="contact">
+        
         <div>
           <motion.div
         transition={{ duration: 0.25 }}
