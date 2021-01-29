@@ -299,7 +299,6 @@ a:hover {
     width: 90vw;
     padding-top: 60px;
     margin: 0 5vw;
-    border: 5px solid white;
 }
 
 .artwork-image {
@@ -380,12 +379,14 @@ p#collector {
 #main-gallery-container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
 }
 
 #main-gallery-item {
-    width: 24vw;
+    width: 22vw;
     height: 20vh;
-    padding: .5vw;
+    margin: 1vw;
     filter: grayscale(0%) brightness(1);
     transition: filter 0.25s 0s linear !important;
     -webkit-transition: filter 0.25s 0s linear !important;

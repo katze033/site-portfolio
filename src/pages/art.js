@@ -2,29 +2,7 @@ import React from "react"
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
-import { SRLWrapper } from "simple-react-lightbox";
-
-const options = {
-    settings: {
-        autoplaySpeed: 3000,
-        boxShadow: 'none',
-        disableKeyboardControls: false,
-        disablePanzoom: false,
-        disableWheelControls: false,
-        hideControlsAfter: 3000,
-        lightboxTransitionSpeed: 0.3,
-        lightboxTransitionTimingFunction: 'linear',
-        overlayColor: 'rgba(30, 30, 30, 0.9)',
-        slideAnimationType: 'fade',
-        slideSpringValues: [300, 50],
-        slideTransitionSpeed: 0.6,
-        slideTransitionTimingFunction: 'linear',
-        usingPreact: false
-    }
-}
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 export const ArtworkGallery = graphql`
 fragment ArtworkGallery on ContentfulArtwork {
@@ -33,12 +11,17 @@ fragment ArtworkGallery on ContentfulArtwork {
       ...GatsbyContentfulFluid
     }
   }
+  video {
+    file {
+      url
+    }
+  }
   title
   slug
 }`
 
 const ArtPage = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
   query {
   allContentfulArtwork (sort: {fields: [datePublished], order:DESC}) {
     edges {
@@ -52,8 +35,46 @@ const ArtPage = () => {
 
 
 
-    return (
-        <Layout>
+  return (
+    <Layout>
+      <div id="main-gallery-container">
+        {data.allContentfulArtwork.edges.map((edge, i) => {
+          return (
+            <figure id="main-gallery-item">
+              <Link to={`/art/${edge.node.slug}`}>
+                <video autoPlay loop muted
+                  id="main-gallery-image"
+
+                  style={
+                    { height: "100%", width:"100%", objectFit: "cover" }
+                  }
+                >
+                  <source
+                    src={edge.node.video.file.url}
+
+                  />
+                </video>
+              </Link>
+            </figure>
+          )
+        })}
+        <figure></figure>
+      </div>
+      <SEO />
+    </Layout>
+  )
+}
+
+
+
+
+
+
+export default ArtPage
+
+
+//eslint disable next line
+{/*
             <SRLWrapper options={options}>
                 <div id="main-gallery-container">
                     {data.allContentfulArtwork.edges.map((edge, i) => {
@@ -77,14 +98,4 @@ const ArtPage = () => {
                     <figure></figure>
                 </div>
             </SRLWrapper>
-            <SEO />
-        </Layout>
-    )
-}
-
-
-
-
-
-
-export default ArtPage
+                  */}
