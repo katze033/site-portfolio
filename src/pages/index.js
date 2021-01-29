@@ -77,7 +77,7 @@ const IndexPage = () => {
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, translateY: 0 },
-          hidden: { opacity: 0, translateY: 200 }
+          hidden: { opacity: 0, translateY: 100 }
         }}
       >
         {children}
@@ -110,7 +110,6 @@ const IndexPage = () => {
 
         </div>
       </section>
-
       <section id="index-gallery">
         <motion.div>
           <SRLWrapper options={options}>
@@ -134,12 +133,10 @@ const IndexPage = () => {
                 }
                 )
                 }
-
               </div>
             </FadeInWhenVisible>
           </SRLWrapper>
         </motion.div>
-
       </section>
       <section id="work">
         <div>
@@ -176,7 +173,7 @@ const IndexPage = () => {
         whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <a href="https://www.twitter.com/luxpris" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">
               <img src={srLogo} id="icon" alt="SuperRare" />
             </a>
           </motion.div>
@@ -215,7 +212,6 @@ const IndexPage = () => {
           </motion.div>
         </div>
       </section>
-
       <SEO />
     </Layout>
   )
