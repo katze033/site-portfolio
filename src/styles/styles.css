@@ -307,12 +307,12 @@ a:hover {
 
 .artwork-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
 .artwork-details {
    display: grid;
-   margin-top: 10px;
+   margin-left: 10px;
 grid-template-columns: repeat(2, 125px);
 grid-template-rows: repeat(3, 25px) 25px 20px 1fr;
 grid-column-gap: 0px;
@@ -343,6 +343,17 @@ p#collector {
     word-wrap: break-word;
     word-break: break-all;
 }
+
+@media only screen and (min-width: 10px) and (max-width: 600px) {
+    .artwork-container {
+            flex-direction: column;
+        }
+        .artwork-details {
+            margin-left: 0;
+            margin-top: 10px;
+
+        }
+    }
 
 @media only screen and (min-width: 10px) and (max-width: 800px) {
     html {
