@@ -347,16 +347,19 @@ p:nth-child(7) { grid-area: 4 / 1 / 5 / 2; }
 p:nth-child(8) { grid-area: 4 / 2 / 5 / 3; }
 p:nth-child(9) { grid-area: 5 / 1 / 6 / 3; }
 p:nth-child(10) { grid-area: 6 / 1 / 7 / 3; }
-#shoplink {
+
+#shopLink {
     margin-top: 2.0rem;
 }
+
 .button-lg {
     color: #eeeeee;
     background-color: #111111;
     border: 1px solid #eeeeee;
     border-radius: 50px;
+    margin: 10px 0;
     text-align: center;
-    padding: 1.2rem 2.4rem;
+    padding: 1.2rem 2.8rem;
     width: 6.2rem;
     font-size: 1.4rem;
     font-family: HindGuntur-Regular, sans-serif;
