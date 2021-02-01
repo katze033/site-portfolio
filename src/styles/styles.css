@@ -39,7 +39,7 @@ body {
 nav {
     position: fixed;
     background-color: #111111;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -51,7 +51,7 @@ nav ul {
 .navitem a {
     font-family: Amiri, serif;
     font-size: 2.1rem;
-    padding: 2.0rem;
+    padding: 2.7rem;
     text-decoration: none;
     
 }
@@ -63,8 +63,8 @@ section {
 
 #video {
     object-fit: cover;
-  width: 215vh;
-  height: 215vh;
+  width: 250vh;
+  height: 250vh;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -83,7 +83,7 @@ section {
   }
 
   #introduction > div {
-      z-index: 99;
+      z-index: -99;
       grid-area: 2 / 2 / 3 / 3;
       /*rowstart/columnstart/rowend/column/end*/background: #111111;
       padding: 15px;
@@ -179,8 +179,9 @@ figure {
 
 #icon {
     color: black;
-    font-size: 38px;
-    width: 54px;
+    font-size: 3.8rem;
+    width: 5.8rem;
+    padding: 1.5rem;
 }
 
 
@@ -385,7 +386,23 @@ p#collector {
             margin-top: 10px;
 
         }
+
+        #video {
+            visibility: hidden;
+        }
+    
+        #introduction {
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-rows: 25vh auto 25vh;
+        }
+
+        #work {
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+
+        }
     }
+
+    
 
 @media only screen and (min-width: 10px) and (max-width: 800px) {
     html {
