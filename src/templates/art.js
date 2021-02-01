@@ -57,10 +57,11 @@ class Art extends Component {
                             <p id="collector"></p>
                             <p><b>Description</b></p>
                             <p id="description"></p>
-                           
+                            <div id="shoplink">
                                 <a href="" className="button-lg">
                                     Shop
                             </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,6 +109,7 @@ class Art extends Component {
                 response.last_sale === null ? document.getElementById("last_price").innerHTML = "Not Yet Sold" : document.getElementById("last_price").innerHTML = response.last_sale.total_price / 1000000000000000000 + " " + (response.last_sale.payment_token.symbol + " (~$" + (Math.floor((response.last_sale.payment_token.usd_price / 1) * (response.last_sale.total_price / 1000000000000000000)))) + ")"
                 response.owner.user === null ? document.getElementById("collector").innerHTML = '<a href=https://etherscan.io/address/' + response.owner.address + '>' + response.owner.address : document.getElementById("collector").innerHTML = '<a href=https://etherscan.io/address/' + response.owner.address + '>' + response.owner.user.username
                 document.getElementById("description").innerHTML = response.description
+
 
             })
     }
