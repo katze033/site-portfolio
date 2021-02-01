@@ -110,34 +110,11 @@ const IndexPage = () => {
 
         </div>
       </section>
+      {/*
       <section id="index-gallery">
-        <motion.div>
-          <SRLWrapper options={options}>
-            <FadeInWhenVisible>
-              <div className="index-gallery-container" id="art">
-                {// eslint-disable-next-line
-                }{data.allContentfulArtwork.edges.map((edge, i) => {
-                  if (i < 6) {
-                    return (
-                      <figure className={`index-gallery_item-${i}`}>
-                        <Img
-                          className='index-gallery_img'
-                          fluid={edge.node.previewImage.fluid}
-                          key={edge.node.previewImage.fluid.src}
-                          alt={edge.node.title}
-                        />
-                      </figure>
-                    )
-
-                  }
-                }
-                )
-                }
-              </div>
-            </FadeInWhenVisible>
-          </SRLWrapper>
-        </motion.div>
+        
       </section>
+      */}
       <section id="work">
         <FadeInWhenVisible>
         <div>

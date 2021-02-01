@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import SEO from "../components/SEO"
+import NavBar from "../components/navbar"
 
 import '../styles/styles.css'
 
@@ -14,6 +15,7 @@ const Layout = (props) => {
                 <SEO />
                 <script src="https://kit.fontawesome.com/457588a6e7.js" crossorigin="anonymous"></script>
             </Helmet>
+            <NavBar></NavBar>
             {props.children}
         </div >
     )

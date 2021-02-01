@@ -40,6 +40,7 @@ nav {
     position: fixed;
     background-color: #111111;
     width: 100vw;
+    height: 46px;
     z-index: 1;
 }
 
@@ -386,14 +387,14 @@ p#collector {
             margin-top: 10px;
 
         }
-
+        /*
         #video {
             visibility: hidden;
         }
-    
+    */
         #introduction {
             grid-template-columns: 0.2fr 1fr 0.2fr;
-        grid-template-rows: 25vh auto 25vh;
+        grid-template-rows: 10vh auto 10vh;
         }
 
         #work {
@@ -423,6 +424,7 @@ p#collector {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-top: 46px;
     width: 100%;
 }
 
