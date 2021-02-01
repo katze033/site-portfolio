@@ -387,11 +387,11 @@ p#collector {
             margin-top: 10px;
 
         }
-        /*
+    
         #video {
             visibility: hidden;
         }
-    */
+    
         #introduction {
             grid-template-columns: 0.2fr 1fr 0.2fr;
         grid-template-rows: 10vh auto 10vh;
