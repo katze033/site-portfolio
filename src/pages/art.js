@@ -42,7 +42,7 @@ const ArtPage = () => {
           return (
             <figure id="main-gallery-item">
               <Link to={`/art/${edge.node.slug}`}>
-                <video autoPlay loop muted
+                <video /*autoPlay loop muted*/
                   id="main-gallery-image"
 
                   style={
