@@ -8,11 +8,7 @@ export const query = graphql`
   query ($slug: String!) {
   contentfulArtwork(slug: {eq: $slug}) {
     title
-    previewImage {
-    	fluid {
-        ...GatsbyContentfulFluid
-      }
-    }
+    
     video {
         file {
           url
