@@ -394,12 +394,12 @@ p#collector {
         }
     
         #introduction {
-            grid-template-columns: 0.2fr 1fr 0.2fr;
-        grid-template-rows: 10vh auto 10vh;
+            grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 5vh auto 5vh;
         }
 
         #work {
-            grid-template-columns: 0.2fr 1fr 0.2fr;
+            grid-template-columns: 0.1fr 1fr 0.1fr;
 
         }
     }
@@ -434,7 +434,6 @@ p#collector {
     height: 100px;
     margin: 0.2vw; /*0.2vw on small screens*/
     border: 0.5rem solid #eeeeee;
-    box-shadow: 0px 0px 100px #000000;
     filter: grayscale(0%) brightness(1);
     transition: filter 0.25s 0s linear !important;
     -webkit-transition: filter 0.25s 0s linear !important;
