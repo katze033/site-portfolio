@@ -395,7 +395,7 @@ p#collector {
     
         #introduction {
             grid-template-columns: 0.1fr 1fr 0.1fr;
-        grid-template-rows: 5vh auto 5vh;
+        grid-template-rows: 10vh auto 10vh;
         }
 
         #work {
