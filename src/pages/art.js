@@ -6,7 +6,11 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 export const ArtworkGallery = graphql`
 fragment ArtworkGallery on ContentfulArtwork {
-  
+  previewImage {
+    fluid {
+      ...GatsbyContentfulFluid
+    }
+  }
   video {
     file {
       url
