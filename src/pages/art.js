@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
+import Img from "gatsby-image"
 
 import { useStaticQuery, graphql, Link } from "gatsby"
 
@@ -42,18 +43,29 @@ const ArtPage = () => {
           return (
             <figure id="main-gallery-item">
               <Link to={`/art/${edge.node.slug}`}>
-                <video /*autoPlay loop muted*/ playsInline preload="metadata"
+              <Img
+                    id="main-gallery-image"
+                    style={
+                      { height: "100%", width:"100%", objectFit: "cover" }
+                    }
+                    fluid={edge.node.previewImage.fluid}
+                    key={edge.node.previewImage.fluid.src}
+                    alt={edge.node.title}
+                  />
+                {/*
+                <video autoPlay loop muted playsInline preload="metadata"
                   id="main-gallery-image"
 
-                  style={
-                    { height: "100%", width:"100%", objectFit: "cover" }
-                  }
+                  
                 >
                   <source
                     src={edge.node.video.file.url}
 
                   />
                 </video>
+                
+                </figure>
+                */}
               </Link>
             </figure>
           )

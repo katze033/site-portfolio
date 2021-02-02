@@ -430,8 +430,8 @@ p#collector {
 }
 
 #main-gallery-item {
-    width: 30vw;
-    height: 30vh;
+    width: 30%;
+    height: 100px;
     margin: 0.2vw; /*0.2vw on small screens*/
     border: 0.5rem solid #eeeeee;
     box-shadow: 0px 0px 100px #000000;
