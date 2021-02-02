@@ -182,7 +182,8 @@ figure {
     color: black;
     font-size: 3.8rem;
     width: 5.8rem;
-    padding: 1.5rem;
+    padding: 5px;
+    text-align: center;
 }
 
 
