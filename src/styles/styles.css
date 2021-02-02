@@ -389,7 +389,7 @@ p#collector {
         }
     
         #video {
-            visibility: hidden;
+            display: none;
         }
     
         #introduction {
