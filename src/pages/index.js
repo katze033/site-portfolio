@@ -2,63 +2,17 @@ import React, { useEffect } from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 import video from "../assets/movie.mp4"
 import srLogo from "../assets/sr_wordmark.svg"
-import { SRLWrapper } from "simple-react-lightbox";
 
 import NavBar from "../components/navbar"
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
-
-
-const options = {
-  settings: {
-    autoplaySpeed: 3000,
-    boxShadow: 'none',
-    disableKeyboardControls: false,
-    disablePanzoom: false,
-    disableWheelControls: false,
-    hideControlsAfter: 3000,
-    lightboxTransitionSpeed: 0.3,
-    lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(30, 30, 30, 0.9)',
-    slideAnimationType: 'fade',
-    slideSpringValues: [300, 50],
-    slideTransitionSpeed: 0.6,
-    slideTransitionTimingFunction: 'linear',
-    usingPreact: false
-  }
-}
-
-export const ArtworkIndex = graphql`
-fragment ArtworkIndex on ContentfulArtwork {
-  previewImage {
-    fluid {
-      ...GatsbyContentfulFluid
-    }
-  }
-  title
-  slug
-}`
-
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-  query {
-  allContentfulArtwork (sort: {fields: [datePublished], order:DESC}) {
-    edges {
-      node {
-        ...ArtworkIndex
-      }
-    }
-  }
-}
-`)
-
   function FadeInWhenVisible({ children }) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
