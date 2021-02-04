@@ -45,9 +45,11 @@ const IndexPage = () => {
     <Layout>
 
       <NavBar></NavBar>
+      {/*
       <video autoPlay playsInline muted loop id="video">
         <source src={video} type="video/mp4"></source>
       </video>
+      */}
       <div id="home"></div>
       <section id="introduction">
 
