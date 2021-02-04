@@ -325,7 +325,7 @@ a:hover {
    display: grid;
    margin-left: 10px;
 grid-template-columns: repeat(2, 140px);
-grid-template-rows: repeat(3, 25px) auto 20px 1fr;
+grid-template-rows: repeat(2, 25px) auto 20px auto 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
     width: 320px;
@@ -344,12 +344,11 @@ p:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
 p:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
 p:nth-child(3) { grid-area: 2 / 1 / 3 / 2; }
 p:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+
 p:nth-child(5) { grid-area: 3 / 1 / 4 / 2; }
 p:nth-child(6) { grid-area: 3 / 2 / 4 / 3; }
 p:nth-child(7) { grid-area: 4 / 1 / 5 / 2; }
-p:nth-child(8) { grid-area: 4 / 2 / 5 / 3; }
-p:nth-child(9) { grid-area: 5 / 1 / 6 / 3; }
-p:nth-child(10) { grid-area: 6 / 1 / 7 / 3; }
+p:nth-child(8) { grid-area: 6 / 1 / 7 / 3; }
 
 #shopLink {
     margin-top: 2.0rem;
@@ -367,6 +366,8 @@ p:nth-child(10) { grid-area: 6 / 1 / 7 / 3; }
     font-size: 1.4rem;
     font-family: HindGuntur-Regular, sans-serif;
     text-decoration: none;
+    grid-area: 7 / 1 / 8 / 3;
+
 }
 
 

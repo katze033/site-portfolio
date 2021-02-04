@@ -36,8 +36,6 @@ class Art extends Component {
                         <div className="artwork-image">
                             <video
                                 alt={this.props.data.contentfulArtwork.title}
-                                muted
-                                autoPlay
                                 controls
                                 loop
                             >
@@ -51,8 +49,7 @@ class Art extends Component {
                             <p id="platform"></p>
                             <p><b>Platform Token No.</b></p>
                             <p id="platformTokenNumber"></p>
-                            <p><b>Last Sale Price</b></p>
-                            <p id="last_price"></p>
+                            
                             <p><b>Owner</b></p>
                             <p id="collector"></p>
                             <p><b>Description</b></p>
@@ -76,7 +73,6 @@ class Art extends Component {
         let loader = "<div className=\"loader\"></div>"
         document.getElementById("platform").innerHTML = "Loading...";
         document.getElementById("platformTokenNumber").innerHTML = "Loading...";
-        document.getElementById("last_price").innerHTML = "Loading...";
         document.getElementById("collector").innerHTML = "Loading...";
         document.getElementById("description").innerHTML = "Loading...";
     }
@@ -104,7 +100,6 @@ class Art extends Component {
                 console.log(response)
                 document.getElementById("platform").innerHTML = "<a href=" + response.external_link + ">" + response.asset_contract.name
                 document.getElementById("platformTokenNumber").innerHTML = '<a href=https://etherscan.io/token/' + contractAddress + '?a=' + response.token_id + '>' + response.token_id
-                response.last_sale === null ? document.getElementById("last_price").innerHTML = "Not Yet Sold" : document.getElementById("last_price").innerHTML = response.last_sale.total_price / 1000000000000000000 + " " + (response.last_sale.payment_token.symbol + " (~$" + (Math.floor((response.last_sale.payment_token.usd_price / 1) * (response.last_sale.total_price / 1000000000000000000)))) + ")"
                 response.owner.user === null ? document.getElementById("collector").innerHTML = '<a href=https://etherscan.io/address/' + response.owner.address + '>' + response.owner.address : document.getElementById("collector").innerHTML = '<a href=https://etherscan.io/address/' + response.owner.address + '>' + response.owner.user.username
                 document.getElementById("description").innerHTML = response.description
                 var shopLink = document.getElementById("shopLink")
