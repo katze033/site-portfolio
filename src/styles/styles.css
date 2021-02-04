@@ -391,7 +391,7 @@ p#collector {
         }
     
         #video {
-            display: none;
+            visibility: hidden;
         }
     
         #introduction {
