@@ -6,6 +6,9 @@ import { Link } from "gatsby"
 
 import video from "../assets/movie.mp4"
 import srLogo from "../assets/sr_wordmark.svg"
+import bg00 from '../assets/bg00.png'
+import bg01 from '../assets/bg01.png'
+
 
 import NavBar from "../components/navbar"
 
@@ -40,16 +43,14 @@ const IndexPage = () => {
   }
 
 
+
   return (
 
     <Layout>
 
       <NavBar></NavBar>
-      {/*
-      <video autoPlay playsInline muted loop id="video">
-        <source src={video} type="video/mp4"></source>
-      </video>
-      */}
+      <img src={bg01} id="bg" className="rotating">
+        </img>
       <div id="home"></div>
       <section id="introduction">
 
@@ -150,11 +151,11 @@ const IndexPage = () => {
       </section>
       <SEO />
     </Layout>
+    
   )
 
 
 }
-
 
 
 
