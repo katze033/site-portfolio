@@ -266,7 +266,7 @@ a {
     -o-transition: color 0.5s;
 }
 
-a:hover {
+a:hover, .active {
     color: #f15060;
 }
 
