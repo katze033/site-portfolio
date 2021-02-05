@@ -485,9 +485,9 @@ figure:last-child {
     }
   }
   .rotating {
-    -webkit-animation: rotating 40s linear infinite;
-    -moz-animation: rotating 40s linear infinite;
-    -ms-animation: rotating 40s linear infinite;
-    -o-animation: rotating 40s linear infinite;
-    animation: rotating 40s linear infinite;
+    -webkit-animation: rotating 60s linear infinite;
+    -moz-animation: rotating 60s linear infinite;
+    -ms-animation: rotating 60s linear infinite;
+    -o-animation: rotating 60s linear infinite;
+    animation: rotating 60s linear infinite;
   }

@@ -4,10 +4,8 @@ import SEO from '../components/SEO'
 
 import { Link } from "gatsby"
 
-import video from "../assets/movie.mp4"
 import srLogo from "../assets/sr_wordmark.svg"
-import bg00 from '../assets/bg00.png'
-import bg01 from '../assets/bg01.png'
+import bg from '../assets/bg03.png'
 
 
 import NavBar from "../components/navbar"
@@ -49,7 +47,7 @@ const IndexPage = () => {
     <Layout>
 
       <NavBar></NavBar>
-      <img src={bg01} id="bg" className="rotating">
+      <img src={bg} id="bg" className="rotating">
         </img>
       <div id="home"></div>
       <section id="introduction">
