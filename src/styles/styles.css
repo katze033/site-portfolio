@@ -27,12 +27,14 @@ body {
     color: #eeeeee;
     background-color: #111111;
     font-family: HindGuntur-Regular, sans-serif;
-    opacity: 0;
     margin: 0;
     padding: 0;
-    animation: fadeIn ease-in 4s;
+}
+main {
+    opacity: 0;
+    animation: fadeIn ease-in 2s;
     animation-fill-mode: forwards;
-    -webkit-animation: fadeIn ease-in 4s;
+    -webkit-animation: fadeIn ease-in 2s;
     -webkit-animation-fill-mode: forwards;
 }
 

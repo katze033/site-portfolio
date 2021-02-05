@@ -16,7 +16,9 @@ const Layout = (props) => {
                 <script src="https://kit.fontawesome.com/457588a6e7.js" crossorigin="anonymous"></script>
             </Helmet>
             <NavBar></NavBar>
+            <main>
             {props.children}
+            </main>
         </div >
     )
 }
