@@ -46,7 +46,6 @@ const IndexPage = () => {
 
     <Layout>
 
-      <NavBar></NavBar>
       <img src={bg} id="bg" className="rotating">
         </img>
       <div id="home"></div>
