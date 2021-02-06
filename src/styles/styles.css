@@ -86,7 +86,7 @@ section {
   }
 
   #introduction > div {
-      z-index: -98;
+      z-index: 1;
       grid-area: 2 / 2 / 3 / 3;
       /*rowstart/columnstart/rowend/column/end*/background: #111111;
       padding: 15px;
