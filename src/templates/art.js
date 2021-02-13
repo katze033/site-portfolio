@@ -70,7 +70,6 @@ class Art extends Component {
     }
 
     insertLoader() {
-        let loader = "<div className=\"loader\"></div>"
         document.getElementById("platform").innerHTML = "Loading...";
         document.getElementById("platformTokenNumber").innerHTML = "Loading...";
         document.getElementById("collector").innerHTML = "Loading...";
