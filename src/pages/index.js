@@ -2,13 +2,8 @@ import React, { useEffect } from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 
-import { Link } from "gatsby"
-
 import srLogo from "../assets/sr_wordmark.svg"
 import bg from '../assets/bg03.png'
-
-
-import NavBar from "../components/navbar"
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
