@@ -8,7 +8,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 export const ArtworkGallery = graphql`
 fragment ArtworkGallery on ContentfulArtwork {
   previewImage {
-    fluid(quality:25) {
+    fluid(quality:50) {
       ...GatsbyContentfulFluid
     }
   }
