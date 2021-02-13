@@ -52,20 +52,6 @@ const ArtPage = () => {
                     key={edge.node.previewImage.fluid.src}
                     alt={edge.node.title}
                   />
-                {/*
-                <video autoPlay loop muted playsInline preload="metadata"
-                  id="main-gallery-image"
-
-                  
-                >
-                  <source
-                    src={edge.node.video.file.url}
-
-                  />
-                </video>
-                
-                </figure>
-                */}
               </Link>
             </figure>
           )
@@ -77,37 +63,4 @@ const ArtPage = () => {
   )
 }
 
-
-
-
-
-
 export default ArtPage
-
-
-//eslint disable next line
-{/*
-            <SRLWrapper options={options}>
-                <div id="main-gallery-container">
-                    {data.allContentfulArtwork.edges.map((edge, i) => {
-                        return (
-                            <figure id="main-gallery-item">
-                                <Img
-                                    id="main-gallery-image"
-                                    style={
-                                        { height: "100%" }
-
-                                    }
-                                    fluid={edge.node.previewImage.fluid}
-                                    key={edge.node.previewImage.fluid.src}
-                                    alt={edge.node.title}
-                                />
-                            </figure>
-                        )
-                    }
-                    )
-                    }
-                    <figure></figure>
-                </div>
-            </SRLWrapper>
-                  */}
