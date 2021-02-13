@@ -41,7 +41,7 @@ const IndexPage = () => {
 
     <Layout>
 
-      <img src={bg} id="bg" className="rotating">
+      <img src={bg} id="bg" className="rotating" alt="Generative artwork.">
         </img>
       <div id="home"></div>
       <section id="introduction">
