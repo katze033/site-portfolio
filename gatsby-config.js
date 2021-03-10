@@ -8,7 +8,7 @@ module.exports = {
     title: "Josh Katzenmeyer",
     titleTemplate: "Josh Katzenmeyer",
     description:
-      "Minneapolis-based creative technologist offering limited edition generative artworks, commissions, and web development services.",
+      "Minneapolis-based creative technologist offering generative artworks, commissions, NFT consultation, and web development services.",
     url: "https://www.joshkatzenmeyer.com", // No trailing slash allowed!
     image: "/static/favicon.ico", // Path to your image you placed in the 'static' folder
     twitterUsername: "@luxpris",
