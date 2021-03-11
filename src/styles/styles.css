@@ -99,7 +99,7 @@ section {
       
 }
 
-#work, #contact {
+#projects, #work, #contact {
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: auto;
@@ -107,55 +107,56 @@ section {
     background: #111111;
 }
 
-#work > div, #contact > div {
+#work > div, #contact > div, #projects > div {
     grid-area: 1 / 2 / 2 / 3;
 }
 
+#projects > div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
 
+#projects > div > div {
+    padding: 0.5rem 0;
+}
 
-#index-gallery {
-    background: #eeeeee;
+#projects > div > div> a {
+    text-decoration: none;
+}
+
+.projects-block {
+    height: 15rem;
+    width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.index-gallery-container {
-    display: grid;
+  align-items: center;
     
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
-  gap: 0;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    
 }
 
-figure {
-    margin: 0;
+#block1 {
+    background-image: url(../assets/lphq.png);
 }
 
-.index-gallery_item-0 {
-    grid-area: 1 / 1 / 3 / 3;
-  }
-
-  .index-gallery_item-1 {
-      grid-area: 1 / 3 / 2 / 4;
-  }
-  .index-gallery_item-2 {
-      grid-area: 2 / 3 / 3 / 4;
-}
-.index-gallery_item-3 {
-    grid-area: 3 / 1 / 4 / 2; 
-}
-.index-gallery_item-4 {
-    grid-area: 3 / 2 / 4 / 3;
-}
-.index-gallery_item-5 {
-    grid-area: 3 / 3 / 4 / 4;
+#block2 {
+    background-image: url(http://images.ctfassets.net/ermr1zlv8ito/suCJnIEqSJNaP8JwZYISX/bdb4efbc5a922eee177bf0f5e22b7ef7/Cognitive_Solidity.jpg?w=1024&h=576&q=50)
 }
 
-.index-gallery_img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block !important;
+#block3 {
+    background-image: url(../assets/pathfinders.png)
+}
+
+#block4 {
+    background-image: url(../assets/deconstructions.png)
+}
+
+/*
+
+#main-gallery-item {
     filter: grayscale(0%) brightness(1);
     transition: filter 0.25s 0s linear !important;
     -webkit-transition: filter 0.25s 0s linear !important;
@@ -165,10 +166,45 @@ figure {
     -webkit-filter: grayscale(0%) brightness(1);
 }
 
-.index-gallery_img:hover {
-    filter: grayscale(100%) brightness(0.5);
-    -webkit-filter: grayscale(100%) brightness(0.5);
+#main-gallery-item:hover {
+    filter: grayscale(100%) brightness(0.5) !important;
+    -webkit-filter: grayscale(100%) brightness(0.5) !important;
 }
+*/
+
+
+.projects-block > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects-block p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #111111;
+    padding: 1.2rem;
+    font-family: Amiri, serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 0px .5rem .5rem #eeeeee;
+      box-shadow: 0px 0px .5rem .5rem #eeeeee;
+      border-radius: 50px;
+
+}
+
+#index-gallery {
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+}
+
+
+figure {
+    margin: 0;
+}
+
 
 #contact {
     background: #eeeeee;
@@ -438,6 +474,10 @@ p#collector {
     height: 100px;
     margin: 0.2vw; /*0.2vw on small screens*/
     border: 0.5rem solid #eeeeee;
+
+}
+
+#main-gallery-item {
     filter: grayscale(0%) brightness(1);
     transition: filter 0.25s 0s linear !important;
     -webkit-transition: filter 0.25s 0s linear !important;
@@ -445,7 +485,6 @@ p#collector {
     -ms-transition: filter 0.25s 0s linear !important;
     -o-transition: filter 0.25s 0s linear !important;
     -webkit-filter: grayscale(0%) brightness(1);
-    
 }
 
 #main-gallery-item:hover {

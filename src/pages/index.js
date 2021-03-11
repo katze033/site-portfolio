@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 
+import { Link } from "gatsby"
+
 import srLogo from "../assets/sr_wordmark.svg"
 import bg from '../assets/bg03.png'
 
@@ -35,6 +37,58 @@ const IndexPage = () => {
     );
   }
 
+  function FadeInFromLeftWhenVisible({ children }) {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      }
+    }, [controls, inView]);
+
+    return (
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        transition={{ duration: 1 }}
+        variants={{
+          visible: { opacity: 1, translateX: 0 },
+          hidden: { opacity: 0, translateX: -200 }
+        }}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
+  function FadeInFromRightWhenVisible({ children }) {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      }
+    }, [controls, inView]);
+
+    return (
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        transition={{ duration: 1 }}
+        variants={{
+          visible: { opacity: 1, translateX: 0 },
+          hidden: { opacity: 0, translateX: 200 }
+        }}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
 
 
   return (
@@ -54,16 +108,47 @@ const IndexPage = () => {
           <p>Conceptually I'm drawn to the questions unearthed when collaborating with
           machines. What does it mean for an artist to act primarily as a curator of a computer's procedural outputs? What
             does it mean for these outputs to be received by and disseminated through algorithmic social media channels? Where does the user end and the machine begin?</p>
-          <p>I make a living by selling <a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">single edition digital copies (NFTs)</a> of my work. I also
-            offer web development services. If you're interested in hiring me for a commission or a custom web project, <a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">email</a> me your idea and I'd love to discuss it with you.</p>
+          <p>I make a living by selling <Link to="/art" target="_blank" rel="noopener noreferrer">single edition digital copies (NFTs)</Link> of my work. I also
+            offer consultations and trainings on NFTs alongside web development services. If you're interested in hiring me for a commission, consultation, or a custom web project, <a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">email</a> me your idea and I'd love to discuss it with you.</p>
 
         </div>
       </section>
-      {/*
-      <section id="index-gallery">
-        
+      <section id="projects">
+        <div>
+          <FadeInFromLeftWhenVisible>
+          <a href="https://www.cryptovoxels.com/play?coords=W@197E,78N">
+            <div className="projects-block" id="block1">
+              <p>VR Gallery (Desktop Only)</p>
+              
+            </div>
+          </a>
+          </FadeInFromLeftWhenVisible>
+          <FadeInFromRightWhenVisible>
+          <Link to="/art">
+            <div className="projects-block" id="block2">
+              <p>Selected Works 2020-Present</p>
+            </div>
+          </Link>
+          </FadeInFromRightWhenVisible>
+          <FadeInFromLeftWhenVisible>
+          
+          <a href="https://artblocks.io/project/25">
+            <div className="projects-block" id="block3">
+              <p>Pathfinders</p>
+            </div>
+          </a>
+          </FadeInFromLeftWhenVisible>
+          <FadeInFromRightWhenVisible>
+          
+          <a href="https://artblocks.io/project/7">
+            <div className="projects-block" id="block4">
+              <p>Elevated Deconstructions</p>
+            </div>
+          </a>
+          </FadeInFromRightWhenVisible>
+          
+        </div>
       </section>
-      */}
       <section id="work">
         <FadeInWhenVisible>
         <div>
