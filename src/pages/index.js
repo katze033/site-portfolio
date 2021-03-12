@@ -118,7 +118,7 @@ const IndexPage = () => {
           <FadeInFromLeftWhenVisible>
           <a href="https://www.cryptovoxels.com/play?coords=W@197E,78N">
             <div className="projects-block" id="block1">
-              <p>VR Gallery (Desktop Only)</p>
+              <p>luxpris HQ (VR Gallery)</p>
               
             </div>
           </a>
