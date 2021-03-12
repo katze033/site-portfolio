@@ -55,7 +55,7 @@ const IndexPage = () => {
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, translateX: 0 },
-          hidden: { opacity: 0, translateX: -200 }
+          hidden: { opacity: 0, translateX: -100 }
         }}
       >
         {children}
@@ -81,7 +81,7 @@ const IndexPage = () => {
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, translateX: 0 },
-          hidden: { opacity: 0, translateX: 200 }
+          hidden: { opacity: 0, translateX: 100 }
         }}
       >
         {children}
