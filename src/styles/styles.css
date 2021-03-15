@@ -438,7 +438,7 @@ p#collector {
         grid-template-rows: 10vh auto 10vh;
         }
 
-        #work {
+        #work, #projects {
             grid-template-columns: 0.1fr 1fr 0.1fr;
 
         }

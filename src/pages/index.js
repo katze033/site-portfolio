@@ -96,7 +96,7 @@ const IndexPage = () => {
     <Layout>
 
       <img src={bg} id="bg" className="rotating" alt="Generative artwork.">
-        </img>
+      </img>
       <div id="home"></div>
       <section id="introduction">
 
@@ -112,74 +112,74 @@ const IndexPage = () => {
       <section id="projects">
         <div>
           <FadeInFromLeftWhenVisible>
-          <a href="https://www.cryptovoxels.com/play?coords=W@197E,78N">
-            <div className="projects-block" id="block1">
-              <p>luxpris HQ (VR Gallery)</p>
-              
-            </div>
-          </a>
+            <a href="https://www.cryptovoxels.com/play?coords=W@197E,78N">
+              <div className="projects-block" id="block1">
+                <p>luxpris HQ (VR Gallery)</p>
+
+              </div>
+            </a>
           </FadeInFromLeftWhenVisible>
           <FadeInFromRightWhenVisible>
-          <Link to="/art">
-            <div className="projects-block" id="block2">
-              <p>Selected Works 2020-Present</p>
-            </div>
-          </Link>
+            <Link to="/art">
+              <div className="projects-block" id="block2">
+                <p>Selected Works 2020-Present</p>
+              </div>
+            </Link>
           </FadeInFromRightWhenVisible>
           <FadeInFromLeftWhenVisible>
-          
-          <a href="https://artblocks.io/project/25">
-            <div className="projects-block" id="block3">
-              <p>Pathfinders</p>
-            </div>
-          </a>
+
+            <a href="https://artblocks.io/project/25">
+              <div className="projects-block" id="block3">
+                <p>Pathfinders</p>
+              </div>
+            </a>
           </FadeInFromLeftWhenVisible>
           <FadeInFromRightWhenVisible>
-          
-          <a href="https://artblocks.io/project/7">
-            <div className="projects-block" id="block4">
-              <p>Elevated Deconstructions</p>
-            </div>
-          </a>
+
+            <a href="https://artblocks.io/project/7">
+              <div className="projects-block" id="block4">
+                <p>Elevated Deconstructions</p>
+              </div>
+            </a>
           </FadeInFromRightWhenVisible>
-          
+
         </div>
       </section>
       <section id="work">
         <FadeInWhenVisible>
-        <div>
-          <h2>Exhibitions</h2>
-          <ul>
-            <li><b>Art in Quarantine</b>, <i>Wreading Digits</i>, Online, 2020</li>
-            <li><b>$1M Art Show</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
-            <li><b>A Dissolution of Corrupted Arrangements</b>, <i>Museum of CryptoArt</i>, Virtual Reality, 2020 (Solo)</li>
-            <li><b>Generative & AI Art Exhibit</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
-            <li><b>"Audiovisual" Album Release & Gallery</b>, <i>Studio Nouveau</i>, Virtual Reality, 2020</li>
-            <li><b>Foot in the Door 5: The Virtual Exhibition</b>, <i>Minneapolis Institute of Art</i>, Minneapolis, MN, 2020</li>
-          </ul>
-          <h2>Press</h2>
-          <ul>
-            <li><a href="https://editorial.superrare.co/2020/09/06/an-interview-with-josh-katzenmeyer-the-artist-that-walks-in-an-abstract-landscape/" target="_blank" rel="noopener noreferrer">An Interview with Josh Katzenmeyer</a></li>
-            <li><a href="https://beta.cent.co/artblocks/+95ml3q" target="_blank" rel="noopener noreferrer">Catching up with Josh Katzenmeyer</a></li>
-            <li><a href="https://www.pscp.tv/w/1dRKZNnRAYgKB" target="_blank" rel="noopener noreferrer">VerticalCrypto x luxpris (Video Interview)</a></li>
+          <div>
+            <h2>Exhibitions</h2>
+            <ul>
+              <li><b>Art in Quarantine</b>, <i>Wreading Digits</i>, Online, 2020</li>
+              <li><b>$1M Art Show</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
+              <li><b>A Dissolution of Corrupted Arrangements</b>, <i>Museum of CryptoArt</i>, Virtual Reality, 2020 (Solo)</li>
+              <li><b>Generative & AI Art Exhibit</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
+              <li><b>"Audiovisual" Album Release & Gallery</b>, <i>Studio Nouveau</i>, Virtual Reality, 2020</li>
+              <li><b>Foot in the Door 5: The Virtual Exhibition</b>, <i>Minneapolis Institute of Art</i>, Minneapolis, MN, 2020</li>
+            </ul>
+            <h2>Press</h2>
+            <ul>
+              <li><a href="https://editorial.superrare.co/2020/09/06/an-interview-with-josh-katzenmeyer-the-artist-that-walks-in-an-abstract-landscape/" target="_blank" rel="noopener noreferrer">An Interview with Josh Katzenmeyer</a></li>
+              <li><a href="https://beta.cent.co/artblocks/+95ml3q" target="_blank" rel="noopener noreferrer">Catching up with Josh Katzenmeyer</a></li>
+              <li><a href="https://www.pscp.tv/w/1dRKZNnRAYgKB" target="_blank" rel="noopener noreferrer">VerticalCrypto x luxpris (Video Interview)</a></li>
 
-          </ul>
-          <h2>Writings</h2>
-          <ul>
-            <li><a href="https://editorial.superrare.co/2020/10/21/james-fox-beautifying-an-unavoidable-darkness/" target="_blank" rel="noopener noreferrer">James Fox: Beautifying an Unavoidable Darkness</a></li>
-            <li><a href="https://editorial.superrare.co/2020/10/05/an-exploration-of-high-weirdness-interviewing-sarah-zucker/" target="_blank" rel="noopener noreferrer">An Exploration of High Weirdness: Interviewing Sarah Zucker</a></li>
-            <li><a href="https://editorial.superrare.co/2020/09/03/an-interview-with-k0ch-the-algorithmic-artist-lost-in-a-recursive-loop/" target="_blank" rel="noopener noreferrer">An Interview with k0ch: The Algorithmic Artist Lost in a Recursive Loop</a></li>
+            </ul>
+            <h2>Writings</h2>
+            <ul>
+              <li><a href="https://editorial.superrare.co/2020/10/21/james-fox-beautifying-an-unavoidable-darkness/" target="_blank" rel="noopener noreferrer">James Fox: Beautifying an Unavoidable Darkness</a></li>
+              <li><a href="https://editorial.superrare.co/2020/10/05/an-exploration-of-high-weirdness-interviewing-sarah-zucker/" target="_blank" rel="noopener noreferrer">An Exploration of High Weirdness: Interviewing Sarah Zucker</a></li>
+              <li><a href="https://editorial.superrare.co/2020/09/03/an-interview-with-k0ch-the-algorithmic-artist-lost-in-a-recursive-loop/" target="_blank" rel="noopener noreferrer">An Interview with k0ch: The Algorithmic Artist Lost in a Recursive Loop</a></li>
 
-          </ul>
-        </div>
+            </ul>
+          </div>
         </FadeInWhenVisible>
       </section>
       <section id="contact">
-        
+
         <div>
           <motion.div
-        transition={{ duration: 0.25 }}
-        whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
             <a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">
@@ -223,7 +223,7 @@ const IndexPage = () => {
       </section>
       <SEO />
     </Layout>
-    
+
   )
 
 
