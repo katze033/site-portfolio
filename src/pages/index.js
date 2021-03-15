@@ -102,12 +102,8 @@ const IndexPage = () => {
 
         <div>
           <h1>I'm Josh Katzenmeyer.</h1>
-          <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. I am a creative technologist who assembles abstracted landscapes and
-            collages with code. I work primarily with JavaScript and Blender, and use generative processes while designing. The result is
-            extraterrestrial, angular, and heavily geometric.</p>
-          <p>Conceptually I'm drawn to the questions unearthed when collaborating with
-          machines. What does it mean for an artist to act primarily as a curator of a computer's procedural outputs? What
-            does it mean for these outputs to be received by and disseminated through algorithmic social media channels? Where does the user end and the machine begin?</p>
+          <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. I'm a creative technologist using code-based generative means to produce extraterrestrial results. My visual output has been steadiest since early 2020 and since then I've enjoyed producing art that makes use of minimalistic geometry to craft immersive, abstracted landscapes. Much of my work is built with JavaScript, but I also use Blender for 3D animation and assorted audio tools to build procedural soundscapes.</p>
+          <p>Conceptually I'm drawn to the questions unearthed when collaborating with machines. I'm interested in exploring the way technology empowers or reduces human autonomy; the way algorithms inspire not only the creation, marketing, and monetization of artworks, but how they affect the perception and attention of audiences and what this might mean for the future of cultural production and consumption.</p>
           <p>I make a living by selling <Link to="/art" target="_blank" rel="noopener noreferrer">single edition digital copies (NFTs)</Link> of my work. I also
             offer consultations and trainings on NFTs alongside web development services. If you're interested in hiring me for a commission, consultation, or a custom web project, <a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">email</a> me your idea and I'd love to discuss it with you.</p>
 
