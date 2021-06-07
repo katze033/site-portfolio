@@ -1,226 +1,53 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 
-import { Link } from "gatsby"
-
-import srLogo from "../assets/sr_wordmark.svg"
-import bg from '../assets/bg03.png'
-
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
-
 const IndexPage = () => {
-  function FadeInWhenVisible({ children }) {
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-      if (inView) {
-        controls.start("visible");
-      }
-    }, [controls, inView]);
-
-    return (
-      <motion.div
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        transition={{ duration: 1 }}
-        variants={{
-          visible: { opacity: 1, translateY: 0 },
-          hidden: { opacity: 0, translateY: 100 }
-        }}
-      >
-        {children}
-      </motion.div>
-    );
-  }
-
-  function FadeInFromLeftWhenVisible({ children }) {
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-      if (inView) {
-        controls.start("visible");
-      }
-    }, [controls, inView]);
-
-    return (
-      <motion.div
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        transition={{ duration: 1 }}
-        variants={{
-          visible: { opacity: 1, translateX: 0 },
-          hidden: { opacity: 0, translateX: -50 }
-        }}
-      >
-        {children}
-      </motion.div>
-    );
-  }
-
-  function FadeInFromRightWhenVisible({ children }) {
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-      if (inView) {
-        controls.start("visible");
-      }
-    }, [controls, inView]);
-
-    return (
-      <motion.div
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        transition={{ duration: 1 }}
-        variants={{
-          visible: { opacity: 1, translateX: 0 },
-          hidden: { opacity: 0, translateX: 50 }
-        }}
-      >
-        {children}
-      </motion.div>
-    );
-  }
-
-
-
   return (
-
     <Layout>
+      <body>
+        <h1>My name's Josh Katzenmeyer.</h1>
+        <p>But most people in the metaverse know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. I'm a creative technologist using
+        code-based generative means to produce extraterrestrial results. My visual output has been steadiest since early 2020 and since then I've enjoyed producing art that makes
+        use of minimalistic geometry to craft immersive, abstracted landscapes. I cut my teeth exhibiting in virtual reality, but more recently my work has made its
+         physical debut on the international stage in Sotheby's <a href="https://www.sothebys.com/en/digital-catalogues/natively-digital-a-curated-nft-sale" target="_blank" rel="noopener noreferrer">Natively Digital</a> auction.</p>
+        <p>Conceptually I'm drawn to the questions unearthed when collaborating with machines. I'm interested in exploring the way technology encourages or reduces
+        human autonomy; the way algorithms inspire not only the creation, marketing, and monetization of artworks, but how they affect the perception and attention of
+        audiences and what this might mean for the future of cultural production and consumption.</p>
+        <p>I make a living by selling NFTs. I also offer consultations and trainings on NFTs alongside web development services. If you're interested in hiring me for a commission,
+         consultation, or a custom web project, <a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">email</a> me your idea
+         and I'd love to discuss it with you.</p>
+        <h2>Art</h2>
+        <ul>
+          <li><a href="https://www.cryptovoxels.com/play?coords=W@197E,78N" target="_blank" rel="noopener noreferrer">VR Gallery (CryptoVoxels)</a></li>
+          <li><a href="https://superrare.co/luxpris" target="_blank" rel="noopener noreferrer">SuperRare</a></li>
+          <li><a href="https://artblocks.io/project/7" target="_blank" rel="noopener noreferrer">Elevated Deconstructions</a></li>
+          <li><a href="https://artblocks.io/project/25" target="_blank" rel="noopener noreferrer">Pathfinders</a></li>
+        </ul>
+        <h2>Exhibitions</h2>
+        <ul>
+          <li><b>Art in Quarantine</b>, <i>Wreading Digits</i>, Online, 2020</li>
+          <li><b>$1M Art Show</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
+          <li><b>A Dissolution of Corrupted Arrangements</b>, <i>Museum of CryptoArt</i>, Virtual Reality, 2020 (Solo)</li>
+          <li><b>Generative & AI Art Exhibit</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
+          <li><b>"Audiovisual" Album Release & Gallery</b>, <i>Studio Nouveau</i>, Virtual Reality, 2020</li>
+          <li><b>Foot in the Door 5: The Virtual Exhibition</b>, <i>Minneapolis Institute of Art</i>, Minneapolis, MN, 2020</li>
+          <li><b>Natively Digital</b>, <i>Sotheby's</i>, NYC/Hong Kong/London (2021)</li>
+        </ul>
+        <h2>Press</h2>
+        <ul>
+          <li><a href="https://editorial.superrare.co/2020/09/06/an-interview-with-josh-katzenmeyer-the-artist-that-walks-in-an-abstract-landscape/" target="_blank" rel="noopener noreferrer">An Interview with Josh Katzenmeyer</a></li>
+          <li><a href="https://beta.cent.co/artblocks/+95ml3q" target="_blank" rel="noopener noreferrer">Catching up with Josh Katzenmeyer</a></li>
+          <li><a href="https://www.pscp.tv/w/1dRKZNnRAYgKB" target="_blank" rel="noopener noreferrer">VerticalCrypto x luxpris (Video Interview)</a></li>
+        </ul>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="https://twitter.com/luxpris" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a href="https://instagram.com/luxpris" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+        </ul>
 
-      <img src={bg} id="bg" className="rotating" alt="Generative artwork.">
-      </img>
-      <div id="home"></div>
-      <section id="introduction">
-
-        <div>
-          <h1>I'm Josh Katzenmeyer.</h1>
-          <p>But most people online know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. I'm a creative technologist using code-based generative means to produce extraterrestrial results. My visual output has been steadiest since early 2020 and since then I've enjoyed producing art that makes use of minimalistic geometry to craft immersive, abstracted landscapes. Much of my work is built with JavaScript, but I also use Blender for 3D animation and assorted audio tools to build procedural soundscapes.</p>
-          <p>Conceptually I'm drawn to the questions unearthed when collaborating with machines. I'm interested in exploring the way technology encourages or reduces human autonomy; the way algorithms inspire not only the creation, marketing, and monetization of artworks, but how they affect the perception and attention of audiences and what this might mean for the future of cultural production and consumption.</p>
-          <p>I make a living by selling <Link to="/art" target="_blank" rel="noopener noreferrer">single edition digital copies (NFTs)</Link> of my work. I also
-            offer consultations and trainings on NFTs alongside web development services. If you're interested in hiring me for a commission, consultation, or a custom web project, <a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">email</a> me your idea and I'd love to discuss it with you.</p>
-
-        </div>
-      </section>
-      <section id="projects">
-        <div>
-          <FadeInFromLeftWhenVisible>
-            <a href="https://www.cryptovoxels.com/play?coords=W@197E,78N">
-              <div className="projects-block" id="block1">
-                <p>luxpris HQ (VR Gallery)</p>
-
-              </div>
-            </a>
-          </FadeInFromLeftWhenVisible>
-          <FadeInFromRightWhenVisible>
-            <Link to="/art">
-              <div className="projects-block" id="block2">
-                <p>Selected Works 2020-Present</p>
-              </div>
-            </Link>
-          </FadeInFromRightWhenVisible>
-          <FadeInFromLeftWhenVisible>
-
-            <a href="https://artblocks.io/project/25">
-              <div className="projects-block" id="block3">
-                <p>Pathfinders</p>
-              </div>
-            </a>
-          </FadeInFromLeftWhenVisible>
-          <FadeInFromRightWhenVisible>
-
-            <a href="https://artblocks.io/project/7">
-              <div className="projects-block" id="block4">
-                <p>Elevated Deconstructions</p>
-              </div>
-            </a>
-          </FadeInFromRightWhenVisible>
-
-        </div>
-      </section>
-      <section id="work">
-        <FadeInWhenVisible>
-          <div>
-            <h2>Exhibitions</h2>
-            <ul>
-              <li><b>Art in Quarantine</b>, <i>Wreading Digits</i>, Online, 2020</li>
-              <li><b>$1M Art Show</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
-              <li><b>A Dissolution of Corrupted Arrangements</b>, <i>Museum of CryptoArt</i>, Virtual Reality, 2020 (Solo)</li>
-              <li><b>Generative & AI Art Exhibit</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
-              <li><b>"Audiovisual" Album Release & Gallery</b>, <i>Studio Nouveau</i>, Virtual Reality, 2020</li>
-              <li><b>Foot in the Door 5: The Virtual Exhibition</b>, <i>Minneapolis Institute of Art</i>, Minneapolis, MN, 2020</li>
-            </ul>
-            <h2>Press</h2>
-            <ul>
-              <li><a href="https://editorial.superrare.co/2020/09/06/an-interview-with-josh-katzenmeyer-the-artist-that-walks-in-an-abstract-landscape/" target="_blank" rel="noopener noreferrer">An Interview with Josh Katzenmeyer</a></li>
-              <li><a href="https://beta.cent.co/artblocks/+95ml3q" target="_blank" rel="noopener noreferrer">Catching up with Josh Katzenmeyer</a></li>
-              <li><a href="https://www.pscp.tv/w/1dRKZNnRAYgKB" target="_blank" rel="noopener noreferrer">VerticalCrypto x luxpris (Video Interview)</a></li>
-
-            </ul>
-            <h2>Writings</h2>
-            <ul>
-              <li><a href="https://editorial.superrare.co/2020/10/21/james-fox-beautifying-an-unavoidable-darkness/" target="_blank" rel="noopener noreferrer">James Fox: Beautifying an Unavoidable Darkness</a></li>
-              <li><a href="https://editorial.superrare.co/2020/10/05/an-exploration-of-high-weirdness-interviewing-sarah-zucker/" target="_blank" rel="noopener noreferrer">An Exploration of High Weirdness: Interviewing Sarah Zucker</a></li>
-              <li><a href="https://editorial.superrare.co/2020/09/03/an-interview-with-k0ch-the-algorithmic-artist-lost-in-a-recursive-loop/" target="_blank" rel="noopener noreferrer">An Interview with k0ch: The Algorithmic Artist Lost in a Recursive Loop</a></li>
-
-            </ul>
-          </div>
-        </FadeInWhenVisible>
-      </section>
-      <section id="contact">
-
-        <div>
-          <motion.div
-            transition={{ duration: 0.25 }}
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <a href="https://www.superrare.co/luxpris" target="_blank" rel="noopener noreferrer">
-              <img src={srLogo} id="icon" alt="SuperRare" />
-            </a>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            border="0px"
-          >
-            <a href="https://www.twitter.com/luxpris" target="_blank" rel="noopener noreferrer">
-              <span class="fab fa-twitter" id="icon"></span>
-            </a>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <a href="https://www.instagram.com/luxpris" target="_blank" rel="noopener noreferrer">
-              <span class="fab fa-instagram" id="icon"></span>
-            </a>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <a href="https://www.github.com/katze033" target="_blank" rel="noopener noreferrer">
-              <span class="fab fa-github" id="icon"></span>
-            </a>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">
-              <span class="fas fa-envelope-square" id="icon"></span>
-            </a>
-          </motion.div>
-        </div>
-      </section>
+      </body>
       <SEO />
     </Layout>
 
@@ -234,20 +61,3 @@ const IndexPage = () => {
 
 
 export default IndexPage
-/*
-<div className="gallery" id="gallery">
-        {data.allContentfulArtwork.edges.map((edge, i) => {
-          return (
-                <Link to={`/art/${edge.node.slug}`}>
-                  <Img
-                    fixed={edge.node.previewImage.fixed}
-                    key={edge.node.previewImage.fixed.src}
-                    alt={edge.node.title}
-                  />
-                </Link>
-              )
-            }
-          )
-        }
-      </div>
-      */
