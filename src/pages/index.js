@@ -47,7 +47,7 @@ const IndexPage = () => {
           <li><a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
         </ul>
         <h2>Mailing List</h2>
-        <form name="mailing-list" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="mailing-list" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
         <input type="hidden" name="mailing-list" value="mailing-list" />
             <input type="email" name="email" placeholder="Email" />
             <button type="submit">Send</button>
