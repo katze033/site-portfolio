@@ -28,3 +28,13 @@ a {
 a:hover {
     color: #f15060;
 }
+
+input {
+    font-family: monospace;
+}
+
+button {
+    font-family: monospace;
+    color: #ddd;
+    background-color: black;
+}
