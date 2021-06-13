@@ -23,6 +23,7 @@ const IndexPage = () => {
           <li><a href="https://superrare.co/luxpris" target="_blank" rel="noopener noreferrer">SuperRare</a></li>
           <li><a href="https://artblocks.io/project/7" target="_blank" rel="noopener noreferrer">Elevated Deconstructions</a></li>
           <li><a href="https://artblocks.io/project/25" target="_blank" rel="noopener noreferrer">Pathfinders</a></li>
+          <li><a href="https://www.hicetnunc.xyz/tz/tz1MXudafV9FkhwkEFF5yE8BnE6VyJ9krbT2/creations" target="_blank" rel="noopener noreferrer">hic et nunc</a></li>
         </ul>
         <h2>Exhibitions</h2>
         <ul>
