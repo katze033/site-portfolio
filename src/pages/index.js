@@ -33,7 +33,9 @@ const IndexPage = () => {
           <li><b>Generative & AI Art Exhibit</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
           <li><b>"Audiovisual" Album Release & Gallery</b>, <i>Studio Nouveau</i>, Virtual Reality, 2020</li>
           <li><b>Foot in the Door 5: The Virtual Exhibition</b>, <i>Minneapolis Institute of Art</i>, Minneapolis, MN, 2020</li>
-          <li><b>Natively Digital</b>, <i>Sotheby's</i>, NYC/Hong Kong/London (2021)</li>
+          <li><b>Natively Digital</b>, <i>Sotheby's</i>, NYC/Hong Kong/London, 2021</li>
+          <li><b>XO Crypto</b>, <i>Blockchain Center NYC</i>, New York, NY, 2021</li>
+
         </ul>
         <h2>Press</h2>
         <ul>
