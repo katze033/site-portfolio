@@ -13,9 +13,6 @@ const IndexPage = () => {
         <p>Conceptually I'm drawn to the questions unearthed when collaborating with machines. I'm interested in exploring the way technology encourages or reduces
         human autonomy; the way algorithms inspire not only the creation, marketing, and monetization of artworks, but how they affect the perception and attention of
         audiences and what this might mean for the future of cultural production and consumption.</p>
-        <p>I make a living by selling NFTs. I also offer consultations and trainings on NFTs alongside web development services. If you're interested in hiring me for a commission,
-         consultation, or a custom web project, <a href="mailto:joshkatzenmeyer@gmail.com" target="_blank" rel="noopener noreferrer">email</a> me your idea
-         and I'd love to discuss it with you.</p>
         <h2>Art</h2>
         <ul>
           <li><a href="https://superrare.co/luxpris" target="_blank" rel="noopener noreferrer">SuperRare</a></li>
