@@ -1,6 +1,6 @@
 body {
-    background-color: #ddd;
-    color:black;
+    background-color: #111;
+    color:#fff;
     font-family: monospace;
     font-size: 14px;
     line-height: 28px;
@@ -17,7 +17,7 @@ ul {
 
 
 a {
-    color: #111;
+    color: #fff;
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
@@ -35,6 +35,6 @@ input {
 
 button {
     font-family: monospace;
-    color: #ddd;
-    background-color: black;
+    color: #111;
+    background-color: #fff;
 }

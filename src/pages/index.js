@@ -9,8 +9,7 @@ const IndexPage = () => {
         <h1>My name's Josh Katzenmeyer.</h1>
         <p>But most people in the metaverse know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. I'm a creative technologist using
         code-based generative means to produce extraterrestrial results. My visual output has been steadiest since early 2020 and since then I've enjoyed producing art that makes
-        use of minimalistic geometry to craft immersive, abstracted landscapes. I cut my teeth exhibiting in virtual reality, but more recently my work has made its
-         physical debut on the international stage in Sotheby's <a href="https://www.sothebys.com/en/digital-catalogues/natively-digital-a-curated-nft-sale" target="_blank" rel="noopener noreferrer">Natively Digital</a> auction.</p>
+        use of minimalistic geometry to craft immersive, abstracted landscapes.</p>
         <p>Conceptually I'm drawn to the questions unearthed when collaborating with machines. I'm interested in exploring the way technology encourages or reduces
         human autonomy; the way algorithms inspire not only the creation, marketing, and monetization of artworks, but how they affect the perception and attention of
         audiences and what this might mean for the future of cultural production and consumption.</p>
@@ -19,10 +18,12 @@ const IndexPage = () => {
          and I'd love to discuss it with you.</p>
         <h2>Art</h2>
         <ul>
-          <li><a href="https://www.cryptovoxels.com/play?coords=W@197E,78N" target="_blank" rel="noopener noreferrer">VR Gallery (CryptoVoxels)</a></li>
           <li><a href="https://superrare.co/luxpris" target="_blank" rel="noopener noreferrer">SuperRare</a></li>
           <li><a href="https://artblocks.io/project/7" target="_blank" rel="noopener noreferrer">Elevated Deconstructions</a></li>
           <li><a href="https://artblocks.io/project/25" target="_blank" rel="noopener noreferrer">Pathfinders</a></li>
+          <li><a href="https://artblocks.io/project/134" target="_blank" rel="noopener noreferrer">Wave Schematics</a></li>
+          <li><a href="https://www.cryptovoxels.com/play?coords=W@197E,78N" target="_blank" rel="noopener noreferrer">VR Gallery (CryptoVoxels)</a></li>
+          <li><a href="https://www.hicetnunc.xyz/tz/tz1MXudafV9FkhwkEFF5yE8BnE6VyJ9krbT2" target="_blank" rel="noopener noreferrer">hic et nunc</a></li>
         </ul>
         <h2>Exhibitions</h2>
         <ul>
@@ -32,7 +33,12 @@ const IndexPage = () => {
           <li><b>Generative & AI Art Exhibit</b>, <i>SuperRare Museum</i>, Virtual Reality, 2020</li>
           <li><b>"Audiovisual" Album Release & Gallery</b>, <i>Studio Nouveau</i>, Virtual Reality, 2020</li>
           <li><b>Foot in the Door 5: The Virtual Exhibition</b>, <i>Minneapolis Institute of Art</i>, Minneapolis, MN, 2020</li>
-          <li><b>Natively Digital</b>, <i>Sotheby's</i>, NYC/Hong Kong/London (2021)</li>
+          <li><b>Natively Digital</b>, <i>Sotheby's</i>, NYC/Hong Kong/London, 2021</li>
+          <li><b>XO Crypto</b>, <i>Blockchain Center</i>, Manhattan, NYC, 2021</li>
+          <li><b>Brighton Pride Party</b>, <i>Brighton Beach Gallery</i>, Virtual Reality, 2021</li>
+          <li><b>U’R,L</b>, <i>IRL Art</i>, Denver, Colorado, 2021</li>
+          <li><b>Vertical Crypto Art Fundraising Event</b>, <i>Arium</i>, Virtual Reality, 2021</li>
+          <li><b>Post-War to Present: the NFTs</b>, <i>Christie's</i>, Manhattan, NYC, 2021</li>
         </ul>
         <h2>Press</h2>
         <ul>
