@@ -6,13 +6,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <body>
-        <h1>My name's Josh Katzenmeyer.</h1>
-        <p>But most people in the metaverse know me as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. I'm a creative technologist using
-        code-based generative means to produce extraterrestrial results. My visual output has been steadiest since early 2020 and since then I've enjoyed producing art that makes
-        use of minimalistic geometry to craft immersive, abstracted landscapes.</p>
-        <p>Conceptually I'm drawn to the questions unearthed when collaborating with machines. I'm interested in exploring the way technology encourages or reduces
-        human autonomy; the way algorithms inspire not only the creation, marketing, and monetization of artworks, but how they affect the perception and attention of
-        audiences and what this might mean for the future of cultural production and consumption.</p>
+        <h1>His name's Josh Katzenmeyer.</h1>
+        <p>But most people in the metaverse know him as <a href="https://www.twitter.com/luxpris/" target="_blank" rel="noopener noreferrer">@luxpris</a>. He is a multidisciplinary artist and musician harnessing technology and code to design otherworldly multimedia experiences. </p> 
+        <p>He has been minting NFTs since early 2020, and has exhibited in North America, Europe, and Asia alongside digital displays in the global VR realms connecting them all. He's drawn to the questions unearthed when collaborating with machines and is most interested in exploring the way technology encourages or reduces human autonomy; the way algorithms inspire not only the creation, marketing, and monetization of artworks, but how they affect the future of cultural production and consumption.</p>
         <h2>Art</h2>
         <ul>
           <li><a href="https://superrare.co/luxpris" target="_blank" rel="noopener noreferrer">SuperRare</a></li>
@@ -20,7 +16,6 @@ const IndexPage = () => {
           <li><a href="https://artblocks.io/project/25" target="_blank" rel="noopener noreferrer">Pathfinders</a></li>
           <li><a href="https://artblocks.io/project/134" target="_blank" rel="noopener noreferrer">Wave Schematics</a></li>
           <li><a href="https://www.cryptovoxels.com/play?coords=W@197E,78N" target="_blank" rel="noopener noreferrer">VR Gallery (CryptoVoxels)</a></li>
-          <li><a href="https://www.hicetnunc.xyz/tz/tz1MXudafV9FkhwkEFF5yE8BnE6VyJ9krbT2" target="_blank" rel="noopener noreferrer">hic et nunc</a></li>
         </ul>
         <h2>Exhibitions</h2>
         <ul>
